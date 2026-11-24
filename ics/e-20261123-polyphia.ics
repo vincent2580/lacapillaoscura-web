@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//La Capilla Oscura//Horario de misas//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Polyphia + Perturbator
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e-20261123-polyphia@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261123T203000
+DTEND;TZID=Europe/Madrid:20261123T233000
+SUMMARY:Polyphia + Perturbator
+LOCATION:La Riviera
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 47\,50 € (compra en la web oficial)\nEntradas:
+  https://www.laganzua.net/conciertos/polyphia-madrid-1016434\nHorario de m
+ isas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/polyphia-madrid-1016434
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

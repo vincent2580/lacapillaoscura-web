@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//La Capilla Oscura//Horario de misas//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fer Cabildo & Los Riffmakers
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e-20261229-fer-cabildo@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261229T213000
+DTEND;TZID=Europe/Madrid:20261230T003000
+SUMMARY:Fer Cabildo & Los Riffmakers
+LOCATION:Fun House\, C/ Palafox 8
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 12/15 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/129222\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/129222
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

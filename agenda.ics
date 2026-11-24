@@ -1,0 +1,638 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//La Capilla Oscura//Horario de misas//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Horario de misas · La Capilla Oscura
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e-20261120-baldung-grien-prado@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20270308
+SUMMARY:Baldung Grien: Las edades y la muerte ★
+LOCATION:Museo del Prado
+DESCRIPTION:ARTE SACRO · Cultura\nPrecio orientativo: 15 € · gratis 18
+ –20 h (compra en la web oficial)\nMás info: https://www.esmadrid.com/ag
+ enda/hans-baldung-grien-museo-prado\nHorario de misas · La Capilla Oscura
+  · https://lacapillaoscura.es/
+URL:https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261123-pinturas-negras-goya@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261130
+SUMMARY:Pinturas negras de Goya
+LOCATION:Museo del Prado
+DESCRIPTION:ARTE SACRO · Cultura\nPrecio orientativo: 15 € · gratis 18
+ –20 h (compra en la web oficial)\nMás info: https://es.wikipedia.org/wi
+ ki/Pinturas_negras\nHorario de misas · La Capilla Oscura · https://lacap
+ illaoscura.es/
+URL:https://es.wikipedia.org/wiki/Pinturas_negras
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261124-catherine-russell-jazz-y-blues@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261124T200000
+DTEND;TZID=Europe/Madrid:20261124T230000
+SUMMARY:Catherine Russell (jazz y blues)
+LOCATION:Teatro Alcalá
+DESCRIPTION:MISA · Conciertos · Fuera del altar (jazz\, folk\, otros)\nPr
+ ecio orientativo: 37\,8 € (compra en la web oficial)\nEntradas: https://
+ www.laganzua.net/conciertos/catherine-russell-madrid-1016342\nHorario de m
+ isas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/catherine-russell-madrid-1016342
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261125-kingfishr-folk@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261125T203000
+DTEND;TZID=Europe/Madrid:20261125T233000
+SUMMARY:Kingfishr (folk)
+LOCATION:Sala Wagon
+DESCRIPTION:MISA · Conciertos · Fuera del altar (jazz\, folk\, otros)\nPr
+ ecio orientativo: 34 € (compra en la web oficial)\nEntradas: https://www
+ .laganzua.net/conciertos/kingfishr-madrid-1016195\nHorario de misas · La 
+ Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/kingfishr-madrid-1016195
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261125-flotsam-jetsam@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261125T210000
+DTEND;TZID=Europe/Madrid:20261126T000000
+SUMMARY:Flotsam & Jetsam
+LOCATION:Revi Live\, C/ Los Cavilas 4
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: sin co
+ nfirmar (compra en la web oficial)\nEntradas: https://conciertos.club/madr
+ id/conciertos/124871\nHorario de misas · La Capilla Oscura · https://lac
+ apillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/124871
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261125-jam-rockville@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261125T210000
+DTEND;TZID=Europe/Madrid:20261126T000000
+SUMMARY:Jam session de Rockville
+LOCATION:Sala Rockville\, Av. Brasil 3 / C/ Orense 32
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: Gratis (
+ compra en la web oficial)\nEntradas: https://conciertos.club/madrid/concie
+ rtos/129479\nHorario de misas · La Capilla Oscura · https://lacapillaosc
+ ura.es/
+URL:https://conciertos.club/madrid/conciertos/129479
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261126-bum-motion-club@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261126T200000
+DTEND;TZID=Europe/Madrid:20261126T230000
+SUMMARY:Bum Motion Club
+LOCATION:Copérnico\, C/ Fernández de los Ríos 67
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 17 € (compra en la web oficial)\nEntradas: htt
+ ps://www.laganzua.net/conciertos/bum-motion-club-madrid-1017636\nHorario d
+ e misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/bum-motion-club-madrid-1017636
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261126-split-dogs@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261126T203000
+DTEND;TZID=Europe/Madrid:20261126T233000
+SUMMARY:Split Dogs
+LOCATION:Sala Nazca\, C/ Orense 24
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 23 € (
+ compra en la web oficial)\nEntradas: https://conciertos.club/madrid/concie
+ rtos/123720\nHorario de misas · La Capilla Oscura · https://lacapillaosc
+ ura.es/
+URL:https://conciertos.club/madrid/conciertos/123720
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261126-javier-alcazar-friends@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261126T213000
+DTEND;TZID=Europe/Madrid:20261127T003000
+SUMMARY:Javier Alcázar & Friends
+LOCATION:Moe
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: Gratis (
+ compra en la web oficial)\nEntradas: https://conciertos.club/madrid/concie
+ rtos/129445\nHorario de misas · La Capilla Oscura · https://lacapillaosc
+ ura.es/
+URL:https://conciertos.club/madrid/conciertos/129445
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261127-sdh-rider-rawla@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261127T203000
+DTEND;TZID=Europe/Madrid:20261127T233000
+SUMMARY:SDH + RAWLA ★
+LOCATION:Cadavra Club\, C/ Caballero de Gracia 10
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 17 € (compra en la web oficial)\nEntradas: htt
+ ps://dice.fm/event/bb7qpv-sdh-semiotics-department-of-heteronyms-presenta-
+ rider-rawla-live-27th-nov-cadavra-madrid-tickets\nHorario de misas · La C
+ apilla Oscura · https://lacapillaoscura.es/
+URL:https://dice.fm/event/bb7qpv-sdh-semiotics-department-of-heteronyms-pre
+ senta-rider-rawla-live-27th-nov-cadavra-madrid-tickets
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261127-catupecu-machu@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261127T210000
+DTEND;TZID=Europe/Madrid:20261128T000000
+SUMMARY:Catupecu Machu
+LOCATION:Sala Mon Live\, C/ Hilarión Eslava 36
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 34–39 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/119766\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/119766
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-euskal-invaders@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T190000
+DTEND;TZID=Europe/Madrid:20261128T220000
+SUMMARY:Euskal Invaders: Streetwise + Sofokaos + Perlata
+LOCATION:Independance Club
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 17\,60 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/124659\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/124659
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-feria-del-disco-de-metal-extre@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T190000
+DTEND;TZID=Europe/Madrid:20261128T220000
+SUMMARY:Feria del Disco de Metal Extremo ★
+LOCATION:Revi Live\, C/ Los Cavilas 4
+DESCRIPTION:RELIQUIAS · Ferias y tiendas · Metal y heavy\nPrecio orientat
+ ivo: 40/45 € (compra en la web oficial)\nEntradas: https://conciertos.cl
+ ub/madrid/conciertos/124870\nHorario de misas · La Capilla Oscura · http
+ s://lacapillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/124870
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-accept@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T210000
+DTEND;TZID=Europe/Madrid:20261129T000000
+SUMMARY:Accept + Dynazty + Enforcer
+LOCATION:La Cubierta\, Leganés
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: sin co
+ nfirmar (compra en la web oficial)\nEntradas: https://conciertos.club/madr
+ id/conciertos/114716\nHorario de misas · La Capilla Oscura · https://lac
+ apillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/114716
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-baron-rojo@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T210000
+DTEND;TZID=Europe/Madrid:20261129T000000
+SUMMARY:Barón Rojo
+LOCATION:La Riviera
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: 27\,75
+  € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/
+ conciertos/109273\nHorario de misas · La Capilla Oscura · https://lacapi
+ llaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/109273
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-desinteresse@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T210000
+DTEND;TZID=Europe/Madrid:20261129T000000
+SUMMARY:Noche Coldwave y Post-punk (Desinteresse)
+LOCATION:Hangar 48
+DESCRIPTION:VIGILIA · Fiestas · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 15\,88 € (compra en la web oficial)\nEntradas:
+  https://entradium.com/events/desinteresse_madrid_coldwave_postpunk\nHorar
+ io de misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://entradium.com/events/desinteresse_madrid_coldwave_postpunk
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-fuzztones@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T213000
+DTEND;TZID=Europe/Madrid:20261129T003000
+SUMMARY:The Fuzztones + The Oompa Loompas
+LOCATION:Gruta 77\, C/ Cuclillo 6
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 27\,50 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/125839\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/125839
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261128-dead-souls@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T230000
+DTEND;TZID=Europe/Madrid:20261129T020000
+SUMMARY:Dead Souls · 2º aniversario
+LOCATION:A Quien le Importa
+DESCRIPTION:VIGILIA · Fiestas · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 10 € (compra en la web oficial)\nEntradas: htt
+ ps://www.gotifiestas.com/eventos/dead-souls-2o-aniversario/\nHorario de mi
+ sas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.gotifiestas.com/eventos/dead-souls-2o-aniversario/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261129-ellas-y-los-de-siempre@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T130000
+DTEND;TZID=Europe/Madrid:20261129T160000
+SUMMARY:Ellas y los de siempre
+LOCATION:Sala Rockville\, Av. Brasil 3 / C/ Orense 32
+DESCRIPTION:MISA · Conciertos · Fuera del altar (jazz\, folk\, otros)\nPr
+ ecio orientativo: 10 € (compra en la web oficial)\nEntradas: https://con
+ ciertos.club/madrid/conciertos/129485\nHorario de misas · La Capilla Oscu
+ ra · https://lacapillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/129485
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261129-los-fabulosos-cadillacs@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T203000
+DTEND;TZID=Europe/Madrid:20261129T233000
+SUMMARY:Los Fabulosos Cadillacs
+LOCATION:Live Las Ventas
+DESCRIPTION:MISA · Conciertos · Fuera del altar (jazz\, folk\, otros)\nPr
+ ecio orientativo: 53\,7 € (compra en la web oficial)\nEntradas: https://
+ www.laganzua.net/conciertos/los-fabulosos-cadillacs-madrid-1016117\nHorari
+ o de misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/los-fabulosos-cadillacs-madrid-1016
+ 117
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261129-imperial-triumphant@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T210000
+DTEND;TZID=Europe/Madrid:20261130T000000
+SUMMARY:Imperial Triumphant
+LOCATION:Sala Nazca\, C/ Orense 24
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: sin co
+ nfirmar (compra en la web oficial)\nEntradas: https://conciertos.club/madr
+ id/conciertos/127686\nHorario de misas · La Capilla Oscura · https://lac
+ apillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/127686
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261129-gruta-77-ultima-noche@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T210000
+DTEND;TZID=Europe/Madrid:20261130T000000
+SUMMARY:Mamá Ladilla + El Señor que te molesta ★
+LOCATION:Gruta 77 · última noche\, C/ Cuclillo 6
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 17\,60 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/128936\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/128936
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261201-soen-tribulation-vulkan@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261201T183000
+DTEND;TZID=Europe/Madrid:20261201T213000
+SUMMARY:Soen + Tribulation + Vulkan
+LOCATION:Wagon
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: sin co
+ nfirmar (compra en la web oficial)\nEntradas: https://www.planomato.com/es
+ /madrid/p/concierto-soen-madrid\nHorario de misas · La Capilla Oscura · 
+ https://lacapillaoscura.es/
+URL:https://www.planomato.com/es/madrid/p/concierto-soen-madrid
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261201-eluveitie-pain-wolfheart@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261201T193000
+DTEND;TZID=Europe/Madrid:20261201T223000
+SUMMARY:Eluveitie + Pain + Wolfheart
+LOCATION:La Riviera
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: 40/50 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/124506\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/124506
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261204-papa-roach-landmvrks-sleep-the@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261204T210000
+DTEND;TZID=Europe/Madrid:20261205T000000
+SUMMARY:Papa Roach + Landmvrks + Sleep Theory
+LOCATION:Palacio Vistalegre
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: 59\,91
+  € (compra en la web oficial)\nEntradas: https://www.laganzua.net/concie
+ rtos/papa-roach-madrid-1016482\nHorario de misas · La Capilla Oscura · h
+ ttps://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/papa-roach-madrid-1016482
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261205-combichrist-xpq-21@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261205T200000
+DTEND;TZID=Europe/Madrid:20261205T230000
+SUMMARY:Combichrist + XPQ-21 ★
+LOCATION:Sala Nazca\, C/ Orense 24
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 32\,10 € (compra en la web oficial)\nEntradas:
+  https://www.laganzua.net/conciertos/combichrist-xpq-21-madrid-1016102\nHo
+ rario de misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/combichrist-xpq-21-madrid-1016102
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261205-elektrokohle@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261205T210000
+DTEND;TZID=Europe/Madrid:20261206T000000
+SUMMARY:Elektrokohle + Sad Lands
+LOCATION:Fotomatón Bar
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 15\,18 € (compra en la web oficial)\nEntradas:
+  https://www.laganzua.net/conciertos/elektrokohle-sad-lands-madrid-1016920
+ \nHorario de misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/elektrokohle-sad-lands-madrid-10169
+ 20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261205-redrum@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261205T230000
+DTEND;TZID=Europe/Madrid:20261206T020000
+SUMMARY:RedRum Gothic Club ★
+LOCATION:Sala Twin / Rockola\, C/ Gaztambide 20
+DESCRIPTION:VIGILIA · Fiestas · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: ~10 € (compra en la web oficial)\nEntradas: ht
+ tps://www.gotifiestas.com/eventos/redrum-goth-club/\nHorario de misas · L
+ a Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.gotifiestas.com/eventos/redrum-goth-club/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261205-destruktion-08@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261205T234500
+DTEND;TZID=Europe/Madrid:20261206T024500
+SUMMARY:Destruktion #08
+LOCATION:Specka
+DESCRIPTION:VIGILIA · Fiestas · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 16\,95 € (compra en la web oficial)\nEntradas:
+  https://www.gotifiestas.com/eventos/destruktion-08/\nHorario de misas · 
+ La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.gotifiestas.com/eventos/destruktion-08/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261206-dark-entries-asamblea-de-las-s@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261206T200000
+DTEND;TZID=Europe/Madrid:20261206T230000
+SUMMARY:Dark Entries: Asamblea de las Sombras
+LOCATION:The Godfather Rock Club
+DESCRIPTION:VIGILIA · Fiestas · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: sin confirmar (compra en la web oficial)\nEntrad
+ as: https://www.gotifiestas.com/eventos/dark-entries-asamblea-de-las-sombr
+ as-en-the-godfather/\nHorario de misas · La Capilla Oscura · https://lac
+ apillaoscura.es/
+URL:https://www.gotifiestas.com/eventos/dark-entries-asamblea-de-las-sombra
+ s-en-the-godfather/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261207-avulsed-carnation-fleshcrawl@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261207T200000
+DTEND;TZID=Europe/Madrid:20261207T230000
+SUMMARY:Avulsed + Carnation + Fleshcrawl
+LOCATION:Revi Live\, C/ Los Cavilas 4
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: 30 €
+  (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/conc
+ iertos/126227\nHorario de misas · La Capilla Oscura · https://lacapillao
+ scura.es/
+URL:https://conciertos.club/madrid/conciertos/126227
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261209-arabrot-lost-in-kyiv@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261209T210000
+DTEND;TZID=Europe/Madrid:20261210T000000
+SUMMARY:Årabrot + Lost in Kyiv
+LOCATION:Silikona
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: 27\,50
+  € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/
+ conciertos/125284\nHorario de misas · La Capilla Oscura · https://lacapi
+ llaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/125284
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261211-blinded-by-passion@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261211T210000
+DTEND;TZID=Europe/Madrid:20261212T000000
+SUMMARY:Blinded by Passion
+LOCATION:Fotomatón Bar
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 10 € (compra en la web oficial)\nEntradas: htt
+ ps://www.laganzua.net/conciertos/blinded-by-passion-madrid-1018264\nHorari
+ o de misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/blinded-by-passion-madrid-1018264
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261212-saurom-alestorm@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261212T170000
+DTEND;TZID=Europe/Madrid:20261212T200000
+SUMMARY:Saurom Juglar Fest: Saurom + Alestorm + Dartagnan
+LOCATION:La Cubierta\, Leganés
+DESCRIPTION:PROCESIÓN · Festivales · Metal y heavy\nPrecio orientativo: 
+ 54 € (compra en la web oficial)\nEntradas: https://www.laganzua.net/conc
+ iertos/saurom-juglar-festival-2026-leganes-1015218\nHorario de misas · La
+  Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.laganzua.net/conciertos/saurom-juglar-festival-2026-leganes
+ -1015218
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261212-dark-christmas-festival@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261212T193000
+DTEND;TZID=Europe/Madrid:20261212T223000
+SUMMARY:Dark Christmas Festival ★
+LOCATION:Sala Nazca\, C/ Orense 24
+DESCRIPTION:PROCESIÓN · Festivales · Oscuro (goth · darkwave · EBM · 
+ post-punk)\nPrecio orientativo: 29\,01 € (compra en la web oficial)\nEnt
+ radas: https://www.laganzua.net/conciertos/dark-christmas-festival-madrid-
+ 2026-madrid-1016484\nHorario de misas · La Capilla Oscura · https://laca
+ pillaoscura.es/
+URL:https://www.laganzua.net/conciertos/dark-christmas-festival-madrid-2026
+ -madrid-1016484
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261212-kid-kapichi-demob-happy@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261212T210000
+DTEND;TZID=Europe/Madrid:20261213T000000
+SUMMARY:Kid Kapichi + Demob Happy
+LOCATION:Sala El Sol\, C/ Jardines 3
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 27\,56 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/124755\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/124755
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261218-darkened-nocturn-slaughtercult@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261218T210000
+DTEND;TZID=Europe/Madrid:20261219T000000
+SUMMARY:Darkened Nocturn Slaughtercult + Nebiros
+LOCATION:Revi Live\, C/ Los Cavilas 4
+DESCRIPTION:MISA · Conciertos · Metal y heavy\nPrecio orientativo: sin co
+ nfirmar (compra en la web oficial)\nEntradas: https://conciertos.club/madr
+ id/conciertos/124867\nHorario de misas · La Capilla Oscura · https://lac
+ apillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/124867
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261218-fotocopia@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261218T210000
+DTEND;TZID=Europe/Madrid:20261219T000000
+SUMMARY:Fotocopia
+LOCATION:Wurlitzer Ballroom\, C/ Tres Cruces 12
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: 16\,51 € (compra en la web oficial)\nEntradas:
+  https://conciertos.club/madrid/conciertos/126537\nHorario de misas · La 
+ Capilla Oscura · https://lacapillaoscura.es/
+URL:https://conciertos.club/madrid/conciertos/126537
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261218-los-chicos@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261218T210000
+DTEND;TZID=Europe/Madrid:20261219T000000
+SUMMARY:Los Chicos + The Oddballs + Johnny Casino
+LOCATION:Fun House\, C/ Palafox 8
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 18/22 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/128418\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/128418
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261219-porretas@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261219T210000
+DTEND;TZID=Europe/Madrid:20261220T000000
+SUMMARY:Porretas
+LOCATION:La Riviera
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 25\,30 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/129591\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/129591
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261226-tardeo-depeche-cure@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261226T180000
+DTEND;TZID=Europe/Madrid:20261226T210000
+SUMMARY:Tardeo Depeche Mode\, New Order y The Cure
+LOCATION:Independance Club
+DESCRIPTION:VIGILIA · Fiestas · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: Gratis/16 € (compra en la web oficial)\nEntrad
+ as: https://www.gotifiestas.com/eventos/depeche-mode-new-order-the-cure-se
+ sion-tardeo/\nHorario de misas · La Capilla Oscura · https://lacapillaos
+ cura.es/
+URL:https://www.gotifiestas.com/eventos/depeche-mode-new-order-the-cure-ses
+ ion-tardeo/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261226-grey-gallows@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261226T210000
+DTEND;TZID=Europe/Madrid:20261227T000000
+SUMMARY:Grey Gallows
+LOCATION:Cadavra Club\, C/ Caballero de Gracia 10
+DESCRIPTION:MISA · Conciertos · Oscuro (goth · darkwave · EBM · post-p
+ unk)\nPrecio orientativo: sin confirmar (compra en la web oficial)\nEntrad
+ as: https://www.gotifiestas.com/eventos/grey-gallows-cadavra-club-madrid/\
+ nHorario de misas · La Capilla Oscura · https://lacapillaoscura.es/
+URL:https://www.gotifiestas.com/eventos/grey-gallows-cadavra-club-madrid/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e-20261229-fer-cabildo@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;TZID=Europe/Madrid:20261229T213000
+DTEND;TZID=Europe/Madrid:20261230T003000
+SUMMARY:Fer Cabildo & Los Riffmakers
+LOCATION:Fun House\, C/ Palafox 8
+DESCRIPTION:MISA · Conciertos · Rock y punk\nPrecio orientativo: 12/15 
+ € (compra en la web oficial)\nEntradas: https://conciertos.club/madrid/c
+ onciertos/129222\nHorario de misas · La Capilla Oscura · https://lacapil
+ laoscura.es/
+URL:https://conciertos.club/madrid/conciertos/129222
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

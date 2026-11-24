@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//La Capilla Oscura//Horario de misas//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Baldung Grien: Las edades y la muerte
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e-20261120-baldung-grien-prado@lacapillaoscura.es
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20270308
+SUMMARY:Baldung Grien: Las edades y la muerte ★
+LOCATION:Museo del Prado
+DESCRIPTION:ARTE SACRO · Cultura\nPrecio orientativo: 15 € · gratis 18
+ –20 h (compra en la web oficial)\nMás info: https://www.esmadrid.com/ag
+ enda/hans-baldung-grien-museo-prado\nHorario de misas · La Capilla Oscura
+  · https://lacapillaoscura.es/
+URL:https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
