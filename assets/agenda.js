@@ -1,4 +1,4 @@
-/* La Capilla Oscura · Horario de misas. Vanilla JS, no requests, no storage, no cookies.
+/* La Capilla Oscura · Horario de misas (v2: copy of ../public/static/site.js + #e-<id> plan links). Vanilla JS, no requests, no storage, no cookies.
    Without JS the page shows every week, then the month grids (anchors do the navigation).
    With JS: one week at a time (‹ ›), "Este finde", "Mes" tab with tap-a-day panel, filters by type and genre. */
 (function () {
@@ -45,6 +45,17 @@
     var h = (location.hash || "").slice(1);
     if (!h) return;
     if (h === "calendario" || h.indexOf("mes-") === 0) { state.view = "month"; return; }
+    if (h.indexOf("e-") === 0) {  // v2: one plan (#e-<id>, used by ¿Vamos? / Compartir links and the home page)
+      var hit = null;
+      weeks.forEach(function (w, i) {
+        if (hit === null && i >= curWeek && w.querySelector('li.ev[data-id="' + h.slice(2).replace(/"/g, "") + '"]')) hit = i;
+      });
+      if (hit === null) weeks.forEach(function (w, i) {
+        if (hit === null && w.querySelector('li.ev[data-id="' + h.slice(2).replace(/"/g, "") + '"]')) hit = i;
+      });
+      if (hit !== null) { state.view = "week"; state.wi = hit; state.open = h.slice(2); }
+      return;
+    }
     var el = doc.getElementById(h);
     if (!el) return;
     var w = el.closest ? el.closest(".week") : null;
@@ -218,9 +229,17 @@
       weeks[state.wi].scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
-  window.addEventListener("hashchange", function () { fromHash(); render(false); });
+  function openPlan() {
+    if (!state.open) return;
+    var li = weeks[state.wi].querySelector('li.ev[data-id="' + state.open.replace(/"/g, "") + '"]');
+    state.open = null;
+    if (li) { var det = li.querySelector("details"); if (det) det.open = true; li.scrollIntoView({ block: "center" }); }
+  }
+  window.addEventListener("hashchange", function () { fromHash(); render(false); openPlan(); });
 
   render(false);
+  // v2: a plan link (#e-…): open its row and scroll to it
+  openPlan();
   // a day link (#d-…) from outside: scroll to it once its week is visible
   if (location.hash.indexOf("#d-") === 0) {
     var target = doc.getElementById(location.hash.slice(1));

@@ -1,0 +1,76 @@
+{# LCO candle (brand symbol), star, velas, stamps, share — inline SVG uses currentColor #}
+{% macro candle(size=24) -%}
+<svg class="ic-candle" width="{{ size }}" height="{{ size }}" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg>
+{%- endmacro %}
+
+{% macro star(label=True) -%}
+<span class="star"{% if label %} role="img" aria-label="iría: recomendado"{% else %} aria-hidden="true"{% endif %}><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span>
+{%- endmacro %}
+
+{# velas rating, like the CRÓNICA template: white candles, red flame; a half = a short candle #}
+{% macro vela(kind) -%}
+<svg class="vela vela-{{ kind }}" viewBox="0 0 40 80" aria-hidden="true" focusable="false">{% if kind == 'half' %}<path class="fl" d="M20 30 C25 37 27 41 27 45 C27 49 24 51 20 51 C16 51 13 49 13 45 C13 41 15 37 20 30 Z"/><rect class="bd" x="10" y="54" width="20" height="22" rx="1"/><path class="dr" d="M15 54 V62 M25 54 V66"/>{% else %}<path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/>{% endif %}<path class="bs" d="M4 77 H36"/></svg>
+{%- endmacro %}
+{% macro velas(v, big=False) -%}
+<span class="velas{{ ' velas-big' if big }}" role="img" aria-label="{{ v.label }}">{% for i in range(v.full) %}{{ vela('full') }}{% endfor %}{% if v.half %}{{ vela('half') }}{% endif %}{% for i in range(v.empty) %}{{ vela('empty') }}{% endfor %}</span>
+{%- endmacro %}
+
+{% macro stamp(text, cls='') -%}<span class="stamp {{ cls }}"><span>{{ text }}</span></span>{%- endmacro %}
+
+{# ¿Vamos? to WhatsApp (static link) + native share / copy link (JS shows it) #}
+{% macro share(wa, text, url, label='¿Vamos?', what='') -%}
+<a class="btn wa" href="{{ wa }}" rel="noopener external" target="_blank">{{ label }}<span class="sr"> Compartir {{ what }} por WhatsApp (abre en otra pestaña)</span></a><button type="button" class="btn ghost js-share" data-text="{{ text }}" data-url="{{ url }}" hidden>Compartir<span class="sr"> {{ what }}</span></button>
+{%- endmacro %}
+
+{# one agenda row: hora · plan ★ · sala · precio (same order as the T11 image); tap = details #}
+{% macro ev(r, aw=False) -%}
+<li class="ev{{ ' pk' if r.pick }}{{ ' awr' if aw }}" data-id="{{ r.id }}" data-type="{{ r.type }}" data-genre="{{ r.genre }}">
+<details>
+<summary>
+<span class="t">{% if aw %}<span class="sr">Toda la semana</span>{% elif r.time %}{{ r.time }}{% else %}<span aria-label="hora sin confirmar">—</span>{% endif %}</span>
+<span class="c"><i class="dot d-{{ r.type }}" aria-hidden="true"></i><b>{{ r.title }}</b>{% if r.pick %}{{ star() }}{% endif %}</span>
+<span class="v"><span class="sep" aria-hidden="true">· </span>{{ r.venue }}{% if r.span %} · {{ r.span }}{% endif %}</span>
+<span class="p">{% if r.price_known %}{{ r.price }}{% else %}<span aria-label="precio sin confirmar">—</span>{% endif %}</span>
+</summary>
+<div class="more">
+<p class="meta"><span class="tag">{{ r.type_label }}</span> {{ r.type_public }}{% if r.genre_label %} · {{ r.genre_label }}{% endif %}{% if r.address %}<br><span class="addr">{{ r.address }}</span>{% endif %}</p>
+<p class="acts">{% if r.url %}<a class="btn" href="{{ r.url }}" rel="noopener external" target="_blank">{{ r.link_label }}<span aria-hidden="true"> ↗</span><span class="sr"> de {{ r.title }} (web externa)</span></a>{% endif %}{{ share(r.wa, r.share_text, r.share_url, '¿Vamos?', r.title) }}<a class="btn ghost" href="/ics/{{ r.id }}.ics" download="{{ r.id }}.ics">Añadir a mi calendario<span class="sr">: {{ r.title }}</span></a></p>
+</div>
+</details>
+</li>
+{%- endmacro %}
+
+{# page hero: a photocopy wallpaper from his published photos + stamp + big title #}
+{% macro hero(wall, kicker, title, sub='', alt='', small=False) -%}
+<section class="hero{{ ' hero-s' if small }}" aria-labelledby="hero-h">
+  <img class="hero-img" src="/assets/img/{{ wall }}-1080.jpg" srcset="/assets/img/{{ wall }}-720.jpg 720w, /assets/img/{{ wall }}-1080.jpg 1080w" sizes="100vw" alt="{{ alt }}" width="1080" height="590"{% if not alt %} role="presentation"{% endif %}>
+  <div class="hero-in wrap">
+    {{ stamp(kicker) }}
+    <h1 id="hero-h" class="hero-t">{{ title }}</h1>
+    {% if sub %}<p class="hero-sub">{{ sub }}</p>{% endif %}
+    {{ caller() if caller is defined else '' }}
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro sect(title, more_href='', more_label='', id='') -%}
+<div class="sec-h"{% if id %} id="{{ id }}"{% endif %}><h2>{{ title }}</h2>{% if more_href %}<a class="more-l" href="{{ more_href }}">{{ more_label }}<span aria-hidden="true"> →</span></a>{% endif %}</div>
+{%- endmacro %}
+
+{# a text block only Vincent can write (content/textos.json): his text if present; else an amber placeholder in the
+   preview build; else (go-live) nothing at all #}
+{% macro slot(t, preview, cls='note') -%}
+{% if t.text %}<p class="{{ cls }}">{{ t.text }}</p>{% elif preview %}<p class="{{ cls }}">{{ todo(t.hint) }}</p>{% endif %}
+{%- endmacro %}
+
+{% macro todo(text) -%}<span class="todo">[tu texto{% if text %}: {{ text }}{% endif %}]</span>{%- endmacro %}
+
+{% macro album(a, show_why=True) -%}
+<li class="alb">
+  <p class="alb-a">{{ a.artist }}</p>
+  <p class="alb-t">{{ a.album }}{% if a.year %} <span class="alb-y">({{ a.year }})</span>{% endif %}</p>
+  {% if show_why and a.extra %}<p class="alb-x">{{ a.extra }}</p>{% endif %}
+  {% if a.v %}{{ velas(a.v) }}{% endif %}
+  <p class="alb-l">{% for name, href in a.links %}<a href="{{ href }}" rel="noopener external" target="_blank">{{ name }}<span class="sr"> (buscar {{ a.album }}, abre en otra pestaña)</span></a>{% endfor %}</p>
+</li>
+{%- endmacro %}

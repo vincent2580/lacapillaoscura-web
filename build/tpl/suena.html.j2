@@ -1,0 +1,37 @@
+{% extends 'base.html.j2' %}
+{% block title %}Lo que suena: discos y novedades de rock y metal | La Capilla Oscura{% endblock %}
+{% block description %}Lo que suena en La Capilla Oscura: lo que he escuchado (con velas), las novedades de cada viernes y los discos para llegar a los conciertos con los deberes hechos.{% endblock %}
+{% block meta %}<link rel="canonical" href="{{ site }}/lo-que-suena/"><meta property="og:type" content="website"><meta property="og:title" content="Lo que suena · La Capilla Oscura">{% endblock %}
+{% block body %}
+<main id="main">
+{% call m.hero('wall-crowd', 'Discos · novedades · velas', 'Lo que suena', 'Lo que escucho, lo que sale cada viernes y lo que toca escuchar antes de un concierto.', '', True) %}{% endcall %}
+<div class="wrap grid-2">
+  <section class="card" aria-labelledby="h-heard">
+    {{ m.sect('Escuchado en la capilla', id='h-heard') }}
+    <p class="card-lead">Con velas en vez de estrellas: de 0 a 5.</p>
+    <ul class="albs">{% for a in listening.heard %}{{ m.album(a, False) }}{% else %}<li class="empty">Pronto, los primeros discos con velas.</li>{% endfor %}</ul>
+    {{ m.slot(textos['suena.escuchado_por_que'], preview) }}
+  </section>
+  <div class="stack">
+  {% for n in listening.novedades %}
+  <section class="card" aria-labelledby="h-nov-{{ loop.index }}">
+    {{ m.sect(('Salió el ' if n.released else 'Sale el ') ~ n.label, id='h-nov-' ~ loop.index) }}
+    <p class="card-lead">Novedades del viernes en metal, rock y oscuro.</p>
+    <ul class="albs albs-c">{% for a in n.albums %}{{ m.album(a) }}{% endfor %}</ul>
+  </section>
+  {% endfor %}
+  {% if listening.nuevas %}
+  <section class="card" aria-labelledby="h-nuevas">
+    {{ m.sect('Bandas para descubrir', id='h-nuevas') }}
+    <ul class="albs albs-c">{% for a in listening.nuevas %}{{ m.album(a) }}{% endfor %}</ul>
+  </section>
+  {% endif %}
+  <section class="card" aria-labelledby="h-deb">
+    {{ m.sect('Deberes antes del concierto', '/saber/#deberes', 'Ver los deberes', 'h-deb') }}
+    <p class="card-lead">El último disco y el primero de cada banda que veré en directo.</p>
+  </section>
+  </div>
+</div>
+<p class="wrap fine-l">Los enlaces buscan el disco en Spotify, Bandcamp y YouTube (webs externas). Aquí no hay reproductores incrustados: así no entra ninguna cookie de terceros.</p>
+</main>
+{% endblock %}

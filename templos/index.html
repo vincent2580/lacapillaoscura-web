@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; img-src &#39;self&#39; data: https://tile.openstreetmap.org; style-src &#39;self&#39;; script-src &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; base-uri &#39;self&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Templos: salas, clubs, bares y tiendas de discos de rock y metal en Madrid | La Capilla Oscura</title>
+<meta name="description" content="29 templos del rock, el metal y lo oscuro en Madrid: salas, clubs, bares y tiendas de discos, con su barrio, su estilo y sus próximas misas. Guárdalos en tu Google Maps.">
+<meta name="theme-color" content="#0B0A09">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/pirata-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:site_name" content="La Capilla Oscura">
+<meta property="og:locale" content="es_ES">
+<link rel="canonical" href="https://lacapillaoscura.es/templos/"><meta property="og:type" content="website"><meta property="og:title" content="Templos · La Capilla Oscura"></head>
+<body class="pg-templos ">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="sh">
+  <div class="sh-in">
+    <a class="brand" href="/" aria-label="La Capilla Oscura: inicio">
+      <img src="/assets/lco-mark.svg" alt="" width="52" height="40"><span class="brand-t">La Capilla Oscura</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <ul>
+<li><a href="/agenda/">Agenda</a></li><li><a href="/lo-que-suena/">Lo que suena</a></li><li><a href="/cronicas/">Crónicas</a></li><li><a href="/saber/">Saber</a></li><li><a href="/templos/" aria-current="page">Templos</a></li><li><a href="/tienda/">Tienda</a></li><li><a href="/sobre/">Sobre LCO</a></li>      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero hero-s" aria-labelledby="hero-h">
+  <img class="hero-img" src="/assets/img/wall-rig-1080.jpg" srcset="/assets/img/wall-rig-720.jpg 720w, /assets/img/wall-rig-1080.jpg 1080w" sizes="100vw" alt="" width="1080" height="590" role="presentation">
+  <div class="hero-in wrap">
+    <span class="stamp "><span>Madrid</span></span>
+    <h1 id="hero-h" class="hero-t">Templos</h1>
+<p class="hero-sub">Salas, clubs, bares y tiendas de discos donde se celebra el culto.</p>    
+  </div>
+</section><div class="wrap">
+  <section class="mapbox" aria-labelledby="h-map">
+    <div class="mapbox-h">
+      <h2 id="h-map" class="card-t">El mapa</h2>
+      <button type="button" class="btn" data-map-open hidden>Abrir el mapa</button>
+    </div>
+    <p class="mapbox-note" data-map-note>El mapa usa OpenStreetMap: al abrirlo, tu navegador pide las imágenes del mapa a sus servidores (un servicio externo). Hasta que lo abras, no se carga nada de fuera. <a href="/privacidad/#mapa">Más en privacidad</a>.</p>
+    <noscript><p class="mapbox-note">El mapa necesita JavaScript. Abajo tienes la lista con enlaces a Google Maps y Apple Maps para cada templo.</p></noscript>
+    <div class="map" id="map" data-map hidden role="region" aria-label="Mapa de los templos de Madrid"></div>
+    <ul class="map-leg" data-map-leg hidden aria-label="Leyenda del mapa"><li><i class="pin pin-sala" aria-hidden="true"></i>Salas</li><li><i class="pin pin-club" aria-hidden="true"></i>Clubs</li><li><i class="pin pin-bar" aria-hidden="true"></i>Bares</li><li><i class="pin pin-tienda" aria-hidden="true"></i>Tiendas de discos</li><li><i class="pin pin-ap" aria-hidden="true"></i>Ubicación aproximada</li></ul>
+  </section>
+
+  <section class="card gm" id="en-tu-mapa" aria-labelledby="h-gm">
+    <h2 id="h-gm" class="card-t">Guarda los Templos LCO en tu Google Maps</h2>
+    <p class="acts"><a class="btn" href="/templos/LCO-Templos-Madrid.kml" download>Descarga la lista (KML)</a><a class="btn ghost" href="/templos/LCO-Templos-Madrid.csv" download>CSV</a><a class="btn ghost" href="/templos/LCO-Templos-Madrid.kmz" download>KMZ</a></p>
+    <p class="gm-hint">Impórtala en Google My Maps (Añadir capa → Importar) o ábrela con Organic Maps, y tendrás los 29 templos en tu móvil.</p>
+  </section>
+
+  <div class="tp-ctl" data-js-tp hidden>
+    <div class="chips" role="group" aria-label="Filtrar templos">
+      <button type="button" class="chip" data-k="" aria-pressed="true">Todos <span class="n">29</span></button>
+<button type="button" class="chip" data-k="sala" aria-pressed="false"><i class="pin pin-sala" aria-hidden="true"></i>Salas <span class="n">16</span></button><button type="button" class="chip" data-k="club" aria-pressed="false"><i class="pin pin-club" aria-hidden="true"></i>Clubs <span class="n">5</span></button><button type="button" class="chip" data-k="bar" aria-pressed="false"><i class="pin pin-bar" aria-hidden="true"></i>Bares <span class="n">3</span></button><button type="button" class="chip" data-k="tienda" aria-pressed="false"><i class="pin pin-tienda" aria-hidden="true"></i>Tiendas de discos <span class="n">5</span></button>    </div>
+    <p class="sr" aria-live="polite" data-tp-status></p>
+  </div>
+
+  <ul class="tp-grid">
+    <li class="card tp" id="p-cafe-la-palma" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Café La Palma</h3>
+      <p class="tp-a">Malasaña <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Oscuro · Fuera del altar</p><p class="tp-i">Indie y darkwave</p>      <p class="tp-l"><a href="https://www.gotifiestas.com/" rel="noopener external" target="_blank">gotifiestas.com<span class="sr"> (web de Café La Palma, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9%20La%20Palma%2C%20Malasa%C3%B1a%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Café La Palma (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Caf%C3%A9%20La%20Palma%2C%20Malasa%C3%B1a%2C%20Madrid&amp;center=40.42671,-3.70423" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Café La Palma (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-fun-house" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Fun House</h3>
+      <p class="tp-a">C/ Palafox 8 · Chamberí</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Conciertos baratos desde 8–10 €</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261218-los-chicos">vie 18 dic, 21:00 · Los Chicos + The Oddballs + Johnny Casino</a></li><li><a href="/agenda/#e-e-20261229-fer-cabildo">mar 29 dic, 21:30 · Fer Cabildo &amp; Los Riffmakers</a></li></ul></div>      <p class="tp-l"><a href="https://conciertos.club/madrid" rel="noopener external" target="_blank">conciertos.club<span class="sr"> (web de Fun House, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Fun%20House%2C%20C%2F%20Palafox%208%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Fun House (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Fun%20House%2C%20C%2F%20Palafox%208%2C%20Madrid&amp;center=40.43150,-3.70122" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Fun House (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-gruta-77" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span> <span class="stamp st-s"><span>Cierra</span></span></p>
+      <h3 class="tp-t">Gruta 77</h3>
+      <p class="tp-a">C/ Cuclillo 6 · Carabanchel</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Punk, garage, rock</p><p class="tp-i">Cierra tras 26 años: última noche el domingo 29 nov (Mamá Ladilla). La promotora seguirá en otras salas.</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261128-fuzztones">sáb 28 nov, 21:30 · The Fuzztones + The Oompa Loompas</a></li><li><a href="/agenda/#e-e-20261129-gruta-77-ultima-noche">dom 29 nov, 21:00 · Mamá Ladilla + El Señor que te molesta</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/gruta_77/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Gruta 77 (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Gruta%2077%2C%20C%2F%20Cuclillo%206%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Gruta 77 (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Gruta%2077%2C%20C%2F%20Cuclillo%206%2C%20Madrid&amp;center=40.39095,-3.73149" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Gruta 77 (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-revi-live" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Revi Live</h3>
+      <p class="tp-a">C/ Los Cavilas 4 · Vicálvaro</p>
+<p class="tp-s">Metal</p><p class="tp-i">Unas 500 personas: thrash, death, black. Feria del Disco de Metal Extremo (28 nov)</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261125-flotsam-jetsam">mié 25 nov, 21:00 · Flotsam &amp; Jetsam</a></li><li><a href="/agenda/#e-e-20261128-feria-del-disco-de-metal-extre">sáb 28 nov, 19:00 · Feria del Disco de Metal Extremo</a></li><li><a href="/agenda/#e-e-20261207-avulsed-carnation-fleshcrawl">lun 7 dic, 20:00 · Avulsed + Carnation + Fleshcrawl</a></li></ul></div>      <p class="tp-l"><a href="https://www.planomato.com/es/madrid/v/revilive" rel="noopener external" target="_blank">planomato.com<span class="sr"> (web de Revi Live, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Revi%20Live%2C%20C%2F%20Los%20Cavilas%204%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Revi Live (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Revi%20Live%2C%20C%2F%20Los%20Cavilas%204%2C%20Madrid&amp;center=40.40086,-3.58972" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Revi Live (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-clamores" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Clamores</h3>
+      <p class="tp-a">C/ Alburquerque 14 · Chamberí</p>
+<p class="tp-s">Rock/punk · Fuera del altar</p><p class="tp-i">Mezcla, cada vez más rock</p>      <p class="tp-l"><a href="https://www.instagram.com/clamoreslive/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Sala Clamores (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Clamores%2C%20C%2F%20Alburquerque%2014%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Clamores (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Clamores%2C%20C%2F%20Alburquerque%2014%2C%20Madrid&amp;center=40.43111,-3.70099" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Clamores (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-el-sol" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala El Sol</h3>
+      <p class="tp-a">C/ Jardines 3 · Gran Vía</p>
+<p class="tp-s">Rock/punk · Fuera del altar</p><p class="tp-i">Sala pequeña clásica (indie, rock alternativo)</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261212-kid-kapichi-demob-happy">sáb 12 dic, 21:00 · Kid Kapichi + Demob Happy</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/salaelsol/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Sala El Sol (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20El%20Sol%2C%20C%2F%20Jardines%203%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala El Sol (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20El%20Sol%2C%20C%2F%20Jardines%203%2C%20Madrid&amp;center=40.41898,-3.70152" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala El Sol (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-mon-live" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Mon Live</h3>
+      <p class="tp-a">C/ Hilarión Eslava 36 · Chamberí</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Rock y hard rock</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261127-catupecu-machu">vie 27 nov, 21:00 · Catupecu Machu</a></li></ul></div>      <p class="tp-l"><a href="https://conciertos.club/madrid" rel="noopener external" target="_blank">conciertos.club<span class="sr"> (web de Sala Mon Live, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Mon%20Live%2C%20C%2F%20Hilari%C3%B3n%20Eslava%2036%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Mon Live (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Mon%20Live%2C%20C%2F%20Hilari%C3%B3n%20Eslava%2036%2C%20Madrid&amp;center=40.43592,-3.71652" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Mon Live (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-nazca" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Nazca</h3>
+      <p class="tp-a">C/ Orense 24 · Tetuán (Azca)</p>
+<p class="tp-s">Oscuro · Metal · Rock/punk</p><p class="tp-i">Goth, EBM, metal y hard rock: Dark Christmas Fest (12 dic)</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261126-split-dogs">jue 26 nov, 20:30 · Split Dogs</a></li><li><a href="/agenda/#e-e-20261129-imperial-triumphant">dom 29 nov, 21:00 · Imperial Triumphant</a></li><li><a href="/agenda/#e-e-20261205-combichrist-xpq-21">sáb 5 dic, 20:00 · Combichrist + XPQ-21</a></li></ul></div>      <p class="tp-l"><a href="https://conciertos.club/madrid/locales/sala-nazca" rel="noopener external" target="_blank">conciertos.club<span class="sr"> (web de Sala Nazca, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Nazca%2C%20C%2F%20Orense%2024%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Nazca (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Nazca%2C%20C%2F%20Orense%2024%2C%20Madrid&amp;center=40.45138,-3.69446" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Nazca (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-pirandello" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Pirandello</h3>
+      <p class="tp-a">C/ Ventura Rodríguez 7 · Argüelles</p>
+<p class="tp-s">Oscuro</p><p class="tp-i">Dark Entries: Spain Goth Day (mayo) y Post-Punk Fest (sept)</p>      <p class="tp-l"><a href="https://xceed.me/en/madrid" rel="noopener external" target="_blank">xceed.me<span class="sr"> (web de Sala Pirandello, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Pirandello%2C%20C%2F%20Ventura%20Rodr%C3%ADguez%207%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Pirandello (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Pirandello%2C%20C%2F%20Ventura%20Rodr%C3%ADguez%207%2C%20Madrid&amp;center=40.42530,-3.71372" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Pirandello (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-rockville" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Rockville</h3>
+      <p class="tp-a">Av. Brasil 3 / C/ Orense 32 · Tetuán (Azca)</p>
+<p class="tp-s">Rock/punk · Metal</p><p class="tp-i">Jams gratis y matinales de fin de semana a 6 €</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261125-jam-rockville">mié 25 nov, 21:00 · Jam session de Rockville</a></li><li><a href="/agenda/#e-e-20261129-ellas-y-los-de-siempre">dom 29 nov, 13:00 · Ellas y los de siempre</a></li></ul></div>      <p class="tp-l"><a href="https://conciertos.club/madrid" rel="noopener external" target="_blank">conciertos.club<span class="sr"> (web de Sala Rockville, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Rockville%2C%20Av.%20Brasil%203%20%2F%20C%2F%20Orense%2032%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Rockville (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Rockville%2C%20Av.%20Brasil%203%20%2F%20C%2F%20Orense%2032%2C%20Madrid&amp;center=40.45373,-3.69450" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Rockville (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-silikona" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Silikona</h3>
+      <p class="tp-a">Moratalaz <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Metal</p><p class="tp-i">Club con más de 30 años: metal extremo y post-metal</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261209-arabrot-lost-in-kyiv">mié 9 dic, 21:00 · Årabrot + Lost in Kyiv</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/salasilikona.conciertos/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Sala Silikona (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Silikona%2C%20Moratalaz%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Silikona (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Silikona%2C%20Moratalaz%2C%20Madrid&amp;center=40.40593,-3.64487" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Silikona (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-villanos" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Sala Villanos (ex-Caracol)</h3>
+      <p class="tp-a">C/ Bernardino Obregón 18 · Embajadores</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">La antigua Sala Caracol con otro nombre</p>      <p class="tp-l"><a href="https://www.instagram.com/salavillanos/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Sala Villanos (ex-Caracol) (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Villanos%20%28ex-Caracol%29%2C%20C%2F%20Bernardino%20Obreg%C3%B3n%2018%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Villanos (ex-Caracol) (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Villanos%20%28ex-Caracol%29%2C%20C%2F%20Bernardino%20Obreg%C3%B3n%2018%2C%20Madrid&amp;center=40.40394,-3.70024" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Villanos (ex-Caracol) (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-shoko" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Shoko</h3>
+      <p class="tp-a">C/ Toledo 86 · La Latina</p>
+<p class="tp-s">Rock/punk · Oscuro</p><p class="tp-i">Sala mediana</p>      <p class="tp-l"><a href="https://conciertos.club/madrid" rel="noopener external" target="_blank">conciertos.club<span class="sr"> (web de Shoko, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Shoko%2C%20C%2F%20Toledo%2086%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Shoko (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Shoko%2C%20C%2F%20Toledo%2086%2C%20Madrid&amp;center=40.40882,-3.71086" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Shoko (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-siroco" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Siroco</h3>
+      <p class="tp-a">C/ San Dimas 3 · Conde Duque / Malasaña</p>
+<p class="tp-s">Rock/punk · Metal</p><p class="tp-i">Carteles a 15 € (rock, metal, stoner)</p>      <p class="tp-l"><a href="https://www.instagram.com/sirocosala/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Siroco (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Siroco%2C%20C%2F%20San%20Dimas%203%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Siroco (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Siroco%2C%20C%2F%20San%20Dimas%203%2C%20Madrid&amp;center=40.42692,-3.70774" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Siroco (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-wagon" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Wagon</h3>
+      <p class="tp-a">Chamartín <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Metal</p><p class="tp-i">Metal y prog</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261125-kingfishr-folk">mié 25 nov, 20:30 · Kingfishr (folk)</a></li><li><a href="/agenda/#e-e-20261201-soen-tribulation-vulkan">mar 1 dic, 18:30 · Soen + Tribulation + Vulkan</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/wagon.live/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Wagon (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Wagon%2C%20Chamart%C3%ADn%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Wagon (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Wagon%2C%20Chamart%C3%ADn%2C%20Madrid&amp;center=40.45899,-3.67613" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Wagon (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-wurlitzer-ballroom" data-kind="sala">
+      <p class="tp-k"><span class="kind kind-sala">Sala</span></p>
+      <h3 class="tp-t">Wurlitzer Ballroom</h3>
+      <p class="tp-a">C/ Tres Cruces 12 · Gran Vía</p>
+<p class="tp-s">Rock/punk · Metal · Oscuro</p><p class="tp-i">Conciertos casi cada noche, pequeños y baratos</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261218-fotocopia">vie 18 dic, 21:00 · Fotocopia</a></li></ul></div>      <p class="tp-l"><a href="https://wurlitzerballroom.com" rel="noopener external" target="_blank">wurlitzerballroom.com<span class="sr"> (web de Wurlitzer Ballroom, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Wurlitzer%20Ballroom%2C%20C%2F%20Tres%20Cruces%2012%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Wurlitzer Ballroom (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Wurlitzer%20Ballroom%2C%20C%2F%20Tres%20Cruces%2012%2C%20Madrid&amp;center=40.41969,-3.70255" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Wurlitzer Ballroom (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-cadavra-club" data-kind="club">
+      <p class="tp-k"><span class="kind kind-club">Club</span></p>
+      <h3 class="tp-t">Cadavra Club</h3>
+      <p class="tp-a">C/ Caballero de Gracia 10 · Gran Vía</p>
+<p class="tp-s">Oscuro</p><p class="tp-i">Alternativo y EBM</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261127-sdh-rider-rawla">vie 27 nov, 20:30 · SDH + RAWLA</a></li><li><a href="/agenda/#e-e-20261226-grey-gallows">sáb 26 dic, 21:00 · Grey Gallows</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/cadavra.club/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Cadavra Club (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cadavra%20Club%2C%20C%2F%20Caballero%20de%20Gracia%2010%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Cadavra Club (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Cadavra%20Club%2C%20C%2F%20Caballero%20de%20Gracia%2010%2C%20Madrid&amp;center=40.41946,-3.70089" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Cadavra Club (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-copernico" data-kind="club">
+      <p class="tp-k"><span class="kind kind-club">Club</span></p>
+      <h3 class="tp-t">Copérnico The Club</h3>
+      <p class="tp-a">C/ Fernández de los Ríos 67 · Chamberí</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Conciertos punk/rock y sesiones de club de jueves a sábado</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261126-bum-motion-club">jue 26 nov, 20:00 · Bum Motion Club</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/copernicotheclub/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Copérnico The Club (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cop%C3%A9rnico%20The%20Club%2C%20C%2F%20Fern%C3%A1ndez%20de%20los%20R%C3%ADos%2067%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Copérnico The Club (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Cop%C3%A9rnico%20The%20Club%2C%20C%2F%20Fern%C3%A1ndez%20de%20los%20R%C3%ADos%2067%2C%20Madrid&amp;center=40.43527,-3.71358" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Copérnico The Club (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-la-reina-lagarta" data-kind="club">
+      <p class="tp-k"><span class="kind kind-club">Club</span></p>
+      <h3 class="tp-t">La Reina Lagarta</h3>
+      <p class="tp-a">C/ La Palma 14 · Malasaña</p>
+<p class="tp-s">Oscuro</p><p class="tp-i">Cabaret freak con noches goth a veces: The Purge Sessions (darkwave, EBM, post-punk)</p>      <p class="tp-l"><a href="https://www.gotifiestas.com/" rel="noopener external" target="_blank">gotifiestas.com<span class="sr"> (web de La Reina Lagarta, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Reina%20Lagarta%2C%20C%2F%20La%20Palma%2014%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: La Reina Lagarta (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=La%20Reina%20Lagarta%2C%20C%2F%20La%20Palma%2014%2C%20Madrid&amp;center=40.42624,-3.70269" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: La Reina Lagarta (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-maravillas-club" data-kind="club">
+      <p class="tp-k"><span class="kind kind-club">Club</span></p>
+      <h3 class="tp-t">Maravillas Club</h3>
+      <p class="tp-a">C/ San Vicente Ferrer 33 · Malasaña</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Conciertos a 11 €; antes una noche mensual «Remember 80s» (puede estar desactualizado)</p>      <p class="tp-l"><a href="https://conciertos.club/madrid" rel="noopener external" target="_blank">conciertos.club<span class="sr"> (web de Maravillas Club, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Maravillas%20Club%2C%20C%2F%20San%20Vicente%20Ferrer%2033%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Maravillas Club (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Maravillas%20Club%2C%20C%2F%20San%20Vicente%20Ferrer%2033%2C%20Madrid&amp;center=40.42576,-3.70431" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Maravillas Club (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-sala-twin-rockola" data-kind="club">
+      <p class="tp-k"><span class="kind kind-club">Club</span></p>
+      <h3 class="tp-t">Sala Twin / Rockola</h3>
+      <p class="tp-a">C/ Gaztambide 20 · Chamberí</p>
+<p class="tp-s">Oscuro</p><p class="tp-i">RedRum Gothic Club: sábados, 23:00 (desde ~10 €)</p><div class="tp-n"><p class="mini-h">Próximas misas</p><ul><li><a href="/agenda/#e-e-20261205-redrum">sáb 5 dic, 23:00 · RedRum Gothic Club</a></li></ul></div>      <p class="tp-l"><a href="https://www.instagram.com/redrumgothclub/" rel="noopener external" target="_blank">Instagram<span class="sr"> de Sala Twin / Rockola (abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Sala%20Twin%20%2F%20Rockola%2C%20C%2F%20Gaztambide%2020%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Twin / Rockola (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Sala%20Twin%20%2F%20Rockola%2C%20C%2F%20Gaztambide%2020%2C%20Madrid&amp;center=40.43327,-3.71554" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Sala Twin / Rockola (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-barracudas-rock-bar" data-kind="bar">
+      <p class="tp-k"><span class="kind kind-bar">Bar</span></p>
+      <h3 class="tp-t">Barracudas Rock Bar</h3>
+      <p class="tp-a">C/ Brescia 19 · Salamanca</p>
+<p class="tp-s">Rock/punk · Metal</p><p class="tp-i">Bar con conciertos (listados en nov 2026)</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Barracudas%20Rock%20Bar%2C%20C%2F%20Brescia%2019%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Barracudas Rock Bar (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Barracudas%20Rock%20Bar%2C%20C%2F%20Brescia%2019%2C%20Madrid&amp;center=40.43669,-3.66237" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Barracudas Rock Bar (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-cadillac-solitario" data-kind="bar">
+      <p class="tp-k"><span class="kind kind-bar">Bar</span></p>
+      <h3 class="tp-t">Cadillac Solitario</h3>
+      <p class="tp-a">C/ Fermín Caballero 6 · Fuencarral-El Pardo</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Conciertos de bar baratos (Sublimado Korrosivo, 10 € con consumición, 21 nov)</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cadillac%20Solitario%2C%20C%2F%20Ferm%C3%ADn%20Caballero%206%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Cadillac Solitario (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Cadillac%20Solitario%2C%20C%2F%20Ferm%C3%ADn%20Caballero%206%2C%20Madrid&amp;center=40.48741,-3.69957" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Cadillac Solitario (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-honky-tonk" data-kind="bar">
+      <p class="tp-k"><span class="kind kind-bar">Bar</span></p>
+      <h3 class="tp-t">Honky Tonk</h3>
+      <p class="tp-a">C/ Covarrubias 24 · Chamberí</p>
+<p class="tp-s">Rock/punk</p><p class="tp-i">Bar con conciertos (listados en nov 2026)</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Honky%20Tonk%2C%20C%2F%20Covarrubias%2024%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Honky Tonk (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Honky%20Tonk%2C%20C%2F%20Covarrubias%2024%2C%20Madrid&amp;center=40.43024,-3.69752" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Honky Tonk (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-ater-cosmo" data-kind="tienda">
+      <p class="tp-k"><span class="kind kind-tienda">Tienda de discos</span></p>
+      <h3 class="tp-t">Ater Cosmo</h3>
+      <p class="tp-a">Madrid <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Rock/punk · Oscuro</p><p class="tp-i">Firmas y showcases acústicos</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Ater%20Cosmo%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Ater Cosmo (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Ater%20Cosmo%2C%20Madrid&amp;center=40.41690,-3.70350" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Ater Cosmo (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-bajo-el-volcan" data-kind="tienda">
+      <p class="tp-k"><span class="kind kind-tienda">Tienda de discos</span></p>
+      <h3 class="tp-t">Bajo el Volcán</h3>
+      <p class="tp-a">Lavapiés <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Rock/punk · Fuera del altar</p><p class="tp-i">Firmas y conciertos pequeños</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Bajo%20el%20Volc%C3%A1n%2C%20Lavapi%C3%A9s%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Bajo el Volcán (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Bajo%20el%20Volc%C3%A1n%2C%20Lavapi%C3%A9s%2C%20Madrid&amp;center=40.40845,-3.70066" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Bajo el Volcán (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-la-metralleta" data-kind="tienda">
+      <p class="tp-k"><span class="kind kind-tienda">Tienda de discos</span></p>
+      <h3 class="tp-t">Discos La Metralleta</h3>
+      <p class="tp-a">Sol <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Rock/punk · Metal · Oscuro</p><p class="tp-i">Vinilo; firmas y showcases</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Discos%20La%20Metralleta%2C%20Sol%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Discos La Metralleta (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Discos%20La%20Metralleta%2C%20Sol%2C%20Madrid&amp;center=40.41783,-3.70222" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Discos La Metralleta (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-killers-discos" data-kind="tienda">
+      <p class="tp-k"><span class="kind kind-tienda">Tienda de discos</span></p>
+      <h3 class="tp-t">Killer&#39;s Discos</h3>
+      <p class="tp-a">Madrid <span class="muted">· ubicación aproximada</span></p>
+<p class="tp-s">Metal</p><p class="tp-i">Tienda de discos de metal</p>      <p class="tp-l"></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=Killer%27s%20Discos%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: Killer&#39;s Discos (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=Killer%27s%20Discos%2C%20Madrid&amp;center=40.41690,-3.70350" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: Killer&#39;s Discos (abre en otra pestaña)</span></a></p>
+    </li>
+    <li class="card tp" id="p-la-rebelde-records" data-kind="tienda">
+      <p class="tp-k"><span class="kind kind-tienda">Tienda de discos</span></p>
+      <h3 class="tp-t">La Rebelde Records</h3>
+      <p class="tp-a">C/ Felipe Fraile 6 · Puente de Vallecas</p>
+<p class="tp-s">Rock/punk · Oscuro</p><p class="tp-i">Nueva (nov 2026): punk, rock, darkwave, goth; vende camisetas</p>      <p class="tp-l"><a href="https://www.timeout.es/madrid/es/noticias/descubrimos-una-nueva-tienda-de-vinilos-y-discos-en-madrid-con-clasicos-de-rock-y-electronica-voces-emergentes-y-sellos-independientes-111226" rel="noopener external" target="_blank">timeout.es<span class="sr"> (web de La Rebelde Records, abre en otra pestaña)</span></a></p>
+      <p class="tp-m"><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Rebelde%20Records%2C%20C%2F%20Felipe%20Fraile%206%2C%20Madrid" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: La Rebelde Records (abre en otra pestaña)</span></a><a href="https://maps.apple.com/search?query=La%20Rebelde%20Records%2C%20C%2F%20Felipe%20Fraile%206%2C%20Madrid&amp;center=40.39701,-3.66592" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: La Rebelde Records (abre en otra pestaña)</span></a></p>
+    </li>
+  </ul>
+  <p class="fine-l">Datos públicos de cada sitio (barrio, estilo, web). Las ubicaciones aproximadas marcan el barrio, no la puerta. Si algo ha cambiado, escríbenos a <a href="mailto:info@lacapillaoscura.es">info@lacapillaoscura.es</a>.</p>
+</div>
+<script type="application/json" id="lco-templos">[{"id":"p-cafe-la-palma","n":"Café La Palma","k":"sala","kl":"Sala","lat":40.42671,"lon":-3.70423,"ap":true,"a":"Malasaña"},{"id":"p-fun-house","n":"Fun House","k":"sala","kl":"Sala","lat":40.4315,"lon":-3.70122,"ap":false,"a":"Chamberí"},{"id":"p-gruta-77","n":"Gruta 77","k":"sala","kl":"Sala","lat":40.39095,"lon":-3.73149,"ap":false,"a":"Carabanchel"},{"id":"p-revi-live","n":"Revi Live","k":"sala","kl":"Sala","lat":40.40086,"lon":-3.58972,"ap":false,"a":"Vicálvaro"},{"id":"p-sala-clamores","n":"Sala Clamores","k":"sala","kl":"Sala","lat":40.43111,"lon":-3.70099,"ap":false,"a":"Chamberí"},{"id":"p-sala-el-sol","n":"Sala El Sol","k":"sala","kl":"Sala","lat":40.41898,"lon":-3.70152,"ap":false,"a":"Gran Vía"},{"id":"p-sala-mon-live","n":"Sala Mon Live","k":"sala","kl":"Sala","lat":40.43592,"lon":-3.71652,"ap":false,"a":"Chamberí"},{"id":"p-sala-nazca","n":"Sala Nazca","k":"sala","kl":"Sala","lat":40.45138,"lon":-3.69446,"ap":false,"a":"Tetuán (Azca)"},{"id":"p-sala-pirandello","n":"Sala Pirandello","k":"sala","kl":"Sala","lat":40.4253,"lon":-3.71372,"ap":false,"a":"Argüelles"},{"id":"p-sala-rockville","n":"Sala Rockville","k":"sala","kl":"Sala","lat":40.45373,"lon":-3.6945,"ap":false,"a":"Tetuán (Azca)"},{"id":"p-sala-silikona","n":"Sala Silikona","k":"sala","kl":"Sala","lat":40.40593,"lon":-3.64487,"ap":true,"a":"Moratalaz"},{"id":"p-sala-villanos","n":"Sala Villanos (ex-Caracol)","k":"sala","kl":"Sala","lat":40.40394,"lon":-3.70024,"ap":false,"a":"Embajadores"},{"id":"p-shoko","n":"Shoko","k":"sala","kl":"Sala","lat":40.40882,"lon":-3.71086,"ap":false,"a":"La Latina"},{"id":"p-siroco","n":"Siroco","k":"sala","kl":"Sala","lat":40.42692,"lon":-3.70774,"ap":false,"a":"Conde Duque / Malasaña"},{"id":"p-wagon","n":"Wagon","k":"sala","kl":"Sala","lat":40.45899,"lon":-3.67613,"ap":true,"a":"Chamartín"},{"id":"p-wurlitzer-ballroom","n":"Wurlitzer Ballroom","k":"sala","kl":"Sala","lat":40.41969,"lon":-3.70255,"ap":false,"a":"Gran Vía"},{"id":"p-cadavra-club","n":"Cadavra Club","k":"club","kl":"Club","lat":40.41946,"lon":-3.70089,"ap":false,"a":"Gran Vía"},{"id":"p-copernico","n":"Copérnico The Club","k":"club","kl":"Club","lat":40.43527,"lon":-3.71358,"ap":false,"a":"Chamberí"},{"id":"p-la-reina-lagarta","n":"La Reina Lagarta","k":"club","kl":"Club","lat":40.42624,"lon":-3.70269,"ap":false,"a":"Malasaña"},{"id":"p-maravillas-club","n":"Maravillas Club","k":"club","kl":"Club","lat":40.42576,"lon":-3.70431,"ap":false,"a":"Malasaña"},{"id":"p-sala-twin-rockola","n":"Sala Twin / Rockola","k":"club","kl":"Club","lat":40.43327,"lon":-3.71554,"ap":false,"a":"Chamberí"},{"id":"p-barracudas-rock-bar","n":"Barracudas Rock Bar","k":"bar","kl":"Bar","lat":40.43669,"lon":-3.66237,"ap":false,"a":"Salamanca"},{"id":"p-cadillac-solitario","n":"Cadillac Solitario","k":"bar","kl":"Bar","lat":40.48741,"lon":-3.69957,"ap":false,"a":"Fuencarral-El Pardo"},{"id":"p-honky-tonk","n":"Honky Tonk","k":"bar","kl":"Bar","lat":40.43024,"lon":-3.69752,"ap":false,"a":"Chamberí"},{"id":"p-ater-cosmo","n":"Ater Cosmo","k":"tienda","kl":"Tienda de discos","lat":40.4169,"lon":-3.7035,"ap":true,"a":""},{"id":"p-bajo-el-volcan","n":"Bajo el Volcán","k":"tienda","kl":"Tienda de discos","lat":40.40845,"lon":-3.70066,"ap":true,"a":"Lavapiés"},{"id":"p-la-metralleta","n":"Discos La Metralleta","k":"tienda","kl":"Tienda de discos","lat":40.41783,"lon":-3.70222,"ap":true,"a":"Sol"},{"id":"p-killers-discos","n":"Killer's Discos","k":"tienda","kl":"Tienda de discos","lat":40.4169,"lon":-3.7035,"ap":true,"a":""},{"id":"p-la-rebelde-records","n":"La Rebelde Records","k":"tienda","kl":"Tienda de discos","lat":40.39701,"lon":-3.66592,"ap":false,"a":"Puente de Vallecas"}]</script>
+</main>
+<footer class="site-ft">
+  <div class="wrap ft-grid">
+    <div class="ft-about">
+      <p class="ft-motto">Colto a la música</p>
+      <p>Conciertos, salas y discos del Madrid rock y metal. Del heavy metal al post-punk, alt wave y folk. Underground, vinilo y energía cruda. Cero elitismo.</p>
+    </div>
+    <ul class="ft-links" aria-label="Síguenos y contacto">
+      <li><a href="https://www.instagram.com/lacapillaoscura/" rel="noopener external" target="_blank">Instagram @lacapillaoscura <span class="sr">(abre en otra pestaña)</span></a></li>
+      <li><a href="https://www.tiktok.com/@lacapillaoscura" rel="noopener external" target="_blank">TikTok @lacapillaoscura <span class="sr">(abre en otra pestaña)</span></a></li>
+      <li><a href="mailto:info@lacapillaoscura.es">info@lacapillaoscura.es</a></li>
+      <li><a href="/agenda.ics" download="horario-de-misas.ics">Toda la agenda en tu calendario (.ics)</a></li>
+    </ul>
+    <ul class="ft-links ft-small" aria-label="Información">
+      <li><a href="/sobre/">Sobre LCO</a></li>
+      <li><a href="/aviso-legal/">Aviso legal</a></li>
+      <li><a href="/privacidad/">Privacidad</a></li>
+    </ul>
+    <p class="fine">Sin cookies, sin analítica y sin publicidad. Precios orientativos: compra siempre en la web oficial. Actualizado el 24 noviembre 2026.</p>
+  </div>
+</footer>
+<script src="/assets/lco.js" defer></script>
+<script src="/assets/templos.js" defer></script></body>
+</html>

@@ -1,0 +1,75 @@
+{
+ "_source": "Crónica Nº 001 as published on Instagram @lacapillaoscura on 19 Nov 2026 (caption + the 4 slides). His published words only.",
+ "cronicas": [
+  {
+   "slug": "the-pretty-reckless-la-riviera-2026-11-09",
+   "number": "Nº 001",
+   "band": "The Pretty Reckless",
+   "venue": "La Riviera",
+   "city": "Madrid",
+   "date": "2026-11-09",
+   "date_label": "9 nov 2026",
+   "published": "2026-11-19",
+   "subtitle": "Primera noche de la gira europea de Dear God.",
+   "support": "YONAKA y DOUG",
+   "rating": 4.5,
+   "cover": "cronica-001-cover",
+   "cover_alt": "Taylor Momsen, de The Pretty Reckless, con los brazos abiertos en el escenario de La Riviera bajo luz azul",
+   "cover_credit": "Portada: vídeo de mi mujer.",
+   "sections": [
+    {
+     "label": "El arranque",
+     "text": "Primera noche de la gira europea de Dear God. Ver a una banda empezar su gira es un privilegio."
+    },
+    {
+     "label": "Directo",
+     "text": "Enérgicos y felices. Se notaba que disfrutaban de estar en Madrid."
+    },
+    {
+     "label": "Público",
+     "text": "Público de verdad: respeto a los teloneros y ganas de vivir el concierto entero."
+    },
+    {
+     "label": "El momento",
+     "text": "Las canciones nuevas me devolvieron a los 15 años: rock puro, con el grunge intacto."
+    }
+   ],
+   "verdict": [
+    {
+     "label": "Lo mejor",
+     "text": "La conexión entre la banda y la sala."
+    },
+    {
+     "label": "Me llevo",
+     "text": "La sensación de que volverán, y de que los seguiré escuchando mucho tiempo."
+    }
+   ],
+   "body": [
+    "Ver a una banda empezar su gira es un privilegio. Salieron con muchísima energía y se notaba que estaban felices de estar en Madrid. Los teloneros, YONAKA y DOUG, también lo dieron todo.",
+    "Y el público estuvo a la altura: gente que vino a vivir el concierto entero, no a esperar dos canciones. Así un concierto es bueno para todos, para la sala y para la banda.",
+    "Dear God es rock puro, con el grunge intacto. Me devolvió a los 15 o 16 años.",
+    "Desde la barra de La Riviera, vista perfecta."
+   ],
+   "question": "¿Estuviste? ¿Con qué canción te quedas?",
+   "slides": [
+    {
+     "img": "cronica-001-slide-1",
+     "alt": "Diapositiva 1 de 4: portada de la crónica, The Pretty Reckless, La Riviera, 9 nov 2026, Madrid, 4,5 de 5 velas"
+    },
+    {
+     "img": "cronica-001-slide-2",
+     "alt": "Diapositiva 2 de 4: la crónica en cuatro partes, el arranque, directo, público y el momento"
+    },
+    {
+     "img": "cronica-001-slide-3",
+     "alt": "Diapositiva 3 de 4: veredicto, 4,5 de 5 velas; lo mejor y lo que me llevo"
+    },
+    {
+     "img": "cronica-001-slide-4",
+     "alt": "Diapositiva 4 de 4: ¿Estuviste? Cuéntamelo. Guárdalo y compártelo"
+    }
+   ],
+   "instagram": "https://www.instagram.com/lacapillaoscura/"
+  }
+ ]
+}

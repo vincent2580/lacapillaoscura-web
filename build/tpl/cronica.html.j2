@@ -1,0 +1,60 @@
+{% extends 'base.html.j2' %}
+{% block title %}Crónica: {{ c.band }} en {{ c.venue }} ({{ c.date_label }}) | La Capilla Oscura{% endblock %}
+{% block description %}Crónica de {{ c.band }} en {{ c.venue }}, {{ c.city }}, {{ c.date_label }}: {{ c.velas.label }}. {{ c.subtitle }}{% endblock %}
+{% block bodyclass %}cronica{% endblock %}
+{% block meta %}
+<link rel="canonical" href="{{ site }}{{ c.url }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ site }}{{ c.url }}">
+<meta property="og:title" content="Crónica: {{ c.band }} en {{ c.venue }} · {{ c.velas.num }}/5 velas">
+<meta property="og:description" content="{{ c.subtitle }} {{ c.sections[3].text }}">
+<meta property="og:image" content="{{ site }}/assets/img/{{ c.cover }}-1080.jpg"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="665"><meta property="og:image:alt" content="{{ c.cover_alt }}"><meta name="twitter:card" content="summary_large_image">
+{% endblock %}
+{% block body %}
+<main id="main">
+<article class="cro" aria-labelledby="cro-h">
+  <header class="cro-hero">
+    <img class="cro-hero-img" src="/assets/img/{{ c.cover }}-1080.jpg" srcset="/assets/img/{{ c.cover }}-640.jpg 640w, /assets/img/{{ c.cover }}-1080.jpg 1080w" sizes="(min-width: 1100px) 1080px, 100vw" alt="{{ c.cover_alt }}" width="1080" height="665">
+    <div class="cro-bar"><span class="cro-bar-l">{{ m.candle(18) }} Crónica del culto</span><span>{{ c.velas.num }} / 5 velas</span></div>
+    <div class="cro-head wrap-n">
+      <p class="cro-n">{{ c.number }}</p>
+      <h1 id="cro-h" class="cro-ht">{{ c.band }}</h1>
+      <p class="cro-meta">{{ c.venue }} <i aria-hidden="true"></i> {{ c.date_label }} <i aria-hidden="true"></i> {{ c.city }}</p>
+      <p class="cro-sub">{{ c.subtitle }} Teloneros: {{ c.support }}.</p>
+    </div>
+  </header>
+  <div class="wrap-n cro-grid">
+    <section class="cro-sec" aria-labelledby="h-la">
+      <h2 id="h-la" class="cro-h2">La crónica</h2>
+      <ol class="cro-parts">
+        {% for s in c.sections %}<li><span class="rn" aria-hidden="true">{{ ['I','II','III','IV','V','VI'][loop.index0] }}</span><div><h3>{{ s.label }}</h3><p>{{ s.text }}</p></div></li>{% endfor %}
+      </ol>
+    </section>
+    <section class="cro-sec cro-ver" aria-labelledby="h-ver">
+      <h2 id="h-ver" class="cro-h2">Veredicto</h2>
+      {{ m.velas(c.velas, True) }}
+      <p class="cro-score"><b>{{ c.velas.num }}</b>/5 <span>velas</span></p>
+      <dl class="cro-dl">{% for v in c.verdict %}<dt>{{ v.label }}</dt><dd>{{ v.text }}</dd>{% endfor %}</dl>
+    </section>
+    <section class="cro-sec cro-txt" aria-labelledby="h-txt">
+      <h2 id="h-txt" class="cro-h2">Desde la barra</h2>
+      {% for p in c.body %}<p>{{ p }}</p>{% endfor %}
+      <p class="cro-credit">{{ c.cover_credit }}</p>
+    </section>
+    <section class="cro-sec cro-cta" aria-labelledby="h-cta">
+      <h2 id="h-cta" class="cro-q">¿Estuviste?</h2>
+      <p class="cro-q2">Cuéntamelo</p>
+      <p>{{ c.question }} Aquí no hay comentarios: cuéntamelo en Instagram.</p>
+      <p class="acts"><a class="btn" href="{{ c.instagram }}" rel="noopener external" target="_blank">Ir a Instagram<span class="sr"> (abre en otra pestaña)</span></a>{{ m.share(c.wa, c.share_text, site ~ c.url, 'Pásala por WhatsApp', 'esta crónica') }}</p>
+    </section>
+  </div>
+  <section class="wrap-n slides" aria-labelledby="h-sl">
+    <h2 id="h-sl" class="sec-h2">Así salió en Instagram</h2>
+    <ul class="slide-row">
+      {% for s in c.slides %}<li><a href="/assets/img/{{ s.img }}-1080.jpg"><img src="/assets/img/{{ s.img }}-540.jpg" alt="{{ s.alt }}" width="540" height="675" loading="lazy"><span class="sr"> (ver grande)</span></a></li>{% endfor %}
+    </ul>
+  </section>
+  <p class="wrap-n back"><a class="btn ghost" href="/cronicas/">Todas las crónicas</a></p>
+</article>
+</main>
+{% endblock %}

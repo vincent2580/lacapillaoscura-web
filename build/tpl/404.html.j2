@@ -1,0 +1,12 @@
+{% extends 'base.html.j2' %}
+{% block title %}Aquí no hay misa | La Capilla Oscura{% endblock %}
+{% block meta %}<meta name="robots" content="noindex">{% endblock %}
+{% block body %}
+<main id="main" class="wrap nf">
+  <span class="nf-candle">{{ m.candle(88) }}</span>
+  {{ m.stamp('Error 404') }}
+  <h1 class="nf-t">Aquí no hay misa</h1>
+  <p>Esta página no existe o la vela ya se apagó.</p>
+  <p class="acts"><a class="btn" href="/agenda/">Ver el horario de misas</a><a class="btn ghost" href="/">Ir al inicio</a></p>
+</main>
+{% endblock %}

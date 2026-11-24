@@ -1,0 +1,25 @@
+{% extends 'base.html.j2' %}
+{% block title %}Crónicas de conciertos en Madrid, con velas | La Capilla Oscura{% endblock %}
+{% block description %}Crónicas honestas de conciertos de rock y metal en Madrid, puntuadas con velas en vez de estrellas.{% endblock %}
+{% block meta %}<link rel="canonical" href="{{ site }}/cronicas/"><meta property="og:type" content="website"><meta property="og:title" content="Crónicas · La Capilla Oscura">{% endblock %}
+{% block body %}
+<main id="main">
+{% call m.hero('wall-resurrection', 'Crónicas del culto', 'Crónicas', 'Voy a conciertos y te cuento lo que vivo: la energía, el público, el momento.', '', True) %}{% endcall %}
+<div class="wrap feed">
+  {% for c in cronicas %}
+  <article class="card feed-it" aria-labelledby="h-{{ c.slug }}">
+    <a class="feed-img" href="{{ c.url }}" tabindex="-1" aria-hidden="true"><img src="/assets/img/{{ c.cover }}-640.jpg" srcset="/assets/img/{{ c.cover }}-640.jpg 640w, /assets/img/{{ c.cover }}-1080.jpg 1080w" sizes="(min-width: 900px) 520px, 100vw" alt="" width="640" height="394"></a>
+    <div class="feed-body">
+      <p class="feed-k">{{ m.stamp('Crónica del culto') }} <span class="cro-n">{{ c.number }}</span> <span class="muted">· publicada el {{ c.published_label }}</span></p>
+      <h2 class="feed-t" id="h-{{ c.slug }}"><a href="{{ c.url }}">{{ c.band }}</a></h2>
+      <p class="feed-m">{{ c.venue }} · {{ c.date_label }} · {{ c.city }}</p>
+      <p class="feed-v">{{ m.velas(c.velas) }} <span class="cro-vn">{{ c.velas.num }} / 5 velas</span></p>
+      <p class="feed-x">{{ c.subtitle }} {{ c.sections[0].text.split('. ')[1] }}</p>
+      <p class="acts"><a class="btn" href="{{ c.url }}">Leer la crónica</a>{{ m.share(c.wa, c.share_text, site ~ c.url, 'Pásala por WhatsApp', c.band) }}</p>
+    </div>
+  </article>
+  {% endfor %}
+  <p class="feed-end">{{ m.candle(22) }}<span>Después de cada concierto, una crónica nueva. Síguela también en <a href="{{ instagram }}" rel="noopener external" target="_blank">Instagram<span class="sr"> (abre en otra pestaña)</span></a>.</span></p>
+</div>
+</main>
+{% endblock %}

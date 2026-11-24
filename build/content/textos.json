@@ -1,0 +1,9 @@
+{
+ "_comment": "Page texts that only Vincent can write, keyed by stable ids (later they can come from La Sacristía's public feed). text = his published words; empty = the block is LEFT OUT of the public site and shown as an amber '[tu texto: hint]' only in the preview build. Never fill these with words he did not write.",
+ "suena.escuchado_por_que": {"text": "", "hint": "dos líneas sobre por qué te quedas con este disco"},
+ "saber.deberes_por_que": {"text": "", "hint": "por qué haces los deberes y qué buscas en cada disco"},
+ "saber.velas_significado": {"text": "", "hint": "qué significa cada vela para ti"},
+ "saber.guias": {"text": "", "hint": "guías, historia de la escena, consejos para tu primer concierto"},
+ "tienda.edicion_001": {"text": "", "hint": "las piezas, los diseños y cuándo abre; con fotos reales de la muestra"},
+ "sobre.quien": {"text": "", "hint": "quién eres, desde cuándo vas a conciertos, tu primer concierto"}
+}

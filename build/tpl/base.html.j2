@@ -1,0 +1,59 @@
+{% import 'macros.j2' as m %}<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{{ csp }}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{% block title %}La Capilla Oscura{% endblock %}</title>
+<meta name="description" content="{% block description %}La Capilla Oscura (LCO): conciertos, salas y discos del Madrid rock y metal. Horario de misas, crónicas, lo que suena y templos.{% endblock %}">
+<meta name="theme-color" content="#0B0A09">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/pirata-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:site_name" content="La Capilla Oscura">
+<meta property="og:locale" content="es_ES">
+{% block meta %}{% endblock %}
+</head>
+<body class="pg-{{ section or 'x' }} {% block bodyclass %}{% endblock %}">
+<a class="skip" href="#main">Saltar al contenido</a>
+{% if preview %}<p class="pv-bar">Vista previa para Vincent: lo marcado en ámbar <span class="todo">[tu texto]</span> no se publica. <a href="/#publico">Ver la versión pública</a></p>{% endif %}
+<header class="sh">
+  <div class="sh-in">
+    <a class="brand" href="/" aria-label="La Capilla Oscura: inicio"{% if section == 'inicio' %} aria-current="page"{% endif %}>
+      <img src="/assets/lco-mark.svg" alt="" width="52" height="40"><span class="brand-t">La Capilla Oscura</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <ul>
+        {% for id, label, href in nav %}<li><a href="{{ href }}"{% if section == id %} aria-current="page"{% endif %}>{{ label }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+{% block body %}{% endblock %}
+<footer class="site-ft">
+  <div class="wrap ft-grid">
+    <div class="ft-about">
+      <p class="ft-motto">Colto a la música</p>
+      <p>Conciertos, salas y discos del Madrid rock y metal. Del heavy metal al post-punk, alt wave y folk. Underground, vinilo y energía cruda. Cero elitismo.</p>
+    </div>
+    <ul class="ft-links" aria-label="Síguenos y contacto">
+      <li><a href="{{ instagram }}" rel="noopener external" target="_blank">Instagram @lacapillaoscura <span class="sr">(abre en otra pestaña)</span></a></li>
+      <li><a href="{{ tiktok }}" rel="noopener external" target="_blank">TikTok @lacapillaoscura <span class="sr">(abre en otra pestaña)</span></a></li>
+      <li><a href="mailto:{{ email }}">{{ email }}</a></li>
+      <li><a href="/agenda.ics" download="horario-de-misas.ics">Toda la agenda en tu calendario (.ics)</a></li>
+    </ul>
+    <ul class="ft-links ft-small" aria-label="Información">
+      <li><a href="/sobre/">Sobre LCO</a></li>
+      <li><a href="/aviso-legal/">Aviso legal</a></li>
+      <li><a href="/privacidad/">Privacidad</a></li>
+    </ul>
+    <p class="fine">Sin cookies, sin analítica y sin publicidad. Precios orientativos: compra siempre en la web oficial. Actualizado el {{ updated }}.</p>
+  </div>
+</footer>
+<script src="/assets/lco.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

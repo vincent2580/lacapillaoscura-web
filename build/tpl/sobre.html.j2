@@ -1,0 +1,39 @@
+{% extends 'base.html.j2' %}
+{% block title %}Sobre La Capilla Oscura (LCO): el manifiesto{% endblock %}
+{% block description %}{{ manif.lead }} {{ manif.paragraphs[0] }}{% endblock %}
+{% block meta %}<link rel="canonical" href="{{ site }}/sobre/"><meta property="og:type" content="website"><meta property="og:title" content="Sobre La Capilla Oscura">{% endblock %}
+{% block body %}
+<main id="main">
+<section class="hero hero-plain" aria-labelledby="hero-h">
+  <div class="hero-in wrap">
+    {{ m.stamp('Manifiesto') }}
+    <h1 id="hero-h" class="hero-t">Sobre LCO</h1>
+    <p class="hero-sub">{{ manif.lead }}</p>
+  </div>
+</section>
+<div class="wrap grid-2 sobre">
+  <section class="manif" aria-label="El manifiesto">
+    {% for p in manif.paragraphs %}<p>{{ p }}</p>{% endfor %}
+    <p class="manif-close">{{ manif.close }}</p>
+    <p class="ft-motto">{{ manif.motto }}</p>
+  </section>
+  <div class="stack">
+    <ol class="lines">
+      {% for l in manif.lines %}<li><p class="mini-h">{{ l.kicker }}</p><p class="line-t">{{ l.line }}</p></li>{% endfor %}
+    </ol>
+    <section class="card" aria-labelledby="h-quien">
+      {% set tx = textos['sobre.quien'] %}
+      {% if tx.text or preview %}<h2 class="card-t" id="h-quien">Quién está detrás</h2>
+      {{ m.slot(tx, preview, '') }}{% else %}<h2 class="card-t" id="h-quien">Contacto</h2>{% endif %}
+      <p>Escríbeme: <a href="mailto:{{ email }}">{{ email }}</a> · <a href="{{ instagram }}" rel="noopener external" target="_blank">Instagram<span class="sr"> (abre en otra pestaña)</span></a> · <a href="{{ tiktok }}" rel="noopener external" target="_blank">TikTok<span class="sr"> (abre en otra pestaña)</span></a></p>
+    </section>
+  </div>
+</div>
+<section class="wrap slides" aria-labelledby="h-sl">
+  <h2 id="h-sl" class="sec-h2">El manifiesto en Instagram</h2>
+  <ul class="slide-row slide-5">
+    {% for s in manif.slides %}<li><img src="/assets/img/{{ s.img }}-540.jpg" alt="{{ s.alt }}" width="540" height="675" loading="lazy"></li>{% endfor %}
+  </ul>
+</section>
+</main>
+{% endblock %}

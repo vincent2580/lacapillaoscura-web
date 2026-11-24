@@ -1,0 +1,115 @@
+{% extends 'base.html.j2' %}
+{% block title %}Horario de misas · Agenda de conciertos de rock, metal y cultura oscura en Madrid | La Capilla Oscura{% endblock %}
+{% block description %}El horario de misas de Madrid: conciertos de rock, metal y cultura oscura día a día, con fiestas, festivales y ferias. Esta semana ({{ cur.label }}): {{ cur.count }} planes. Precios orientativos.{% endblock %}
+{% block bodyclass %}agenda{% endblock %}
+{% block meta %}
+<link rel="canonical" href="{{ site }}/agenda/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site }}/agenda/">
+<meta property="og:title" content="Horario de misas · La Capilla Oscura">
+<meta property="og:description" content="Conciertos de rock, metal y cultura oscura en Madrid, día a día. Esta semana ({{ cur.label }}): {{ cur.count }} planes.">
+{% if og %}<meta property="og:image" content="{{ site }}/{{ og.path }}"><meta property="og:image:width" content="{{ og.w }}"><meta property="og:image:height" content="{{ og.h }}"><meta property="og:image:alt" content="Horario de misas, Madrid, {{ cur.label }}"><meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="alternate" type="application/json" href="/agenda.json" title="Agenda (JSON)">
+<link rel="alternate" type="text/calendar" href="/agenda.ics" title="Agenda (iCalendar)">
+{% endblock %}
+{% block body %}
+<header class="top" aria-label="Horario de misas">
+  <div class="wrap">
+    <div class="hd">
+      <h1 class="ttl">Horario de misas</h1>
+      
+    </div>
+    <p class="idline">La Capilla Oscura · conciertos de rock, metal y cultura oscura en Madrid</p>
+    <p class="line">Madrid · rock · metal · punk · oscuro</p>
+    <ul class="leg" aria-label="Leyenda de colores">
+      {% for t in types %}<li><i class="dot d-{{ t.id }}" aria-hidden="true"></i>{{ t.lit }}</li>{% endfor %}
+      <li>{{ m.star(False) }}iría</li>
+    </ul>
+    <div class="ctl" data-js hidden>
+      <div class="seg" role="group" aria-label="Qué ver">
+        <button type="button" data-view="week" aria-pressed="true">Semana</button>
+        <button type="button" data-view="finde" aria-pressed="false">Este finde</button>
+        <button type="button" data-view="month" aria-pressed="false">Mes</button>
+      </div>
+      <details class="flt">
+        <summary><span>Filtrar</span> <span class="nflt" data-nflt></span></summary>
+        <div class="flt-body">
+          <p class="flt-h" id="flt-type">Tipo de plan</p>
+          <div class="chips" role="group" aria-labelledby="flt-type">
+            {% for t in types %}<button type="button" class="chip" data-f="type" data-v="{{ t.id }}" aria-pressed="false"><i class="dot d-{{ t.id }}" aria-hidden="true"></i>{{ t.label }}</button>{% endfor %}
+          </div>
+          <p class="flt-h" id="flt-genre">Estilo</p>
+          <div class="chips" role="group" aria-labelledby="flt-genre">
+            {% for g in genres %}<button type="button" class="chip" data-f="genre" data-v="{{ g.id }}" aria-pressed="false">{{ g.label }}</button>{% endfor %}
+          </div>
+          <button type="button" class="clear" data-clear disabled>Quitar filtros</button>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="hint">Toca un plan para ver las entradas, invitar a alguien («¿Vamos?») o añadirlo a tu calendario.</p>
+  <p class="status sr" aria-live="polite" data-status></p>
+{% for w in weeks %}
+  <section class="week" id="{{ w.id }}" data-i="{{ loop.index0 }}" data-start="{{ w.start }}" data-end="{{ w.end }}" data-label="{{ w.label }}" data-finde-label="{{ w.finde_label }}" aria-labelledby="{{ w.id }}-h">
+    <div class="wk-head">
+      <h2 class="wk" id="{{ w.id }}-h">{{ m.candle(26) }}<span>Madrid · <span data-wl>{{ w.label }}</span></span></h2>
+      <nav class="wk-nav" aria-label="Cambiar de semana">
+        {% if not loop.first %}{% set p = weeks[loop.index0 - 1] %}<a href="#{{ p.id }}" data-go="{{ loop.index0 - 1 }}" aria-label="Semana anterior: {{ p.label }}">‹</a>{% else %}<span class="off" aria-hidden="true">‹</span>{% endif %}
+        {% if not loop.last %}{% set n = weeks[loop.index0 + 1] %}<a href="#{{ n.id }}" data-go="{{ loop.index0 + 1 }}" aria-label="Semana siguiente: {{ n.label }}">›</a>{% else %}<span class="off" aria-hidden="true">›</span>{% endif %}
+      </nav>
+    </div>
+    {% set ns = namespace(dash=False) %}
+    {% for d in w.days %}
+    <div class="day{{ ' past' if d.past }}{{ ' today' if d.date == today }}" id="d-{{ d.date }}" data-date="{{ d.date }}" data-wd="{{ d.wd_i }}">
+      <h3 class="dl" aria-label="{{ d.aria }}"><span class="wd" aria-hidden="true">{{ d.wd }}</span><span class="dn" aria-hidden="true">{{ d.n }}</span></h3>
+      <ul class="evs">
+        {% for r in d.rows %}{% if not r.price_known %}{% set ns.dash = True %}{% endif %}{{ m.ev(r) }}
+        {% endfor %}
+        <li class="empty"{{ ' hidden' if d.rows }}>{{ 'Nada con estos filtros' if d.rows else 'Sin misa en el altar' }}</li>
+      </ul>
+    </div>
+    {% endfor %}
+    {% if w.allweek %}
+    <div class="day aw">
+      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
+      <ul class="evs">
+        {% for r in w.allweek %}{% if not r.price_known %}{% set ns.dash = True %}{% endif %}{{ m.ev(r, True) }}
+        {% endfor %}
+        <li class="empty" hidden>Nada con estos filtros</li>
+      </ul>
+    </div>
+    {% endif %}
+    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
+    {% if not w.count %}<p class="wk-empty">Aún no hay misas confirmadas esta semana. Vuelve el lunes.</p>{% endif %}
+    <p class="wk-foot"><span data-count>{{ w.count }} plan{{ 'es' if w.count != 1 }}</span> · Precios orientativos · compra en la web oficial{{ ' · — sin confirmar' if ns.dash }}</p>
+  </section>
+{% endfor %}
+
+  <section class="months" id="calendario" aria-labelledby="cal-h">
+    <div class="wk-head"><h2 class="wk" id="cal-h">{{ m.candle(26) }}<span>Calendario litúrgico</span></h2></div>
+    {% for mo in months %}
+    <div class="month" id="{{ mo.id }}">
+      <h3 class="mo-h">{{ mo.label }}</h3>
+      <table class="cal">
+        <caption class="sr">Calendario de {{ mo.label }}: toca un día para ver sus planes</caption>
+        <thead><tr>{% for x, full in [('L','lunes'),('M','martes'),('X','miércoles'),('J','jueves'),('V','viernes'),('S','sábado'),('D','domingo')] %}<th scope="col" abbr="{{ full }}">{{ x }}</th>{% endfor %}</tr></thead>
+        <tbody>
+        {% for wk in mo.weeks %}<tr>{% for c in wk %}{% if c %}<td class="{{ 'past ' if c.past }}{{ 'today ' if c.today }}{{ 'has' if c.count }}">{% if c.anchor %}<a class="cell" href="#d-{{ c.date }}" data-day="{{ c.date }}">{% else %}<span class="cell">{% endif %}<span class="sr">{{ c.aria_pre }} </span><span class="n">{{ c.n }}</span><span class="sr"> {{ c.aria_post }}</span><span class="dots" aria-hidden="true">{% for dd in c.dots[:4] %}<i class="dot d-{{ dd.type }}{{ ' pk' if dd.pick }}" data-type="{{ dd.type }}" data-genre="{{ dd.genre }}"></i>{% endfor %}{% if c.count > 4 %}<b>+{{ c.count - 4 }}</b>{% endif %}</span>{% if c.anchor %}</a>{% else %}</span>{% endif %}</td>{% else %}<td class="blank"></td>{% endif %}{% endfor %}</tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {% if mo.longs %}<p class="longs"><b>Todo el mes:</b> {% for l in mo.longs %}{{ l.title }}{% if l.pick %} ★{% endif %} ({{ l.venue }} · {{ l.until }}){{ ' · ' if not loop.last }}{% endfor %}</p>{% endif %}
+      <div class="daypanel" data-panel hidden>
+        <h4 class="dp-h" tabindex="-1"></h4>
+        <ul class="evs"></ul>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+</main>
+<script type="application/json" id="lco-days">{{ day_ids_json|safe }}</script>
+{% endblock %}
+{% block scripts %}<script src="/assets/agenda.js" defer></script>{% endblock %}

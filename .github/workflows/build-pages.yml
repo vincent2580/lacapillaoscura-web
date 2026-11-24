@@ -1,0 +1,125 @@
+# lacapillaoscura.es v2 · rebuild + publish (PUBLIC repo vincent2580/lacapillaoscura-web, .github/workflows/build-pages.yml)
+#
+# Every 2 h, by hand and on every push to main: fetch La Sacristía's two PUBLIC feeds (no credentials), build the
+# static site with the generator in build/, check it (build/site_guard.py) and publish it. A feed that cannot be
+# fetched, is malformed or empty FAILS the job and changes nothing: the last good site stays online.
+#
+# Works with either GitHub Pages source (Settings -> Pages -> Build and deployment -> Source), detected each run:
+# - "Deploy from a branch" (main, / root) = today's setting, no settings change needed: the new site is committed to
+#   the repo root of main (only when something changed) and a Pages build is requested through the REST API
+#   (POST /repos/{owner}/{repo}/pages/builds). GitHub documents that commits pushed with GITHUB_TOKEN do not trigger
+#   a Pages build, and that `pages: write` lets a workflow request one.
+# - "GitHub Actions": the site is uploaded as a Pages artifact and deployed with actions/deploy-pages (no commit).
+# The site's daily build stamp makes one commit a day in branch mode, which is repository activity: GitHub disables
+# scheduled workflows of public repos only after 60 days without activity.
+name: build-pages
+
+on:
+  schedule:
+    - cron: "23 */2 * * *"   # every 2 h at :23 UTC; dates/weeks are computed in Europe/Madrid (TZ below)
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: "Request a Pages build / deploy even if nothing changed"
+        type: boolean
+        default: false
+      accept_shrink:
+        description: "Allow the agenda (< 25 %) or Templos (< 50 %) to shrink a lot"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lco-pages
+  cancel-in-progress: false
+
+env:
+  SOURCE_URL: https://sacristia.lacapillaoscura.es/public/agenda.json
+  SITE_URL: https://sacristia.lacapillaoscura.es/public/site.json
+  WEEK_IMAGE_URL: https://sacristia.lacapillaoscura.es/public/week-image
+  TZ: Europe/Madrid
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write   # branch mode only: commit the rebuilt site to main
+      pages: write      # read the Pages source; request a Pages build (branch mode)
+    outputs:
+      mode: ${{ steps.pages.outputs.mode }}
+      deploy: ${{ steps.publish.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Install the generator's pinned dependencies
+        run: python -m pip install --quiet --disable-pip-version-check --require-hashes -r build/requirements.txt
+      - name: Pages source
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          type="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type)"
+          case "$type" in
+            workflow) echo "mode=artifact" >> "$GITHUB_OUTPUT" ;;
+            legacy) echo "mode=branch" >> "$GITHUB_OUTPUT" ;;
+            *) echo "::error::unexpected Pages build_type '${type}'"; exit 1 ;;
+          esac
+          echo "Pages build_type: ${type}"
+      - name: Rebuild from La Sacristía (a failed fetch fails the job; nothing changes)
+        id: rebuild
+        env:
+          PY: python
+          MODE: ${{ steps.pages.outputs.mode }}
+          WORK: ${{ runner.temp }}/lco-pages
+          ACCEPT_SHRINK: ${{ inputs.accept_shrink && '1' || '0' }}
+        run: bash build/rebuild.sh
+      - name: Publish
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MODE: ${{ steps.pages.outputs.mode }}
+          CHANGED: ${{ steps.rebuild.outputs.changed }}
+          FORCE: ${{ inputs.force_deploy && 'true' || 'false' }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          deploy=false
+          if [ "$MODE" = artifact ]; then
+            deploy=true
+          elif [ "$CHANGED" = true ] || [ "$FORCE" = true ] || [ "$EVENT" = push ]; then
+            gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" --jq '"Pages build requested: " + .status'
+          else
+            echo "nothing changed: no Pages build needed"
+          fi
+          echo "deploy=${deploy}" >> "$GITHUB_OUTPUT"
+      - name: Configure Pages (GitHub Actions source)
+        if: steps.publish.outputs.deploy == 'true'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Upload the site for Pages
+        if: steps.publish.outputs.deploy == 'true'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: ${{ runner.temp }}/lco-pages/site
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.deploy == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

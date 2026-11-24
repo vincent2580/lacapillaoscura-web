@@ -1,0 +1,93 @@
+{% extends 'base.html.j2' %}
+{% block title %}La Capilla Oscura (LCO) · Conciertos, salas y discos del Madrid rock y metal{% endblock %}
+{% block meta %}
+<link rel="canonical" href="{{ site }}/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site }}/">
+<meta property="og:title" content="La Capilla Oscura (LCO) · Conciertos, salas y discos del Madrid rock y metal">
+<meta property="og:description" content="Horario de misas de Madrid ({{ cur.label }}: {{ cur.count }} planes), crónicas con velas, lo que suena y los templos de la ciudad.">
+{% if og %}<meta property="og:image" content="{{ site }}/{{ og.path }}"><meta property="og:image:width" content="{{ og.w }}"><meta property="og:image:height" content="{{ og.h }}"><meta property="og:image:alt" content="Horario de misas, Madrid, {{ cur.label }}"><meta name="twitter:card" content="summary_large_image">{% endif %}
+{% endblock %}
+{% block body %}
+<main id="main">
+{% call m.hero('wall-riviera', 'Madrid · rock · metal · oscuro', 'La Capilla Oscura', manif.lead, 'Escenario de La Riviera con los focos encendidos antes de un concierto, en blanco y negro') %}
+    <p class="hero-motto">Colto a la música</p>
+{% endcall %}
+
+<div class="wrap dash">
+  {# ---- this week: the main thing #}
+  <section class="card c-week" aria-labelledby="h-week">
+    <div class="card-h">
+      <h2 id="h-week" class="wk">{{ m.candle(24) }}<span>Semana · {{ cur.label }}</span></h2>
+      <a class="more-l" href="/agenda/">Horario de misas<span aria-hidden="true"> →</span></a>
+    </div>
+    <ol class="strip" aria-label="Planes por día, {{ cur.label }}">
+      {% for d in strip %}<li class="{{ 'past ' if d.past }}{{ 'today' if d.today }}"><a href="/agenda/#d-{{ d.date }}"><span class="s-wd">{{ d.wd }}</span> <span class="s-n">{{ d.n }}</span> <span class="s-c">{{ d.count }}</span><span class="sr"> plan{{ 'es' if d.count != 1 }}{{ ', hoy' if d.today }}</span></a></li>{% endfor %}
+    </ol>
+    <h3 class="mini-h">{{ m.star(False) }} Iría</h3>
+    <ul class="rows">
+      {% for r in picks %}<li class="row{{ ' past' if r.past }}"><a href="/agenda/#e-{{ r.id }}"><span class="r-d">{{ r.day }}{% if r.time %} · {{ r.time }}{% endif %}</span><span class="r-t"><i class="dot d-{{ r.type }}" aria-hidden="true"></i>{{ r.title }}</span><span class="r-v">{{ r.venue }}{% if r.span %} · {{ r.span }}{% endif %}</span><span class="r-p">{{ r.price }}</span></a></li>
+      {% else %}<li class="empty">Sin ★ esta semana. Mira el horario completo.</li>{% endfor %}
+    </ul>
+    <p class="card-f"><a class="btn" href="/agenda/">Ver los {{ cur.count }} planes de la semana</a>{% if next_week %}<a class="btn ghost" href="/agenda/#{{ next_week.id }}">Semana que viene ({{ next_week.count }})</a>{% endif %}</p>
+  </section>
+
+  {# ---- latest crónica #}
+  {% set c = cronicas[0] %}
+  <article class="card c-cro" aria-labelledby="h-cro">
+    <a class="cro-link" href="{{ c.url }}">
+      <span class="cro-img"><img src="/assets/img/{{ c.cover }}-640.jpg" srcset="/assets/img/{{ c.cover }}-640.jpg 640w, /assets/img/{{ c.cover }}-1080.jpg 1080w" sizes="(min-width: 1000px) 460px, 100vw" alt="{{ c.cover_alt }}" width="640" height="394" loading="lazy"></span>
+      <span class="cro-band">{{ m.stamp('Crónica del culto') }}<span class="cro-n">{{ c.number }}</span></span>
+      <span class="cro-body">
+        <span class="cro-t" id="h-cro">{{ c.band }}</span>
+        <span class="cro-m">{{ c.venue }} · {{ c.date_label }} · {{ c.city }}</span>
+        <span class="cro-v">{{ m.velas(c.velas) }}<span class="cro-vn">{{ c.velas.num }} / 5 velas</span></span>
+        <span class="cro-quote">«{{ c.sections[3].text }}»</span>
+      </span>
+    </a>
+  </article>
+
+  {# ---- lo que suena #}
+  <section class="card c-suena" aria-labelledby="h-suena">
+    <div class="card-h"><h2 id="h-suena" class="card-t">Lo que suena</h2><a class="more-l" href="/lo-que-suena/">Todo<span aria-hidden="true"> →</span></a></div>
+    {% if listening.heard %}{% set a = listening.heard[0] %}
+    <p class="mini-h">Escuchado en la capilla</p>
+    <p class="heard"><b>{{ a.artist }}</b> · {{ a.album }} ({{ a.year }}) {{ m.velas(a.v) }}</p>
+    {% endif %}
+    {% if listening.novedades %}{% set n = listening.novedades[0] %}
+    <p class="mini-h">{{ 'Salió el' if n.released else 'Sale el' }} {{ n.label }}</p>
+    <ul class="list">{% for a in n.albums[:4] %}<li><b>{{ a.artist }}</b> · {{ a.album }}</li>{% endfor %}</ul>{% if n.albums|length > 4 %}<p class="muted">y {{ n.albums|length - 4 }} más en <a href="/lo-que-suena/">Lo que suena</a></p>{% endif %}
+    {% endif %}
+  </section>
+
+  {# ---- saber (generic: what the deberes are; never which concerts) #}
+  <section class="card c-saber" aria-labelledby="h-saber">
+    <div class="card-h"><h2 id="h-saber" class="card-t">Saber</h2><a class="more-l" href="/saber/">Todo<span aria-hidden="true"> →</span></a></div>
+    <p class="card-lead">Antes de cada concierto, los deberes: el último disco y el primero.</p>
+    <ul class="list links-l">
+      <li><a href="/saber/#deberes">Deberes antes del concierto</a></li>
+      <li><a href="/saber/#h-velas">Las velas: de 0 a 5</a></li>
+      <li><a href="/saber/#h-glos">Glosario de la capilla</a></li>
+    </ul>
+  </section>
+
+  {# ---- templos #}
+  <section class="card c-templos" aria-labelledby="h-templos">
+    <div class="card-h"><h2 id="h-templos" class="card-t">Templos</h2><a class="more-l" href="/templos/">Mapa<span aria-hidden="true"> →</span></a></div>
+    <p class="big-n"><b>{{ n_templos }}</b> salas, clubs, bares y tiendas de discos de Madrid</p>
+    <ul class="kinds">{% for k in kinds_count %}<li><span>{{ k.n }}</span> {{ k.label }}</li>{% endfor %}</ul>
+    {% for p in closing %}<p class="closing">{{ m.stamp('Cierra', 'st-s') }} <b>{{ p.name }}</b>{% if p.next %} · {{ p.next[-1].title }}, {{ p.next[-1].when }}{% endif %}</p>{% endfor %}
+  </section>
+
+  {# ---- tienda #}
+  <section class="card c-tienda" aria-labelledby="h-tienda">
+    <div class="tienda-in">
+      {{ m.stamp('Próximamente', 'st-big') }}
+      <h2 id="h-tienda" class="tienda-t">{{ edicion.title }}</h2>
+      <p>{{ manif.paragraphs[3] }}</p>
+    </div>
+    <p class="card-f"><a class="btn" href="{{ avisame_href }}">Avísame<span class="sr"> por correo cuando abra la {{ edicion.title }}</span></a><a class="btn ghost" href="{{ instagram }}" rel="noopener external" target="_blank">Síguenos en Instagram<span class="sr"> (abre en otra pestaña)</span></a></p>
+  </section>
+</div>
+</main>
+{% endblock %}

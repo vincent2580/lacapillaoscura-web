@@ -3,1172 +3,131 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; img-src &#39;self&#39; data:; style-src &#39;self&#39;; script-src &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; base-uri &#39;self&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>La Capilla Oscura (LCO) · Horario de misas: conciertos de rock, metal y cultura oscura en Madrid</title>
-<meta name="description" content="La Capilla Oscura (LCO): el horario de misas de Madrid. Conciertos de rock, metal y cultura oscura día a día, con fiestas, festivales y ferias. Esta semana (23–29 nov): 24 planes. Precios orientativos.">
+<title>La Capilla Oscura (LCO) · Conciertos, salas y discos del Madrid rock y metal</title>
+<meta name="description" content="La Capilla Oscura (LCO): conciertos, salas y discos del Madrid rock y metal. Horario de misas, crónicas, lo que suena y templos.">
 <meta name="theme-color" content="#0B0A09">
 <meta name="color-scheme" content="dark">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/pirata-one.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/barlow-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
-<link rel="canonical" href="https://lacapillaoscura.es/">
-<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/pirata-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <meta property="og:site_name" content="La Capilla Oscura">
 <meta property="og:locale" content="es_ES">
+<link rel="canonical" href="https://lacapillaoscura.es/">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://lacapillaoscura.es/">
-<meta property="og:title" content="La Capilla Oscura (LCO) · Horario de misas: conciertos de rock, metal y cultura oscura en Madrid">
-<meta property="og:description" content="Conciertos de rock, metal y cultura oscura en Madrid, día a día. Esta semana (23–29 nov): 24 planes.">
-<meta property="og:image" content="https://lacapillaoscura.es/assets/og-semana.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1350">
-<meta property="og:image:alt" content="Horario de misas, Madrid, 23–29 nov: los planes de la semana día a día">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/json" href="agenda.json" title="Agenda (JSON)">
-<link rel="alternate" type="text/calendar" href="agenda.ics" title="Agenda (iCalendar)">
-</head>
-<body class="">
+<meta property="og:title" content="La Capilla Oscura (LCO) · Conciertos, salas y discos del Madrid rock y metal">
+<meta property="og:description" content="Horario de misas de Madrid (23–29 nov: 24 planes), crónicas con velas, lo que suena y los templos de la ciudad.">
+<meta property="og:image" content="https://lacapillaoscura.es/assets/og-semana.jpg"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1350"><meta property="og:image:alt" content="Horario de misas, Madrid, 23–29 nov"><meta name="twitter:card" content="summary_large_image"></head>
+<body class="pg-inicio ">
 <a class="skip" href="#main">Saltar al contenido</a>
-<header class="top">
-  <div class="wrap">
-    <div class="hd">
-      <h1 class="ttl">Horario de misas</h1>
-      <img class="mk" src="assets/lco-mark.svg" alt="La Capilla Oscura" width="130" height="100">
-    </div>
-    <p class="idline">La Capilla Oscura · conciertos de rock, metal y cultura oscura en Madrid</p>
-    <p class="line">Madrid · rock · metal · punk · oscuro</p>
-    <ul class="leg" aria-label="Leyenda de colores">
-<li><i class="dot d-misa" aria-hidden="true"></i>misa</li><li><i class="dot d-vigilia" aria-hidden="true"></i>vigilia</li><li><i class="dot d-procesion" aria-hidden="true"></i>procesión</li><li><i class="dot d-reliquias" aria-hidden="true"></i>reliquias</li><li><i class="dot d-arte-sacro" aria-hidden="true"></i>arte sacro</li>      <li><span class="star" aria-hidden="true"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span>iría</li>
-    </ul>
-    <div class="ctl" data-js hidden>
-      <div class="seg" role="group" aria-label="Qué ver">
-        <button type="button" data-view="week" aria-pressed="true">Semana</button>
-        <button type="button" data-view="finde" aria-pressed="false">Este finde</button>
-        <button type="button" data-view="month" aria-pressed="false">Mes</button>
-      </div>
-      <details class="flt">
-        <summary><span>Filtrar</span> <span class="nflt" data-nflt></span></summary>
-        <div class="flt-body">
-          <p class="flt-h" id="flt-type">Tipo de plan</p>
-          <div class="chips" role="group" aria-labelledby="flt-type">
-<button type="button" class="chip" data-f="type" data-v="misa" aria-pressed="false"><i class="dot d-misa" aria-hidden="true"></i>Conciertos</button><button type="button" class="chip" data-f="type" data-v="vigilia" aria-pressed="false"><i class="dot d-vigilia" aria-hidden="true"></i>Fiestas</button><button type="button" class="chip" data-f="type" data-v="procesion" aria-pressed="false"><i class="dot d-procesion" aria-hidden="true"></i>Festivales</button><button type="button" class="chip" data-f="type" data-v="reliquias" aria-pressed="false"><i class="dot d-reliquias" aria-hidden="true"></i>Ferias y tiendas</button><button type="button" class="chip" data-f="type" data-v="arte-sacro" aria-pressed="false"><i class="dot d-arte-sacro" aria-hidden="true"></i>Cultura</button>          </div>
-          <p class="flt-h" id="flt-genre">Estilo</p>
-          <div class="chips" role="group" aria-labelledby="flt-genre">
-<button type="button" class="chip" data-f="genre" data-v="metal" aria-pressed="false">Metal</button><button type="button" class="chip" data-f="genre" data-v="rock-punk" aria-pressed="false">Rock/punk</button><button type="button" class="chip" data-f="genre" data-v="oscuro" aria-pressed="false">Oscuro</button><button type="button" class="chip" data-f="genre" data-v="otros" aria-pressed="false">Fuera del altar</button>          </div>
-          <button type="button" class="clear" data-clear disabled>Quitar filtros</button>
-        </div>
-      </details>
-    </div>
+<header class="sh">
+  <div class="sh-in">
+    <a class="brand" href="/" aria-label="La Capilla Oscura: inicio" aria-current="page">
+      <img src="/assets/lco-mark.svg" alt="" width="52" height="40"><span class="brand-t">La Capilla Oscura</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <ul>
+<li><a href="/agenda/">Agenda</a></li><li><a href="/lo-que-suena/">Lo que suena</a></li><li><a href="/cronicas/">Crónicas</a></li><li><a href="/saber/">Saber</a></li><li><a href="/templos/">Templos</a></li><li><a href="/tienda/">Tienda</a></li><li><a href="/sobre/">Sobre LCO</a></li>      </ul>
+    </nav>
   </div>
 </header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-h">
+  <img class="hero-img" src="/assets/img/wall-riviera-1080.jpg" srcset="/assets/img/wall-riviera-720.jpg 720w, /assets/img/wall-riviera-1080.jpg 1080w" sizes="100vw" alt="Escenario de La Riviera con los focos encendidos antes de un concierto, en blanco y negro" width="1080" height="590">
+  <div class="hero-in wrap">
+    <span class="stamp "><span>Madrid · rock · metal · oscuro</span></span>
+    <h1 id="hero-h" class="hero-t">La Capilla Oscura</h1>
+<p class="hero-sub">Conciertos, salas y discos del Madrid rock y metal: esto es La Capilla Oscura.</p>        <p class="hero-motto">Colto a la música</p>
 
-<main id="main" class="wrap">
-  <p class="hint">Toca un plan para ver las entradas y añadirlo a tu calendario.</p>
-  <p class="status sr" aria-live="polite" data-status></p>
-  <section class="week" id="semana-2026-11-23" data-i="0" data-start="2026-11-23" data-end="2026-11-29" data-label="23–29 nov" data-finde-label="27–29 nov" aria-labelledby="semana-2026-11-23-h">
-    <div class="wk-head">
-      <h2 class="wk" id="semana-2026-11-23-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Madrid · <span data-wl>23–29 nov</span></span></h2>
-      <nav class="wk-nav" aria-label="Cambiar de semana">
-<span class="off" aria-hidden="true">‹</span><a href="#semana-2026-11-30" data-go="1" aria-label="Semana siguiente: 30 nov–6 dic">›</a>      </nav>
+  </div>
+</section>
+<div class="wrap dash">
+  <section class="card c-week" aria-labelledby="h-week">
+    <div class="card-h">
+      <h2 id="h-week" class="wk"><svg class="ic-candle" width="24" height="24" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Semana · 23–29 nov</span></h2>
+      <a class="more-l" href="/agenda/">Horario de misas<span aria-hidden="true"> →</span></a>
     </div>
-    <div class="day past" id="d-2026-11-23" data-date="2026-11-23" data-wd="0">
-      <h3 class="dl" aria-label="lunes 23 de noviembre"><span class="wd" aria-hidden="true">LUN</span><span class="dn" aria-hidden="true">23</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261123-polyphia" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">20:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Polyphia + Perturbator</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>La Riviera</span>
-<span class="p">47,50 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/polyphia-madrid-1016434" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Polyphia + Perturbator (web externa)</span></a><a class="btn ghost" href="ics/e-20261123-polyphia.ics" download="e-20261123-polyphia.ics">Añadir a mi calendario<span class="sr">: Polyphia + Perturbator</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261123-wedge" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Wedge</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Wurlitzer Ballroom</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Tres Cruces 12 · Gran Vía</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/125821" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Wedge (web externa)</span></a><a class="btn ghost" href="ics/e-20261123-wedge.ics" download="e-20261123-wedge.ics">Añadir a mi calendario<span class="sr">: Wedge</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day today" id="d-2026-11-24" data-date="2026-11-24" data-wd="1">
-      <h3 class="dl" aria-label="martes 24 de noviembre"><span class="wd" aria-hidden="true">MAR</span><span class="dn" aria-hidden="true">24</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261124-catherine-russell-jazz-y-blues" data-type="misa" data-genre="otros">
-<details>
-<summary>
-<span class="t">20:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Catherine Russell (jazz y blues)</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Teatro Alcalá</span>
-<span class="p">37,8 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Fuera del altar (jazz, folk, otros)</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/catherine-russell-madrid-1016342" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Catherine Russell (jazz y blues) (web externa)</span></a><a class="btn ghost" href="ics/e-20261124-catherine-russell-jazz-y-blues.ics" download="e-20261124-catherine-russell-jazz-y-blues.ics">Añadir a mi calendario<span class="sr">: Catherine Russell (jazz y blues)</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-11-25" data-date="2026-11-25" data-wd="2">
-      <h3 class="dl" aria-label="miércoles 25 de noviembre"><span class="wd" aria-hidden="true">MIÉ</span><span class="dn" aria-hidden="true">25</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261125-kingfishr-folk" data-type="misa" data-genre="otros">
-<details>
-<summary>
-<span class="t">20:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Kingfishr (folk)</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Wagon</span>
-<span class="p">34 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Fuera del altar (jazz, folk, otros)</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/kingfishr-madrid-1016195" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Kingfishr (folk) (web externa)</span></a><a class="btn ghost" href="ics/e-20261125-kingfishr-folk.ics" download="e-20261125-kingfishr-folk.ics">Añadir a mi calendario<span class="sr">: Kingfishr (folk)</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261125-flotsam-jetsam" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Flotsam &amp; Jetsam</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Revi Live</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy<br><span class="addr">C/ Los Cavilas 4 · Vicálvaro</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/124871" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Flotsam &amp; Jetsam (web externa)</span></a><a class="btn ghost" href="ics/e-20261125-flotsam-jetsam.ics" download="e-20261125-flotsam-jetsam.ics">Añadir a mi calendario<span class="sr">: Flotsam &amp; Jetsam</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261125-jam-rockville" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Jam session de Rockville</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Rockville</span>
-<span class="p">Gratis</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">Av. Brasil 3 / C/ Orense 32 · Tetuán (Azca)</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/129479" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Jam session de Rockville (web externa)</span></a><a class="btn ghost" href="ics/e-20261125-jam-rockville.ics" download="e-20261125-jam-rockville.ics">Añadir a mi calendario<span class="sr">: Jam session de Rockville</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-11-26" data-date="2026-11-26" data-wd="3">
-      <h3 class="dl" aria-label="jueves 26 de noviembre"><span class="wd" aria-hidden="true">JUE</span><span class="dn" aria-hidden="true">26</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261126-bum-motion-club" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">20:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Bum Motion Club</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Copérnico</span>
-<span class="p">17 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Fernández de los Ríos 67 · Chamberí</span></p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/bum-motion-club-madrid-1017636" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Bum Motion Club (web externa)</span></a><a class="btn ghost" href="ics/e-20261126-bum-motion-club.ics" download="e-20261126-bum-motion-club.ics">Añadir a mi calendario<span class="sr">: Bum Motion Club</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261126-split-dogs" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">20:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Split Dogs</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Nazca</span>
-<span class="p">23 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Orense 24 · Tetuán (Azca)</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/123720" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Split Dogs (web externa)</span></a><a class="btn ghost" href="ics/e-20261126-split-dogs.ics" download="e-20261126-split-dogs.ics">Añadir a mi calendario<span class="sr">: Split Dogs</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261126-javier-alcazar-friends" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Javier Alcázar &amp; Friends</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Moe</span>
-<span class="p">Gratis</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/129445" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Javier Alcázar &amp; Friends (web externa)</span></a><a class="btn ghost" href="ics/e-20261126-javier-alcazar-friends.ics" download="e-20261126-javier-alcazar-friends.ics">Añadir a mi calendario<span class="sr">: Javier Alcázar &amp; Friends</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-11-27" data-date="2026-11-27" data-wd="4">
-      <h3 class="dl" aria-label="viernes 27 de noviembre"><span class="wd" aria-hidden="true">VIE</span><span class="dn" aria-hidden="true">27</span></h3>
-      <ul class="evs">
-<li class="ev pk" data-id="e-20261127-sdh-rider-rawla" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">20:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>SDH + RAWLA</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Cadavra Club</span>
-<span class="p">17 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Caballero de Gracia 10 · Gran Vía</span></p>
-<p class="acts"><a class="btn" href="https://dice.fm/event/bb7qpv-sdh-semiotics-department-of-heteronyms-presenta-rider-rawla-live-27th-nov-cadavra-madrid-tickets" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de SDH + RAWLA (web externa)</span></a><a class="btn ghost" href="ics/e-20261127-sdh-rider-rawla.ics" download="e-20261127-sdh-rider-rawla.ics">Añadir a mi calendario<span class="sr">: SDH + RAWLA</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261127-catupecu-machu" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Catupecu Machu</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Mon Live</span>
-<span class="p">34–39 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Hilarión Eslava 36 · Chamberí</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/119766" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Catupecu Machu (web externa)</span></a><a class="btn ghost" href="ics/e-20261127-catupecu-machu.ics" download="e-20261127-catupecu-machu.ics">Añadir a mi calendario<span class="sr">: Catupecu Machu</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-11-28" data-date="2026-11-28" data-wd="5">
-      <h3 class="dl" aria-label="sábado 28 de noviembre"><span class="wd" aria-hidden="true">SÁB</span><span class="dn" aria-hidden="true">28</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261128-euskal-invaders" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">19:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Euskal Invaders: Streetwise + Sofokaos + Perlata</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Independance Club</span>
-<span class="p">17,60 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/124659" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Euskal Invaders: Streetwise + Sofokaos + Perlata (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-euskal-invaders.ics" download="e-20261128-euskal-invaders.ics">Añadir a mi calendario<span class="sr">: Euskal Invaders: Streetwise + Sofokaos + Perlata</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev pk" data-id="e-20261128-feria-del-disco-de-metal-extre" data-type="reliquias" data-genre="metal">
-<details>
-<summary>
-<span class="t">19:00</span>
-<span class="c"><i class="dot d-reliquias" aria-hidden="true"></i><b>Feria del Disco de Metal Extremo</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Revi Live</span>
-<span class="p">40/45 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">reliquias</span> Ferias y tiendas · Metal y heavy<br><span class="addr">C/ Los Cavilas 4 · Vicálvaro</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/124870" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Feria del Disco de Metal Extremo (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-feria-del-disco-de-metal-extre.ics" download="e-20261128-feria-del-disco-de-metal-extre.ics">Añadir a mi calendario<span class="sr">: Feria del Disco de Metal Extremo</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261128-accept" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Accept + Dynazty + Enforcer</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>La Cubierta, Leganés</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/114716" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Accept + Dynazty + Enforcer (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-accept.ics" download="e-20261128-accept.ics">Añadir a mi calendario<span class="sr">: Accept + Dynazty + Enforcer</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261128-baron-rojo" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Barón Rojo</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>La Riviera</span>
-<span class="p">27,75 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/109273" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Barón Rojo (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-baron-rojo.ics" download="e-20261128-baron-rojo.ics">Añadir a mi calendario<span class="sr">: Barón Rojo</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261128-desinteresse" data-type="vigilia" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-vigilia" aria-hidden="true"></i><b>Noche Coldwave y Post-punk (Desinteresse)</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Hangar 48</span>
-<span class="p">15,88 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">vigilia</span> Fiestas · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://entradium.com/events/desinteresse_madrid_coldwave_postpunk" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Noche Coldwave y Post-punk (Desinteresse) (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-desinteresse.ics" download="e-20261128-desinteresse.ics">Añadir a mi calendario<span class="sr">: Noche Coldwave y Post-punk (Desinteresse)</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261128-fuzztones" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>The Fuzztones + The Oompa Loompas</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Gruta 77</span>
-<span class="p">27,50 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Cuclillo 6 · Carabanchel</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/125839" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de The Fuzztones + The Oompa Loompas (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-fuzztones.ics" download="e-20261128-fuzztones.ics">Añadir a mi calendario<span class="sr">: The Fuzztones + The Oompa Loompas</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261128-dead-souls" data-type="vigilia" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">23:00</span>
-<span class="c"><i class="dot d-vigilia" aria-hidden="true"></i><b>Dead Souls · 2º aniversario</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>A Quien le Importa</span>
-<span class="p">10 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">vigilia</span> Fiestas · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.gotifiestas.com/eventos/dead-souls-2o-aniversario/" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Dead Souls · 2º aniversario (web externa)</span></a><a class="btn ghost" href="ics/e-20261128-dead-souls.ics" download="e-20261128-dead-souls.ics">Añadir a mi calendario<span class="sr">: Dead Souls · 2º aniversario</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-11-29" data-date="2026-11-29" data-wd="6">
-      <h3 class="dl" aria-label="domingo 29 de noviembre"><span class="wd" aria-hidden="true">DOM</span><span class="dn" aria-hidden="true">29</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261129-ellas-y-los-de-siempre" data-type="misa" data-genre="otros">
-<details>
-<summary>
-<span class="t">13:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Ellas y los de siempre</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Rockville</span>
-<span class="p">10 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Fuera del altar (jazz, folk, otros)<br><span class="addr">Av. Brasil 3 / C/ Orense 32 · Tetuán (Azca)</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/129485" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Ellas y los de siempre (web externa)</span></a><a class="btn ghost" href="ics/e-20261129-ellas-y-los-de-siempre.ics" download="e-20261129-ellas-y-los-de-siempre.ics">Añadir a mi calendario<span class="sr">: Ellas y los de siempre</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261129-los-fabulosos-cadillacs" data-type="misa" data-genre="otros">
-<details>
-<summary>
-<span class="t">20:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Los Fabulosos Cadillacs</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Live Las Ventas</span>
-<span class="p">53,7 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Fuera del altar (jazz, folk, otros)</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/los-fabulosos-cadillacs-madrid-1016117" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Los Fabulosos Cadillacs (web externa)</span></a><a class="btn ghost" href="ics/e-20261129-los-fabulosos-cadillacs.ics" download="e-20261129-los-fabulosos-cadillacs.ics">Añadir a mi calendario<span class="sr">: Los Fabulosos Cadillacs</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261129-imperial-triumphant" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Imperial Triumphant</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Nazca</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy<br><span class="addr">C/ Orense 24 · Tetuán (Azca)</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/127686" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Imperial Triumphant (web externa)</span></a><a class="btn ghost" href="ics/e-20261129-imperial-triumphant.ics" download="e-20261129-imperial-triumphant.ics">Añadir a mi calendario<span class="sr">: Imperial Triumphant</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev pk" data-id="e-20261129-gruta-77-ultima-noche" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Mamá Ladilla + El Señor que te molesta</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Gruta 77 · última noche</span>
-<span class="p">17,60 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Cuclillo 6 · Carabanchel</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/128936" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Mamá Ladilla + El Señor que te molesta (web externa)</span></a><a class="btn ghost" href="ics/e-20261129-gruta-77-ultima-noche.ics" download="e-20261129-gruta-77-ultima-noche.ics">Añadir a mi calendario<span class="sr">: Mamá Ladilla + El Señor que te molesta</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day aw">
-      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
-      <ul class="evs">
-<li class="ev pk awr" data-id="e-20261120-baldung-grien-prado" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Baldung Grien: Las edades y la muerte</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · hasta 7 mar</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Baldung Grien: Las edades y la muerte (web externa)</span></a><a class="btn ghost" href="ics/e-20261120-baldung-grien-prado.ics" download="e-20261120-baldung-grien-prado.ics">Añadir a mi calendario<span class="sr">: Baldung Grien: Las edades y la muerte</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev awr" data-id="e-20261123-pinturas-negras-goya" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Pinturas negras de Goya</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · cada día</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://es.wikipedia.org/wiki/Pinturas_negras" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Pinturas negras de Goya (web externa)</span></a><a class="btn ghost" href="ics/e-20261123-pinturas-negras-goya.ics" download="e-20261123-pinturas-negras-goya.ics">Añadir a mi calendario<span class="sr">: Pinturas negras de Goya</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
-    <p class="wk-foot"><span data-count>24 planes</span> · Precios orientativos · compra en la web oficial · — sin confirmar</p>
-  </section>
-  <section class="week" id="semana-2026-11-30" data-i="1" data-start="2026-11-30" data-end="2026-12-06" data-label="30 nov–6 dic" data-finde-label="4–6 dic" aria-labelledby="semana-2026-11-30-h">
-    <div class="wk-head">
-      <h2 class="wk" id="semana-2026-11-30-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Madrid · <span data-wl>30 nov–6 dic</span></span></h2>
-      <nav class="wk-nav" aria-label="Cambiar de semana">
-<a href="#semana-2026-11-23" data-go="0" aria-label="Semana anterior: 23–29 nov">‹</a><a href="#semana-2026-12-07" data-go="2" aria-label="Semana siguiente: 7–13 dic">›</a>      </nav>
-    </div>
-    <div class="day" id="d-2026-11-30" data-date="2026-11-30" data-wd="0">
-      <h3 class="dl" aria-label="lunes 30 de noviembre"><span class="wd" aria-hidden="true">LUN</span><span class="dn" aria-hidden="true">30</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-01" data-date="2026-12-01" data-wd="1">
-      <h3 class="dl" aria-label="martes 1 de diciembre"><span class="wd" aria-hidden="true">MAR</span><span class="dn" aria-hidden="true">1</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261201-soen-tribulation-vulkan" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">18:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Soen + Tribulation + Vulkan</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Wagon</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://www.planomato.com/es/madrid/p/concierto-soen-madrid" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Soen + Tribulation + Vulkan (web externa)</span></a><a class="btn ghost" href="ics/e-20261201-soen-tribulation-vulkan.ics" download="e-20261201-soen-tribulation-vulkan.ics">Añadir a mi calendario<span class="sr">: Soen + Tribulation + Vulkan</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261201-eluveitie-pain-wolfheart" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">19:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Eluveitie + Pain + Wolfheart</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>La Riviera</span>
-<span class="p">40/50 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/124506" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Eluveitie + Pain + Wolfheart (web externa)</span></a><a class="btn ghost" href="ics/e-20261201-eluveitie-pain-wolfheart.ics" download="e-20261201-eluveitie-pain-wolfheart.ics">Añadir a mi calendario<span class="sr">: Eluveitie + Pain + Wolfheart</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-02" data-date="2026-12-02" data-wd="2">
-      <h3 class="dl" aria-label="miércoles 2 de diciembre"><span class="wd" aria-hidden="true">MIÉ</span><span class="dn" aria-hidden="true">2</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-03" data-date="2026-12-03" data-wd="3">
-      <h3 class="dl" aria-label="jueves 3 de diciembre"><span class="wd" aria-hidden="true">JUE</span><span class="dn" aria-hidden="true">3</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-04" data-date="2026-12-04" data-wd="4">
-      <h3 class="dl" aria-label="viernes 4 de diciembre"><span class="wd" aria-hidden="true">VIE</span><span class="dn" aria-hidden="true">4</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261204-papa-roach-landmvrks-sleep-the" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Papa Roach + Landmvrks + Sleep Theory</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Palacio Vistalegre</span>
-<span class="p">59,91 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/papa-roach-madrid-1016482" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Papa Roach + Landmvrks + Sleep Theory (web externa)</span></a><a class="btn ghost" href="ics/e-20261204-papa-roach-landmvrks-sleep-the.ics" download="e-20261204-papa-roach-landmvrks-sleep-the.ics">Añadir a mi calendario<span class="sr">: Papa Roach + Landmvrks + Sleep Theory</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-05" data-date="2026-12-05" data-wd="5">
-      <h3 class="dl" aria-label="sábado 5 de diciembre"><span class="wd" aria-hidden="true">SÁB</span><span class="dn" aria-hidden="true">5</span></h3>
-      <ul class="evs">
-<li class="ev pk" data-id="e-20261205-combichrist-xpq-21" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">20:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Combichrist + XPQ-21</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Nazca</span>
-<span class="p">32,10 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Orense 24 · Tetuán (Azca)</span></p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/combichrist-xpq-21-madrid-1016102" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Combichrist + XPQ-21 (web externa)</span></a><a class="btn ghost" href="ics/e-20261205-combichrist-xpq-21.ics" download="e-20261205-combichrist-xpq-21.ics">Añadir a mi calendario<span class="sr">: Combichrist + XPQ-21</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261205-elektrokohle" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Elektrokohle + Sad Lands</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Fotomatón Bar</span>
-<span class="p">15,18 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/elektrokohle-sad-lands-madrid-1016920" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Elektrokohle + Sad Lands (web externa)</span></a><a class="btn ghost" href="ics/e-20261205-elektrokohle.ics" download="e-20261205-elektrokohle.ics">Añadir a mi calendario<span class="sr">: Elektrokohle + Sad Lands</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev pk" data-id="e-20261205-redrum" data-type="vigilia" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">23:00</span>
-<span class="c"><i class="dot d-vigilia" aria-hidden="true"></i><b>RedRum Gothic Club</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Twin / Rockola</span>
-<span class="p">~10 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">vigilia</span> Fiestas · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Gaztambide 20 · Chamberí</span></p>
-<p class="acts"><a class="btn" href="https://www.gotifiestas.com/eventos/redrum-goth-club/" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de RedRum Gothic Club (web externa)</span></a><a class="btn ghost" href="ics/e-20261205-redrum.ics" download="e-20261205-redrum.ics">Añadir a mi calendario<span class="sr">: RedRum Gothic Club</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261205-destruktion-08" data-type="vigilia" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">23:45</span>
-<span class="c"><i class="dot d-vigilia" aria-hidden="true"></i><b>Destruktion #08</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Specka</span>
-<span class="p">16,95 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">vigilia</span> Fiestas · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.gotifiestas.com/eventos/destruktion-08/" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Destruktion #08 (web externa)</span></a><a class="btn ghost" href="ics/e-20261205-destruktion-08.ics" download="e-20261205-destruktion-08.ics">Añadir a mi calendario<span class="sr">: Destruktion #08</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-06" data-date="2026-12-06" data-wd="6">
-      <h3 class="dl" aria-label="domingo 6 de diciembre"><span class="wd" aria-hidden="true">DOM</span><span class="dn" aria-hidden="true">6</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261206-dark-entries-asamblea-de-las-s" data-type="vigilia" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">20:00</span>
-<span class="c"><i class="dot d-vigilia" aria-hidden="true"></i><b>Dark Entries: Asamblea de las Sombras</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>The Godfather Rock Club</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">vigilia</span> Fiestas · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.gotifiestas.com/eventos/dark-entries-asamblea-de-las-sombras-en-the-godfather/" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Dark Entries: Asamblea de las Sombras (web externa)</span></a><a class="btn ghost" href="ics/e-20261206-dark-entries-asamblea-de-las-s.ics" download="e-20261206-dark-entries-asamblea-de-las-s.ics">Añadir a mi calendario<span class="sr">: Dark Entries: Asamblea de las Sombras</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day aw">
-      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
-      <ul class="evs">
-<li class="ev pk awr" data-id="e-20261120-baldung-grien-prado" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Baldung Grien: Las edades y la muerte</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · hasta 7 mar</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Baldung Grien: Las edades y la muerte (web externa)</span></a><a class="btn ghost" href="ics/e-20261120-baldung-grien-prado.ics" download="e-20261120-baldung-grien-prado.ics">Añadir a mi calendario<span class="sr">: Baldung Grien: Las edades y la muerte</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
-    <p class="wk-foot"><span data-count>9 planes</span> · Precios orientativos · compra en la web oficial · — sin confirmar</p>
-  </section>
-  <section class="week" id="semana-2026-12-07" data-i="2" data-start="2026-12-07" data-end="2026-12-13" data-label="7–13 dic" data-finde-label="11–13 dic" aria-labelledby="semana-2026-12-07-h">
-    <div class="wk-head">
-      <h2 class="wk" id="semana-2026-12-07-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Madrid · <span data-wl>7–13 dic</span></span></h2>
-      <nav class="wk-nav" aria-label="Cambiar de semana">
-<a href="#semana-2026-11-30" data-go="1" aria-label="Semana anterior: 30 nov–6 dic">‹</a><a href="#semana-2026-12-14" data-go="3" aria-label="Semana siguiente: 14–20 dic">›</a>      </nav>
-    </div>
-    <div class="day" id="d-2026-12-07" data-date="2026-12-07" data-wd="0">
-      <h3 class="dl" aria-label="lunes 7 de diciembre"><span class="wd" aria-hidden="true">LUN</span><span class="dn" aria-hidden="true">7</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261207-avulsed-carnation-fleshcrawl" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">20:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Avulsed + Carnation + Fleshcrawl</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Revi Live</span>
-<span class="p">30 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy<br><span class="addr">C/ Los Cavilas 4 · Vicálvaro</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/126227" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Avulsed + Carnation + Fleshcrawl (web externa)</span></a><a class="btn ghost" href="ics/e-20261207-avulsed-carnation-fleshcrawl.ics" download="e-20261207-avulsed-carnation-fleshcrawl.ics">Añadir a mi calendario<span class="sr">: Avulsed + Carnation + Fleshcrawl</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-08" data-date="2026-12-08" data-wd="1">
-      <h3 class="dl" aria-label="martes 8 de diciembre"><span class="wd" aria-hidden="true">MAR</span><span class="dn" aria-hidden="true">8</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-09" data-date="2026-12-09" data-wd="2">
-      <h3 class="dl" aria-label="miércoles 9 de diciembre"><span class="wd" aria-hidden="true">MIÉ</span><span class="dn" aria-hidden="true">9</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261209-arabrot-lost-in-kyiv" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Årabrot + Lost in Kyiv</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Silikona</span>
-<span class="p">27,50 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/125284" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Årabrot + Lost in Kyiv (web externa)</span></a><a class="btn ghost" href="ics/e-20261209-arabrot-lost-in-kyiv.ics" download="e-20261209-arabrot-lost-in-kyiv.ics">Añadir a mi calendario<span class="sr">: Årabrot + Lost in Kyiv</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-10" data-date="2026-12-10" data-wd="3">
-      <h3 class="dl" aria-label="jueves 10 de diciembre"><span class="wd" aria-hidden="true">JUE</span><span class="dn" aria-hidden="true">10</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-11" data-date="2026-12-11" data-wd="4">
-      <h3 class="dl" aria-label="viernes 11 de diciembre"><span class="wd" aria-hidden="true">VIE</span><span class="dn" aria-hidden="true">11</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261211-blinded-by-passion" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Blinded by Passion</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Fotomatón Bar</span>
-<span class="p">10 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/blinded-by-passion-madrid-1018264" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Blinded by Passion (web externa)</span></a><a class="btn ghost" href="ics/e-20261211-blinded-by-passion.ics" download="e-20261211-blinded-by-passion.ics">Añadir a mi calendario<span class="sr">: Blinded by Passion</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-12" data-date="2026-12-12" data-wd="5">
-      <h3 class="dl" aria-label="sábado 12 de diciembre"><span class="wd" aria-hidden="true">SÁB</span><span class="dn" aria-hidden="true">12</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261212-saurom-alestorm" data-type="procesion" data-genre="metal">
-<details>
-<summary>
-<span class="t">17:00</span>
-<span class="c"><i class="dot d-procesion" aria-hidden="true"></i><b>Saurom Juglar Fest: Saurom + Alestorm + Dartagnan</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>La Cubierta, Leganés</span>
-<span class="p">54 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">procesión</span> Festivales · Metal y heavy</p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/saurom-juglar-festival-2026-leganes-1015218" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Saurom Juglar Fest: Saurom + Alestorm + Dartagnan (web externa)</span></a><a class="btn ghost" href="ics/e-20261212-saurom-alestorm.ics" download="e-20261212-saurom-alestorm.ics">Añadir a mi calendario<span class="sr">: Saurom Juglar Fest: Saurom + Alestorm + Dartagnan</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev pk" data-id="e-20261212-dark-christmas-festival" data-type="procesion" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">19:30</span>
-<span class="c"><i class="dot d-procesion" aria-hidden="true"></i><b>Dark Christmas Festival</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala Nazca</span>
-<span class="p">29,01 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">procesión</span> Festivales · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Orense 24 · Tetuán (Azca)</span></p>
-<p class="acts"><a class="btn" href="https://www.laganzua.net/conciertos/dark-christmas-festival-madrid-2026-madrid-1016484" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Dark Christmas Festival (web externa)</span></a><a class="btn ghost" href="ics/e-20261212-dark-christmas-festival.ics" download="e-20261212-dark-christmas-festival.ics">Añadir a mi calendario<span class="sr">: Dark Christmas Festival</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261212-kid-kapichi-demob-happy" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Kid Kapichi + Demob Happy</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Sala El Sol</span>
-<span class="p">27,56 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Jardines 3 · Gran Vía</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/124755" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Kid Kapichi + Demob Happy (web externa)</span></a><a class="btn ghost" href="ics/e-20261212-kid-kapichi-demob-happy.ics" download="e-20261212-kid-kapichi-demob-happy.ics">Añadir a mi calendario<span class="sr">: Kid Kapichi + Demob Happy</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-13" data-date="2026-12-13" data-wd="6">
-      <h3 class="dl" aria-label="domingo 13 de diciembre"><span class="wd" aria-hidden="true">DOM</span><span class="dn" aria-hidden="true">13</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day aw">
-      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
-      <ul class="evs">
-<li class="ev pk awr" data-id="e-20261120-baldung-grien-prado" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Baldung Grien: Las edades y la muerte</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · hasta 7 mar</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Baldung Grien: Las edades y la muerte (web externa)</span></a><a class="btn ghost" href="ics/e-20261120-baldung-grien-prado.ics" download="e-20261120-baldung-grien-prado.ics">Añadir a mi calendario<span class="sr">: Baldung Grien: Las edades y la muerte</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
-    <p class="wk-foot"><span data-count>7 planes</span> · Precios orientativos · compra en la web oficial</p>
-  </section>
-  <section class="week" id="semana-2026-12-14" data-i="3" data-start="2026-12-14" data-end="2026-12-20" data-label="14–20 dic" data-finde-label="18–20 dic" aria-labelledby="semana-2026-12-14-h">
-    <div class="wk-head">
-      <h2 class="wk" id="semana-2026-12-14-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Madrid · <span data-wl>14–20 dic</span></span></h2>
-      <nav class="wk-nav" aria-label="Cambiar de semana">
-<a href="#semana-2026-12-07" data-go="2" aria-label="Semana anterior: 7–13 dic">‹</a><a href="#semana-2026-12-21" data-go="4" aria-label="Semana siguiente: 21–27 dic">›</a>      </nav>
-    </div>
-    <div class="day" id="d-2026-12-14" data-date="2026-12-14" data-wd="0">
-      <h3 class="dl" aria-label="lunes 14 de diciembre"><span class="wd" aria-hidden="true">LUN</span><span class="dn" aria-hidden="true">14</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-15" data-date="2026-12-15" data-wd="1">
-      <h3 class="dl" aria-label="martes 15 de diciembre"><span class="wd" aria-hidden="true">MAR</span><span class="dn" aria-hidden="true">15</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-16" data-date="2026-12-16" data-wd="2">
-      <h3 class="dl" aria-label="miércoles 16 de diciembre"><span class="wd" aria-hidden="true">MIÉ</span><span class="dn" aria-hidden="true">16</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-17" data-date="2026-12-17" data-wd="3">
-      <h3 class="dl" aria-label="jueves 17 de diciembre"><span class="wd" aria-hidden="true">JUE</span><span class="dn" aria-hidden="true">17</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-18" data-date="2026-12-18" data-wd="4">
-      <h3 class="dl" aria-label="viernes 18 de diciembre"><span class="wd" aria-hidden="true">VIE</span><span class="dn" aria-hidden="true">18</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261218-darkened-nocturn-slaughtercult" data-type="misa" data-genre="metal">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Darkened Nocturn Slaughtercult + Nebiros</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Revi Live</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Metal y heavy<br><span class="addr">C/ Los Cavilas 4 · Vicálvaro</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/124867" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Darkened Nocturn Slaughtercult + Nebiros (web externa)</span></a><a class="btn ghost" href="ics/e-20261218-darkened-nocturn-slaughtercult.ics" download="e-20261218-darkened-nocturn-slaughtercult.ics">Añadir a mi calendario<span class="sr">: Darkened Nocturn Slaughtercult + Nebiros</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261218-fotocopia" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Fotocopia</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Wurlitzer Ballroom</span>
-<span class="p">16,51 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Tres Cruces 12 · Gran Vía</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/126537" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Fotocopia (web externa)</span></a><a class="btn ghost" href="ics/e-20261218-fotocopia.ics" download="e-20261218-fotocopia.ics">Añadir a mi calendario<span class="sr">: Fotocopia</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261218-los-chicos" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Los Chicos + The Oddballs + Johnny Casino</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Fun House</span>
-<span class="p">18/22 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Palafox 8 · Chamberí</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/128418" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Los Chicos + The Oddballs + Johnny Casino (web externa)</span></a><a class="btn ghost" href="ics/e-20261218-los-chicos.ics" download="e-20261218-los-chicos.ics">Añadir a mi calendario<span class="sr">: Los Chicos + The Oddballs + Johnny Casino</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-19" data-date="2026-12-19" data-wd="5">
-      <h3 class="dl" aria-label="sábado 19 de diciembre"><span class="wd" aria-hidden="true">SÁB</span><span class="dn" aria-hidden="true">19</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261219-porretas" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Porretas</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>La Riviera</span>
-<span class="p">25,30 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk</p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/129591" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Porretas (web externa)</span></a><a class="btn ghost" href="ics/e-20261219-porretas.ics" download="e-20261219-porretas.ics">Añadir a mi calendario<span class="sr">: Porretas</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-20" data-date="2026-12-20" data-wd="6">
-      <h3 class="dl" aria-label="domingo 20 de diciembre"><span class="wd" aria-hidden="true">DOM</span><span class="dn" aria-hidden="true">20</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day aw">
-      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
-      <ul class="evs">
-<li class="ev pk awr" data-id="e-20261120-baldung-grien-prado" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Baldung Grien: Las edades y la muerte</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · hasta 7 mar</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Baldung Grien: Las edades y la muerte (web externa)</span></a><a class="btn ghost" href="ics/e-20261120-baldung-grien-prado.ics" download="e-20261120-baldung-grien-prado.ics">Añadir a mi calendario<span class="sr">: Baldung Grien: Las edades y la muerte</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
-    <p class="wk-foot"><span data-count>5 planes</span> · Precios orientativos · compra en la web oficial · — sin confirmar</p>
-  </section>
-  <section class="week" id="semana-2026-12-21" data-i="4" data-start="2026-12-21" data-end="2026-12-27" data-label="21–27 dic" data-finde-label="25–27 dic" aria-labelledby="semana-2026-12-21-h">
-    <div class="wk-head">
-      <h2 class="wk" id="semana-2026-12-21-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Madrid · <span data-wl>21–27 dic</span></span></h2>
-      <nav class="wk-nav" aria-label="Cambiar de semana">
-<a href="#semana-2026-12-14" data-go="3" aria-label="Semana anterior: 14–20 dic">‹</a><a href="#semana-2026-12-28" data-go="5" aria-label="Semana siguiente: 28 dic–3 ene">›</a>      </nav>
-    </div>
-    <div class="day" id="d-2026-12-21" data-date="2026-12-21" data-wd="0">
-      <h3 class="dl" aria-label="lunes 21 de diciembre"><span class="wd" aria-hidden="true">LUN</span><span class="dn" aria-hidden="true">21</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-22" data-date="2026-12-22" data-wd="1">
-      <h3 class="dl" aria-label="martes 22 de diciembre"><span class="wd" aria-hidden="true">MAR</span><span class="dn" aria-hidden="true">22</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-23" data-date="2026-12-23" data-wd="2">
-      <h3 class="dl" aria-label="miércoles 23 de diciembre"><span class="wd" aria-hidden="true">MIÉ</span><span class="dn" aria-hidden="true">23</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-24" data-date="2026-12-24" data-wd="3">
-      <h3 class="dl" aria-label="jueves 24 de diciembre"><span class="wd" aria-hidden="true">JUE</span><span class="dn" aria-hidden="true">24</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-25" data-date="2026-12-25" data-wd="4">
-      <h3 class="dl" aria-label="viernes 25 de diciembre"><span class="wd" aria-hidden="true">VIE</span><span class="dn" aria-hidden="true">25</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-26" data-date="2026-12-26" data-wd="5">
-      <h3 class="dl" aria-label="sábado 26 de diciembre"><span class="wd" aria-hidden="true">SÁB</span><span class="dn" aria-hidden="true">26</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261226-tardeo-depeche-cure" data-type="vigilia" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">18:00</span>
-<span class="c"><i class="dot d-vigilia" aria-hidden="true"></i><b>Tardeo Depeche Mode, New Order y The Cure</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Independance Club</span>
-<span class="p">Gratis/16 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">vigilia</span> Fiestas · Oscuro (goth · darkwave · EBM · post-punk)</p>
-<p class="acts"><a class="btn" href="https://www.gotifiestas.com/eventos/depeche-mode-new-order-the-cure-sesion-tardeo/" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Tardeo Depeche Mode, New Order y The Cure (web externa)</span></a><a class="btn ghost" href="ics/e-20261226-tardeo-depeche-cure.ics" download="e-20261226-tardeo-depeche-cure.ics">Añadir a mi calendario<span class="sr">: Tardeo Depeche Mode, New Order y The Cure</span></a></p>
-</div>
-</details>
-</li>
-<li class="ev" data-id="e-20261226-grey-gallows" data-type="misa" data-genre="oscuro">
-<details>
-<summary>
-<span class="t">21:00</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Grey Gallows</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Cadavra Club</span>
-<span class="p"><span aria-label="precio sin confirmar">—</span></span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Oscuro (goth · darkwave · EBM · post-punk)<br><span class="addr">C/ Caballero de Gracia 10 · Gran Vía</span></p>
-<p class="acts"><a class="btn" href="https://www.gotifiestas.com/eventos/grey-gallows-cadavra-club-madrid/" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Grey Gallows (web externa)</span></a><a class="btn ghost" href="ics/e-20261226-grey-gallows.ics" download="e-20261226-grey-gallows.ics">Añadir a mi calendario<span class="sr">: Grey Gallows</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-27" data-date="2026-12-27" data-wd="6">
-      <h3 class="dl" aria-label="domingo 27 de diciembre"><span class="wd" aria-hidden="true">DOM</span><span class="dn" aria-hidden="true">27</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day aw">
-      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
-      <ul class="evs">
-<li class="ev pk awr" data-id="e-20261120-baldung-grien-prado" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Baldung Grien: Las edades y la muerte</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · hasta 7 mar</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Baldung Grien: Las edades y la muerte (web externa)</span></a><a class="btn ghost" href="ics/e-20261120-baldung-grien-prado.ics" download="e-20261120-baldung-grien-prado.ics">Añadir a mi calendario<span class="sr">: Baldung Grien: Las edades y la muerte</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
-    <p class="wk-foot"><span data-count>3 planes</span> · Precios orientativos · compra en la web oficial · — sin confirmar</p>
-  </section>
-  <section class="week" id="semana-2026-12-28" data-i="5" data-start="2026-12-28" data-end="2027-01-03" data-label="28 dic–3 ene" data-finde-label="1–3 ene" aria-labelledby="semana-2026-12-28-h">
-    <div class="wk-head">
-      <h2 class="wk" id="semana-2026-12-28-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Madrid · <span data-wl>28 dic–3 ene</span></span></h2>
-      <nav class="wk-nav" aria-label="Cambiar de semana">
-<a href="#semana-2026-12-21" data-go="4" aria-label="Semana anterior: 21–27 dic">‹</a><span class="off" aria-hidden="true">›</span>      </nav>
-    </div>
-    <div class="day" id="d-2026-12-28" data-date="2026-12-28" data-wd="0">
-      <h3 class="dl" aria-label="lunes 28 de diciembre"><span class="wd" aria-hidden="true">LUN</span><span class="dn" aria-hidden="true">28</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-29" data-date="2026-12-29" data-wd="1">
-      <h3 class="dl" aria-label="martes 29 de diciembre"><span class="wd" aria-hidden="true">MAR</span><span class="dn" aria-hidden="true">29</span></h3>
-      <ul class="evs">
-<li class="ev" data-id="e-20261229-fer-cabildo" data-type="misa" data-genre="rock-punk">
-<details>
-<summary>
-<span class="t">21:30</span>
-<span class="c"><i class="dot d-misa" aria-hidden="true"></i><b>Fer Cabildo &amp; Los Riffmakers</b></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Fun House</span>
-<span class="p">12/15 €</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">misa</span> Conciertos · Rock y punk<br><span class="addr">C/ Palafox 8 · Chamberí</span></p>
-<p class="acts"><a class="btn" href="https://conciertos.club/madrid/conciertos/129222" rel="noopener external" target="_blank">Entradas<span aria-hidden="true"> ↗</span><span class="sr"> de Fer Cabildo &amp; Los Riffmakers (web externa)</span></a><a class="btn ghost" href="ics/e-20261229-fer-cabildo.ics" download="e-20261229-fer-cabildo.ics">Añadir a mi calendario<span class="sr">: Fer Cabildo &amp; Los Riffmakers</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-30" data-date="2026-12-30" data-wd="2">
-      <h3 class="dl" aria-label="miércoles 30 de diciembre"><span class="wd" aria-hidden="true">MIÉ</span><span class="dn" aria-hidden="true">30</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2026-12-31" data-date="2026-12-31" data-wd="3">
-      <h3 class="dl" aria-label="jueves 31 de diciembre"><span class="wd" aria-hidden="true">JUE</span><span class="dn" aria-hidden="true">31</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2027-01-01" data-date="2027-01-01" data-wd="4">
-      <h3 class="dl" aria-label="viernes 1 de enero"><span class="wd" aria-hidden="true">VIE</span><span class="dn" aria-hidden="true">1</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2027-01-02" data-date="2027-01-02" data-wd="5">
-      <h3 class="dl" aria-label="sábado 2 de enero"><span class="wd" aria-hidden="true">SÁB</span><span class="dn" aria-hidden="true">2</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day" id="d-2027-01-03" data-date="2027-01-03" data-wd="6">
-      <h3 class="dl" aria-label="domingo 3 de enero"><span class="wd" aria-hidden="true">DOM</span><span class="dn" aria-hidden="true">3</span></h3>
-      <ul class="evs">
-        <li class="empty">Sin misa en el altar</li>
-      </ul>
-    </div>
-    <div class="day aw">
-      <h3 class="awh"><i aria-hidden="true"></i>Toda la semana</h3>
-      <ul class="evs">
-<li class="ev pk awr" data-id="e-20261120-baldung-grien-prado" data-type="arte-sacro" data-genre="">
-<details>
-<summary>
-<span class="t"><span class="sr">Toda la semana</span></span>
-<span class="c"><i class="dot d-arte-sacro" aria-hidden="true"></i><b>Baldung Grien: Las edades y la muerte</b><span class="star" role="img" aria-label="iría: recomendado"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span></span>
-<span class="v"><span class="sep" aria-hidden="true">· </span>Museo del Prado · hasta 7 mar</span>
-<span class="p">15 € · gratis 18–20 h</span>
-</summary>
-<div class="more">
-<p class="meta"><span class="tag">arte sacro</span> Cultura</p>
-<p class="acts"><a class="btn" href="https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado" rel="noopener external" target="_blank">Más info<span aria-hidden="true"> ↗</span><span class="sr"> de Baldung Grien: Las edades y la muerte (web externa)</span></a><a class="btn ghost" href="ics/e-20261120-baldung-grien-prado.ics" download="e-20261120-baldung-grien-prado.ics">Añadir a mi calendario<span class="sr">: Baldung Grien: Las edades y la muerte</span></a></p>
-</div>
-</details>
-</li>
-        <li class="empty" hidden>Nada con estos filtros</li>
-      </ul>
-    </div>
-    <p class="wk-nomatch" data-nomatch hidden>Ninguna misa con estos filtros esta semana. <button type="button" class="clear" data-clear2>Quitar filtros</button></p>
-    <p class="wk-foot"><span data-count>2 planes</span> · Precios orientativos · compra en la web oficial</p>
+    <ol class="strip" aria-label="Planes por día, 23–29 nov">
+<li class="past "><a href="/agenda/#d-2026-11-23"><span class="s-wd">LUN</span> <span class="s-n">23</span> <span class="s-c">2</span><span class="sr"> planes</span></a></li><li class="today"><a href="/agenda/#d-2026-11-24"><span class="s-wd">MAR</span> <span class="s-n">24</span> <span class="s-c">1</span><span class="sr"> plan, hoy</span></a></li><li class=""><a href="/agenda/#d-2026-11-25"><span class="s-wd">MIÉ</span> <span class="s-n">25</span> <span class="s-c">3</span><span class="sr"> planes</span></a></li><li class=""><a href="/agenda/#d-2026-11-26"><span class="s-wd">JUE</span> <span class="s-n">26</span> <span class="s-c">3</span><span class="sr"> planes</span></a></li><li class=""><a href="/agenda/#d-2026-11-27"><span class="s-wd">VIE</span> <span class="s-n">27</span> <span class="s-c">2</span><span class="sr"> planes</span></a></li><li class=""><a href="/agenda/#d-2026-11-28"><span class="s-wd">SÁB</span> <span class="s-n">28</span> <span class="s-c">7</span><span class="sr"> planes</span></a></li><li class=""><a href="/agenda/#d-2026-11-29"><span class="s-wd">DOM</span> <span class="s-n">29</span> <span class="s-c">4</span><span class="sr"> planes</span></a></li>    </ol>
+    <h3 class="mini-h"><span class="star" aria-hidden="true"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><path d="M100 18 L123 74 L183 78 L137 117 L152 176 L100 144 L48 176 L63 117 L17 78 L77 74 Z" fill="currentColor"/></svg></span> Iría</h3>
+    <ul class="rows">
+<li class="row"><a href="/agenda/#e-e-20261127-sdh-rider-rawla"><span class="r-d">vie 27 · 20:30</span><span class="r-t"><i class="dot d-misa" aria-hidden="true"></i>SDH + RAWLA</span><span class="r-v">Cadavra Club</span><span class="r-p">17 €</span></a></li>
+<li class="row"><a href="/agenda/#e-e-20261128-feria-del-disco-de-metal-extre"><span class="r-d">sáb 28 · 19:00</span><span class="r-t"><i class="dot d-reliquias" aria-hidden="true"></i>Feria del Disco de Metal Extremo</span><span class="r-v">Revi Live</span><span class="r-p">40/45 €</span></a></li>
+<li class="row"><a href="/agenda/#e-e-20261129-gruta-77-ultima-noche"><span class="r-d">dom 29 · 21:00</span><span class="r-t"><i class="dot d-misa" aria-hidden="true"></i>Mamá Ladilla + El Señor que te molesta</span><span class="r-v">Gruta 77 · última noche</span><span class="r-p">17,60 €</span></a></li>
+<li class="row"><a href="/agenda/#e-e-20261120-baldung-grien-prado"><span class="r-d">toda la semana</span><span class="r-t"><i class="dot d-arte-sacro" aria-hidden="true"></i>Baldung Grien: Las edades y la muerte</span><span class="r-v">Museo del Prado · hasta 7 mar</span><span class="r-p">15 € · gratis 18–20 h</span></a></li>
+    </ul>
+    <p class="card-f"><a class="btn" href="/agenda/">Ver los 24 planes de la semana</a><a class="btn ghost" href="/agenda/#semana-2026-11-30">Semana que viene (9)</a></p>
   </section>
 
-  <section class="months" id="calendario" aria-labelledby="cal-h">
-    <div class="wk-head"><h2 class="wk" id="cal-h"><svg class="ic-candle" width="26" height="26" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>Calendario litúrgico</span></h2></div>
-    <div class="month" id="mes-2026-11">
-      <h3 class="mo-h">noviembre 2026</h3>
-      <table class="cal">
-        <caption class="sr">Calendario de noviembre 2026: toca un día para ver sus planes</caption>
-        <thead><tr><th scope="col" abbr="lunes">L</th><th scope="col" abbr="martes">M</th><th scope="col" abbr="miércoles">X</th><th scope="col" abbr="jueves">J</th><th scope="col" abbr="viernes">V</th><th scope="col" abbr="sábado">S</th><th scope="col" abbr="domingo">D</th></tr></thead>
-        <tbody>
-<tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="past "><span class="cell"><span class="sr">domingo </span><span class="n">1</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td></tr>
-<tr><td class="past "><span class="cell"><span class="sr">lunes </span><span class="n">2</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">martes </span><span class="n">3</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">miércoles </span><span class="n">4</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">jueves </span><span class="n">5</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">viernes </span><span class="n">6</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">sábado </span><span class="n">7</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">domingo </span><span class="n">8</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td></tr>
-<tr><td class="past "><span class="cell"><span class="sr">lunes </span><span class="n">9</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">martes </span><span class="n">10</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">miércoles </span><span class="n">11</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">jueves </span><span class="n">12</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">viernes </span><span class="n">13</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">sábado </span><span class="n">14</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">domingo </span><span class="n">15</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td></tr>
-<tr><td class="past "><span class="cell"><span class="sr">lunes </span><span class="n">16</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">martes </span><span class="n">17</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">miércoles </span><span class="n">18</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">jueves </span><span class="n">19</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">viernes </span><span class="n">20</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">sábado </span><span class="n">21</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td><td class="past "><span class="cell"><span class="sr">domingo </span><span class="n">22</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></span></td></tr>
-<tr><td class="past has"><a class="cell" href="#d-2026-11-23" data-day="2026-11-23"><span class="sr">lunes </span><span class="n">23</span><span class="sr"> de noviembre: 3 planes</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i></span></a></td><td class="today has"><a class="cell" href="#d-2026-11-24" data-day="2026-11-24"><span class="sr">martes </span><span class="n">24</span><span class="sr"> de noviembre: 2 planes</span><span class="dots" aria-hidden="true"><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i><i class="dot d-misa" data-type="misa" data-genre="otros"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-11-25" data-day="2026-11-25"><span class="sr">miércoles </span><span class="n">25</span><span class="sr"> de noviembre: 4 planes</span><span class="dots" aria-hidden="true"><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i><i class="dot d-misa" data-type="misa" data-genre="otros"></i><i class="dot d-misa" data-type="misa" data-genre="metal"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-11-26" data-day="2026-11-26"><span class="sr">jueves </span><span class="n">26</span><span class="sr"> de noviembre: 4 planes</span><span class="dots" aria-hidden="true"><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i><i class="dot d-misa" data-type="misa" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-11-27" data-day="2026-11-27"><span class="sr">viernes </span><span class="n">27</span><span class="sr"> de noviembre: 3 planes</span><span class="dots" aria-hidden="true"><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i><i class="dot d-misa pk" data-type="misa" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-11-28" data-day="2026-11-28"><span class="sr">sábado </span><span class="n">28</span><span class="sr"> de noviembre: 8 planes</span><span class="dots" aria-hidden="true"><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i><i class="dot d-reliquias pk" data-type="reliquias" data-genre="metal"></i><i class="dot d-misa" data-type="misa" data-genre="metal"></i><b>+4</b></span></a></td><td class="has"><a class="cell" href="#d-2026-11-29" data-day="2026-11-29"><span class="sr">domingo </span><span class="n">29</span><span class="sr"> de noviembre: 5 planes</span><span class="dots" aria-hidden="true"><i class="dot d-arte-sacro" data-type="arte-sacro" data-genre=""></i><i class="dot d-misa" data-type="misa" data-genre="otros"></i><i class="dot d-misa" data-type="misa" data-genre="otros"></i><i class="dot d-misa" data-type="misa" data-genre="metal"></i><b>+1</b></span></a></td></tr>
-<tr><td class=""><a class="cell" href="#d-2026-11-30" data-day="2026-11-30"><span class="sr">lunes </span><span class="n">30</span><span class="sr"> de noviembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
-        </tbody>
-      </table>
-<p class="longs"><b>Todo el mes:</b> Baldung Grien: Las edades y la muerte ★ (Museo del Prado · hasta 7 mar)</p>      <div class="daypanel" data-panel hidden>
-        <h4 class="dp-h" tabindex="-1"></h4>
-        <ul class="evs"></ul>
-      </div>
-    </div>
-    <div class="month" id="mes-2026-12">
-      <h3 class="mo-h">diciembre 2026</h3>
-      <table class="cal">
-        <caption class="sr">Calendario de diciembre 2026: toca un día para ver sus planes</caption>
-        <thead><tr><th scope="col" abbr="lunes">L</th><th scope="col" abbr="martes">M</th><th scope="col" abbr="miércoles">X</th><th scope="col" abbr="jueves">J</th><th scope="col" abbr="viernes">V</th><th scope="col" abbr="sábado">S</th><th scope="col" abbr="domingo">D</th></tr></thead>
-        <tbody>
-<tr><td class="blank"></td><td class="has"><a class="cell" href="#d-2026-12-01" data-day="2026-12-01"><span class="sr">martes </span><span class="n">1</span><span class="sr"> de diciembre: 2 planes</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="metal"></i><i class="dot d-misa" data-type="misa" data-genre="metal"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-02" data-day="2026-12-02"><span class="sr">miércoles </span><span class="n">2</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-03" data-day="2026-12-03"><span class="sr">jueves </span><span class="n">3</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="has"><a class="cell" href="#d-2026-12-04" data-day="2026-12-04"><span class="sr">viernes </span><span class="n">4</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="metal"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-12-05" data-day="2026-12-05"><span class="sr">sábado </span><span class="n">5</span><span class="sr"> de diciembre: 4 planes</span><span class="dots" aria-hidden="true"><i class="dot d-misa pk" data-type="misa" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="oscuro"></i><i class="dot d-vigilia pk" data-type="vigilia" data-genre="oscuro"></i><i class="dot d-vigilia" data-type="vigilia" data-genre="oscuro"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-12-06" data-day="2026-12-06"><span class="sr">domingo </span><span class="n">6</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-vigilia" data-type="vigilia" data-genre="oscuro"></i></span></a></td></tr>
-<tr><td class="has"><a class="cell" href="#d-2026-12-07" data-day="2026-12-07"><span class="sr">lunes </span><span class="n">7</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="metal"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-08" data-day="2026-12-08"><span class="sr">martes </span><span class="n">8</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="has"><a class="cell" href="#d-2026-12-09" data-day="2026-12-09"><span class="sr">miércoles </span><span class="n">9</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="metal"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-10" data-day="2026-12-10"><span class="sr">jueves </span><span class="n">10</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="has"><a class="cell" href="#d-2026-12-11" data-day="2026-12-11"><span class="sr">viernes </span><span class="n">11</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="oscuro"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-12-12" data-day="2026-12-12"><span class="sr">sábado </span><span class="n">12</span><span class="sr"> de diciembre: 3 planes</span><span class="dots" aria-hidden="true"><i class="dot d-procesion" data-type="procesion" data-genre="metal"></i><i class="dot d-procesion pk" data-type="procesion" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-13" data-day="2026-12-13"><span class="sr">domingo </span><span class="n">13</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td></tr>
-<tr><td class=""><a class="cell" href="#d-2026-12-14" data-day="2026-12-14"><span class="sr">lunes </span><span class="n">14</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-15" data-day="2026-12-15"><span class="sr">martes </span><span class="n">15</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-16" data-day="2026-12-16"><span class="sr">miércoles </span><span class="n">16</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-17" data-day="2026-12-17"><span class="sr">jueves </span><span class="n">17</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="has"><a class="cell" href="#d-2026-12-18" data-day="2026-12-18"><span class="sr">viernes </span><span class="n">18</span><span class="sr"> de diciembre: 3 planes</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="metal"></i><i class="dot d-misa" data-type="misa" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class="has"><a class="cell" href="#d-2026-12-19" data-day="2026-12-19"><span class="sr">sábado </span><span class="n">19</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-20" data-day="2026-12-20"><span class="sr">domingo </span><span class="n">20</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td></tr>
-<tr><td class=""><a class="cell" href="#d-2026-12-21" data-day="2026-12-21"><span class="sr">lunes </span><span class="n">21</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-22" data-day="2026-12-22"><span class="sr">martes </span><span class="n">22</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-23" data-day="2026-12-23"><span class="sr">miércoles </span><span class="n">23</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-24" data-day="2026-12-24"><span class="sr">jueves </span><span class="n">24</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-25" data-day="2026-12-25"><span class="sr">viernes </span><span class="n">25</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="has"><a class="cell" href="#d-2026-12-26" data-day="2026-12-26"><span class="sr">sábado </span><span class="n">26</span><span class="sr"> de diciembre: 2 planes</span><span class="dots" aria-hidden="true"><i class="dot d-vigilia" data-type="vigilia" data-genre="oscuro"></i><i class="dot d-misa" data-type="misa" data-genre="oscuro"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-27" data-day="2026-12-27"><span class="sr">domingo </span><span class="n">27</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td></tr>
-<tr><td class=""><a class="cell" href="#d-2026-12-28" data-day="2026-12-28"><span class="sr">lunes </span><span class="n">28</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="has"><a class="cell" href="#d-2026-12-29" data-day="2026-12-29"><span class="sr">martes </span><span class="n">29</span><span class="sr"> de diciembre: 1 plan</span><span class="dots" aria-hidden="true"><i class="dot d-misa" data-type="misa" data-genre="rock-punk"></i></span></a></td><td class=""><a class="cell" href="#d-2026-12-30" data-day="2026-12-30"><span class="sr">miércoles </span><span class="n">30</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class=""><a class="cell" href="#d-2026-12-31" data-day="2026-12-31"><span class="sr">jueves </span><span class="n">31</span><span class="sr"> de diciembre: sin planes</span><span class="dots" aria-hidden="true"></span></a></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
-        </tbody>
-      </table>
-<p class="longs"><b>Todo el mes:</b> Baldung Grien: Las edades y la muerte ★ (Museo del Prado · hasta 7 mar)</p>      <div class="daypanel" data-panel hidden>
-        <h4 class="dp-h" tabindex="-1"></h4>
-        <ul class="evs"></ul>
-      </div>
-    </div>
+  <article class="card c-cro" aria-labelledby="h-cro">
+    <a class="cro-link" href="/cronicas/the-pretty-reckless-la-riviera-2026-11-09/">
+      <span class="cro-img"><img src="/assets/img/cronica-001-cover-640.jpg" srcset="/assets/img/cronica-001-cover-640.jpg 640w, /assets/img/cronica-001-cover-1080.jpg 1080w" sizes="(min-width: 1000px) 460px, 100vw" alt="Taylor Momsen, de The Pretty Reckless, con los brazos abiertos en el escenario de La Riviera bajo luz azul" width="640" height="394" loading="lazy"></span>
+      <span class="cro-band"><span class="stamp "><span>Crónica del culto</span></span><span class="cro-n">Nº 001</span></span>
+      <span class="cro-body">
+        <span class="cro-t" id="h-cro">The Pretty Reckless</span>
+        <span class="cro-m">La Riviera · 9 nov 2026 · Madrid</span>
+        <span class="cro-v"><span class="velas" role="img" aria-label="4,5 de 5 velas"><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-half" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 30 C25 37 27 41 27 45 C27 49 24 51 20 51 C16 51 13 49 13 45 C13 41 15 37 20 30 Z"/><rect class="bd" x="10" y="54" width="20" height="22" rx="1"/><path class="dr" d="M15 54 V62 M25 54 V66"/><path class="bs" d="M4 77 H36"/></svg></span><span class="cro-vn">4,5 / 5 velas</span></span>
+        <span class="cro-quote">«Las canciones nuevas me devolvieron a los 15 años: rock puro, con el grunge intacto.»</span>
+      </span>
+    </a>
+  </article>
+
+  <section class="card c-suena" aria-labelledby="h-suena">
+    <div class="card-h"><h2 id="h-suena" class="card-t">Lo que suena</h2><a class="more-l" href="/lo-que-suena/">Todo<span aria-hidden="true"> →</span></a></div>
+    <p class="mini-h">Escuchado en la capilla</p>
+    <p class="heard"><b>The Warning</b> · Everything&#39;s Falling (2026) <span class="velas" role="img" aria-label="4 de 5 velas"><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-full" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg><svg class="vela vela-empty" viewBox="0 0 40 80" aria-hidden="true" focusable="false"><path class="fl" d="M20 2 C25 9 27 13 27 17 C27 21 24 23 20 23 C16 23 13 21 13 17 C13 13 15 9 20 2 Z"/><rect class="bd" x="10" y="26" width="20" height="50" rx="1"/><path class="dr" d="M15 26 V38 M25 26 V44"/><path class="bs" d="M4 77 H36"/></svg></span></p>
+    <p class="mini-h">Sale el vie 27 nov</p>
+    <ul class="list"><li><b>Leviathan</b> · Die To This</li><li><b>Neal Morse &amp; The Resonance</b> · River Of Light</li><li><b>Revnoir</b> · Sometimes I Feel You, Sometimes I Don&#39;t</li><li><b>Molly Hatchet</b> · Lost Horizon</li></ul><p class="muted">y 1 más en <a href="/lo-que-suena/">Lo que suena</a></p>  </section>
+
+  <section class="card c-saber" aria-labelledby="h-saber">
+    <div class="card-h"><h2 id="h-saber" class="card-t">Saber</h2><a class="more-l" href="/saber/">Todo<span aria-hidden="true"> →</span></a></div>
+    <p class="card-lead">Antes de cada concierto, los deberes: el último disco y el primero.</p>
+    <ul class="list links-l">
+      <li><a href="/saber/#deberes">Deberes antes del concierto</a></li>
+      <li><a href="/saber/#h-velas">Las velas: de 0 a 5</a></li>
+      <li><a href="/saber/#h-glos">Glosario de la capilla</a></li>
+    </ul>
   </section>
+
+  <section class="card c-templos" aria-labelledby="h-templos">
+    <div class="card-h"><h2 id="h-templos" class="card-t">Templos</h2><a class="more-l" href="/templos/">Mapa<span aria-hidden="true"> →</span></a></div>
+    <p class="big-n"><b>29</b> salas, clubs, bares y tiendas de discos de Madrid</p>
+    <ul class="kinds"><li><span>16</span> Salas</li><li><span>5</span> Clubs</li><li><span>3</span> Bares</li><li><span>5</span> Tiendas de discos</li></ul>
+<p class="closing"><span class="stamp st-s"><span>Cierra</span></span> <b>Gruta 77</b> · Mamá Ladilla + El Señor que te molesta, dom 29 nov, 21:00</p>  </section>
+
+  <section class="card c-tienda" aria-labelledby="h-tienda">
+    <div class="tienda-in">
+      <span class="stamp st-big"><span>Próximamente</span></span>
+      <h2 id="h-tienda" class="tienda-t">Edición 001</h2>
+      <p>Y sí: de esta capilla saldrá ropa. Poca y numerada.</p>
+    </div>
+    <p class="card-f"><a class="btn" href="mailto:info@lacapillaoscura.es?subject=Av%C3%ADsame%20%C2%B7%20Edici%C3%B3n%20001">Avísame<span class="sr"> por correo cuando abra la Edición 001</span></a><a class="btn ghost" href="https://www.instagram.com/lacapillaoscura/" rel="noopener external" target="_blank">Síguenos en Instagram<span class="sr"> (abre en otra pestaña)</span></a></p>
+  </section>
+</div>
 </main>
-<script type="application/json" id="lco-days">{"2026-11-23":["e-20261123-polyphia","e-20261123-wedge","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-24":["e-20261124-catherine-russell-jazz-y-blues","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-25":["e-20261125-kingfishr-folk","e-20261125-flotsam-jetsam","e-20261125-jam-rockville","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-26":["e-20261126-bum-motion-club","e-20261126-split-dogs","e-20261126-javier-alcazar-friends","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-27":["e-20261127-sdh-rider-rawla","e-20261127-catupecu-machu","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-28":["e-20261128-euskal-invaders","e-20261128-feria-del-disco-de-metal-extre","e-20261128-accept","e-20261128-baron-rojo","e-20261128-desinteresse","e-20261128-fuzztones","e-20261128-dead-souls","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-29":["e-20261129-ellas-y-los-de-siempre","e-20261129-los-fabulosos-cadillacs","e-20261129-imperial-triumphant","e-20261129-gruta-77-ultima-noche","e-20261120-baldung-grien-prado","e-20261123-pinturas-negras-goya"],"2026-11-30":["e-20261120-baldung-grien-prado"],"2026-12-01":["e-20261201-soen-tribulation-vulkan","e-20261201-eluveitie-pain-wolfheart","e-20261120-baldung-grien-prado"],"2026-12-02":["e-20261120-baldung-grien-prado"],"2026-12-03":["e-20261120-baldung-grien-prado"],"2026-12-04":["e-20261204-papa-roach-landmvrks-sleep-the","e-20261120-baldung-grien-prado"],"2026-12-05":["e-20261205-combichrist-xpq-21","e-20261205-elektrokohle","e-20261205-redrum","e-20261205-destruktion-08","e-20261120-baldung-grien-prado"],"2026-12-06":["e-20261206-dark-entries-asamblea-de-las-s","e-20261120-baldung-grien-prado"],"2026-12-07":["e-20261207-avulsed-carnation-fleshcrawl","e-20261120-baldung-grien-prado"],"2026-12-08":["e-20261120-baldung-grien-prado"],"2026-12-09":["e-20261209-arabrot-lost-in-kyiv","e-20261120-baldung-grien-prado"],"2026-12-10":["e-20261120-baldung-grien-prado"],"2026-12-11":["e-20261211-blinded-by-passion","e-20261120-baldung-grien-prado"],"2026-12-12":["e-20261212-saurom-alestorm","e-20261212-dark-christmas-festival","e-20261212-kid-kapichi-demob-happy","e-20261120-baldung-grien-prado"],"2026-12-13":["e-20261120-baldung-grien-prado"],"2026-12-14":["e-20261120-baldung-grien-prado"],"2026-12-15":["e-20261120-baldung-grien-prado"],"2026-12-16":["e-20261120-baldung-grien-prado"],"2026-12-17":["e-20261120-baldung-grien-prado"],"2026-12-18":["e-20261218-darkened-nocturn-slaughtercult","e-20261218-fotocopia","e-20261218-los-chicos","e-20261120-baldung-grien-prado"],"2026-12-19":["e-20261219-porretas","e-20261120-baldung-grien-prado"],"2026-12-20":["e-20261120-baldung-grien-prado"],"2026-12-21":["e-20261120-baldung-grien-prado"],"2026-12-22":["e-20261120-baldung-grien-prado"],"2026-12-23":["e-20261120-baldung-grien-prado"],"2026-12-24":["e-20261120-baldung-grien-prado"],"2026-12-25":["e-20261120-baldung-grien-prado"],"2026-12-26":["e-20261226-tardeo-depeche-cure","e-20261226-grey-gallows","e-20261120-baldung-grien-prado"],"2026-12-27":["e-20261120-baldung-grien-prado"],"2026-12-28":["e-20261120-baldung-grien-prado"],"2026-12-29":["e-20261229-fer-cabildo","e-20261120-baldung-grien-prado"],"2026-12-30":["e-20261120-baldung-grien-prado"],"2026-12-31":["e-20261120-baldung-grien-prado"],"2027-01-01":["e-20261120-baldung-grien-prado"],"2027-01-02":["e-20261120-baldung-grien-prado"],"2027-01-03":["e-20261120-baldung-grien-prado"]}</script>
 <footer class="site-ft">
-  <div class="wrap">
-    <div class="about">
-      <h2>Qué es La Capilla Oscura</h2>
-      <p>Un culto a la música en directo en Madrid: del heavy metal al post-punk, alt wave y folk.</p>
-      <p>Underground, vinilo y energía cruda. Cero elitismo.</p>
+  <div class="wrap ft-grid">
+    <div class="ft-about">
+      <p class="ft-motto">Colto a la música</p>
+      <p>Conciertos, salas y discos del Madrid rock y metal. Del heavy metal al post-punk, alt wave y folk. Underground, vinilo y energía cruda. Cero elitismo.</p>
     </div>
-    <ul class="links">
-      <li><a href="https://www.instagram.com/lacapillaoscura/" rel="noopener external" target="_blank">Instagram <span class="sr">(abre en otra pestaña)</span></a></li>
+    <ul class="ft-links" aria-label="Síguenos y contacto">
+      <li><a href="https://www.instagram.com/lacapillaoscura/" rel="noopener external" target="_blank">Instagram @lacapillaoscura <span class="sr">(abre en otra pestaña)</span></a></li>
       <li><a href="https://www.tiktok.com/@lacapillaoscura" rel="noopener external" target="_blank">TikTok @lacapillaoscura <span class="sr">(abre en otra pestaña)</span></a></li>
       <li><a href="mailto:info@lacapillaoscura.es">info@lacapillaoscura.es</a></li>
-      <li><a href="agenda.ics" download="horario-de-misas.ics">Toda la agenda en tu calendario (.ics)</a></li>
-      <li><a href="aviso-legal.html">Aviso legal</a></li>
+      <li><a href="/agenda.ics" download="horario-de-misas.ics">Toda la agenda en tu calendario (.ics)</a></li>
     </ul>
-    <p class="fine">Precios orientativos · compra en la web oficial. Solo publicamos planes confirmados. Sin cookies ni seguimiento. Actualizado el 24 noviembre 2026.</p>
-    <p class="sign"><svg class="ic-candle" width="22" height="22" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M100 14 C112 34 118 46 118 58 C118 70 110 77 100 77 C90 77 82 70 82 58 C82 46 88 34 100 14 Z"/><path d="M100 77 V90"/><path d="M74 182 V104 C74 96 80 92 88 95 C94 97 98 94 104 94 C112 94 126 92 126 104 V182"/><path d="M86 100 V126 M114 98 V140"/><path d="M50 182 H150"/></svg><span>@lacapillaoscura</span></p>
+    <ul class="ft-links ft-small" aria-label="Información">
+      <li><a href="/sobre/">Sobre LCO</a></li>
+      <li><a href="/aviso-legal/">Aviso legal</a></li>
+      <li><a href="/privacidad/">Privacidad</a></li>
+    </ul>
+    <p class="fine">Sin cookies, sin analítica y sin publicidad. Precios orientativos: compra siempre en la web oficial. Actualizado el 24 noviembre 2026.</p>
   </div>
 </footer>
-<script src="assets/site.js" defer></script></body>
+<script src="/assets/lco.js" defer></script>
+</body>
 </html>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>LCO · Templos de Madrid</name>
+<description>Recomendaciones de La Capilla Oscura · https://lacapillaoscura.es/templos/</description>
+<Style id="lco-sala">
+<IconStyle><color>ff3f3ad8</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle>
+<LabelStyle><scale>0.9</scale></LabelStyle>
+</Style>
+<Style id="lco-club">
+<IconStyle><color>ffd67f9b</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle>
+<LabelStyle><scale>0.9</scale></LabelStyle>
+</Style>
+<Style id="lco-bar">
+<IconStyle><color>ff3ea4d6</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle>
+<LabelStyle><scale>0.9</scale></LabelStyle>
+</Style>
+<Style id="lco-tienda">
+<IconStyle><color>ffa5b346</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle>
+<LabelStyle><scale>0.9</scale></LabelStyle>
+</Style>
+<Style id="lco-museo">
+<IconStyle><color>ffde986f</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle>
+<LabelStyle><scale>0.9</scale></LabelStyle>
+</Style>
+<Style id="lco-otro">
+<IconStyle><color>ff909ca3</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle>
+<LabelStyle><scale>0.9</scale></LabelStyle>
+</Style>
+<Folder>
+<name>Salas</name>
+<Placemark id="p-cafe-la-palma">
+<name>Café La Palma</name>
+<description>Sala · Oscuro (goth · darkwave · EBM · post-punk), Fuera del altar (jazz, folk, otros)
+Malasaña · ubicación aproximada
+Indie y darkwave
+https://www.gotifiestas.com/
+Más en lacapillaoscura.es/templos/#p-cafe-la-palma</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-cafe-la-palma</value></Data></ExtendedData>
+<Point><coordinates>-3.70423,40.42671,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-fun-house">
+<name>Fun House</name>
+<description>Sala · Rock y punk
+C/ Palafox 8 · Chamberí · Madrid
+Conciertos baratos desde 8–10 €
+https://conciertos.club/madrid
+Más en lacapillaoscura.es/templos/#p-fun-house</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-fun-house</value></Data></ExtendedData>
+<Point><coordinates>-3.70122,40.43150,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-gruta-77">
+<name>Gruta 77</name>
+<description>Sala · Rock y punk
+C/ Cuclillo 6 · Carabanchel · Madrid
+Cierra: Cierra tras 26 años: última noche el domingo 29 nov (Mamá Ladilla). La promotora seguirá en otras salas.
+Punk, garage, rock
+https://www.instagram.com/gruta_77/
+Más en lacapillaoscura.es/templos/#p-gruta-77</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-gruta-77</value></Data></ExtendedData>
+<Point><coordinates>-3.73149,40.39095,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-revi-live">
+<name>Revi Live</name>
+<description>Sala · Metal y heavy
+C/ Los Cavilas 4 · Vicálvaro · Madrid
+Unas 500 personas: thrash, death, black. Feria del Disco de Metal Extremo (28 nov)
+https://www.planomato.com/es/madrid/v/revilive
+Más en lacapillaoscura.es/templos/#p-revi-live</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-revi-live</value></Data></ExtendedData>
+<Point><coordinates>-3.58972,40.40086,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-clamores">
+<name>Sala Clamores</name>
+<description>Sala · Rock y punk, Fuera del altar (jazz, folk, otros)
+C/ Alburquerque 14 · Chamberí · Madrid
+Mezcla, cada vez más rock
+https://www.instagram.com/clamoreslive/
+Más en lacapillaoscura.es/templos/#p-sala-clamores</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-clamores</value></Data></ExtendedData>
+<Point><coordinates>-3.70099,40.43111,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-el-sol">
+<name>Sala El Sol</name>
+<description>Sala · Rock y punk, Fuera del altar (jazz, folk, otros)
+C/ Jardines 3 · Gran Vía · Madrid
+Sala pequeña clásica (indie, rock alternativo)
+https://www.instagram.com/salaelsol/
+Más en lacapillaoscura.es/templos/#p-sala-el-sol</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-el-sol</value></Data></ExtendedData>
+<Point><coordinates>-3.70152,40.41898,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-mon-live">
+<name>Sala Mon Live</name>
+<description>Sala · Rock y punk
+C/ Hilarión Eslava 36 · Chamberí · Madrid
+Rock y hard rock
+https://conciertos.club/madrid
+Más en lacapillaoscura.es/templos/#p-sala-mon-live</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-mon-live</value></Data></ExtendedData>
+<Point><coordinates>-3.71652,40.43592,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-nazca">
+<name>Sala Nazca</name>
+<description>Sala · Oscuro (goth · darkwave · EBM · post-punk), Metal y heavy, Rock y punk
+C/ Orense 24 · Tetuán (Azca) · Madrid
+Goth, EBM, metal y hard rock: Dark Christmas Fest (12 dic)
+https://conciertos.club/madrid/locales/sala-nazca
+Más en lacapillaoscura.es/templos/#p-sala-nazca</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-nazca</value></Data></ExtendedData>
+<Point><coordinates>-3.69446,40.45138,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-pirandello">
+<name>Sala Pirandello</name>
+<description>Sala · Oscuro (goth · darkwave · EBM · post-punk)
+C/ Ventura Rodríguez 7 · Argüelles · Madrid
+Dark Entries: Spain Goth Day (mayo) y Post-Punk Fest (sept)
+https://xceed.me/en/madrid
+Más en lacapillaoscura.es/templos/#p-sala-pirandello</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-pirandello</value></Data></ExtendedData>
+<Point><coordinates>-3.71372,40.42530,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-rockville">
+<name>Sala Rockville</name>
+<description>Sala · Rock y punk, Metal y heavy
+Av. Brasil 3 / C/ Orense 32 · Tetuán (Azca) · Madrid
+Jams gratis y matinales de fin de semana a 6 €
+https://conciertos.club/madrid
+Más en lacapillaoscura.es/templos/#p-sala-rockville</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-rockville</value></Data></ExtendedData>
+<Point><coordinates>-3.69450,40.45373,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-silikona">
+<name>Sala Silikona</name>
+<description>Sala · Metal y heavy
+Moratalaz · ubicación aproximada
+Club con más de 30 años: metal extremo y post-metal
+https://www.instagram.com/salasilikona.conciertos/
+Más en lacapillaoscura.es/templos/#p-sala-silikona</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-silikona</value></Data></ExtendedData>
+<Point><coordinates>-3.64487,40.40593,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-villanos">
+<name>Sala Villanos (ex-Caracol)</name>
+<description>Sala · Rock y punk
+C/ Bernardino Obregón 18 · Embajadores · Madrid
+La antigua Sala Caracol con otro nombre
+https://www.instagram.com/salavillanos/
+Más en lacapillaoscura.es/templos/#p-sala-villanos</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-villanos</value></Data></ExtendedData>
+<Point><coordinates>-3.70024,40.40394,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-shoko">
+<name>Shoko</name>
+<description>Sala · Rock y punk, Oscuro (goth · darkwave · EBM · post-punk)
+C/ Toledo 86 · La Latina · Madrid
+Sala mediana
+https://conciertos.club/madrid
+Más en lacapillaoscura.es/templos/#p-shoko</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-shoko</value></Data></ExtendedData>
+<Point><coordinates>-3.71086,40.40882,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-siroco">
+<name>Siroco</name>
+<description>Sala · Rock y punk, Metal y heavy
+C/ San Dimas 3 · Conde Duque / Malasaña · Madrid
+Carteles a 15 € (rock, metal, stoner)
+https://www.instagram.com/sirocosala/
+Más en lacapillaoscura.es/templos/#p-siroco</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-siroco</value></Data></ExtendedData>
+<Point><coordinates>-3.70774,40.42692,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-wagon">
+<name>Wagon</name>
+<description>Sala · Metal y heavy
+Chamartín · ubicación aproximada
+Metal y prog
+https://www.instagram.com/wagon.live/
+Más en lacapillaoscura.es/templos/#p-wagon</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-wagon</value></Data></ExtendedData>
+<Point><coordinates>-3.67613,40.45899,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-wurlitzer-ballroom">
+<name>Wurlitzer Ballroom</name>
+<description>Sala · Rock y punk, Metal y heavy, Oscuro (goth · darkwave · EBM · post-punk)
+C/ Tres Cruces 12 · Gran Vía · Madrid
+Conciertos casi cada noche, pequeños y baratos
+https://wurlitzerballroom.com
+Más en lacapillaoscura.es/templos/#p-wurlitzer-ballroom</description>
+<styleUrl>#lco-sala</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Sala</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-wurlitzer-ballroom</value></Data></ExtendedData>
+<Point><coordinates>-3.70255,40.41969,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>Clubs</name>
+<Placemark id="p-cadavra-club">
+<name>Cadavra Club</name>
+<description>Club · Oscuro (goth · darkwave · EBM · post-punk)
+C/ Caballero de Gracia 10 · Gran Vía · Madrid
+Alternativo y EBM
+https://www.instagram.com/cadavra.club/
+Más en lacapillaoscura.es/templos/#p-cadavra-club</description>
+<styleUrl>#lco-club</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Club</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-cadavra-club</value></Data></ExtendedData>
+<Point><coordinates>-3.70089,40.41946,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-copernico">
+<name>Copérnico The Club</name>
+<description>Club · Rock y punk
+C/ Fernández de los Ríos 67 · Chamberí · Madrid
+Conciertos punk/rock y sesiones de club de jueves a sábado
+https://www.instagram.com/copernicotheclub/
+Más en lacapillaoscura.es/templos/#p-copernico</description>
+<styleUrl>#lco-club</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Club</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-copernico</value></Data></ExtendedData>
+<Point><coordinates>-3.71358,40.43527,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-la-reina-lagarta">
+<name>La Reina Lagarta</name>
+<description>Club · Oscuro (goth · darkwave · EBM · post-punk)
+C/ La Palma 14 · Malasaña · Madrid
+Cabaret freak con noches goth a veces: The Purge Sessions (darkwave, EBM, post-punk)
+https://www.gotifiestas.com/
+Más en lacapillaoscura.es/templos/#p-la-reina-lagarta</description>
+<styleUrl>#lco-club</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Club</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-la-reina-lagarta</value></Data></ExtendedData>
+<Point><coordinates>-3.70269,40.42624,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-maravillas-club">
+<name>Maravillas Club</name>
+<description>Club · Rock y punk
+C/ San Vicente Ferrer 33 · Malasaña · Madrid
+Conciertos a 11 €; antes una noche mensual «Remember 80s» (puede estar desactualizado)
+https://conciertos.club/madrid
+Más en lacapillaoscura.es/templos/#p-maravillas-club</description>
+<styleUrl>#lco-club</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Club</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-maravillas-club</value></Data></ExtendedData>
+<Point><coordinates>-3.70431,40.42576,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-sala-twin-rockola">
+<name>Sala Twin / Rockola</name>
+<description>Club · Oscuro (goth · darkwave · EBM · post-punk)
+C/ Gaztambide 20 · Chamberí · Madrid
+RedRum Gothic Club: sábados, 23:00 (desde ~10 €)
+https://www.instagram.com/redrumgothclub/
+Más en lacapillaoscura.es/templos/#p-sala-twin-rockola</description>
+<styleUrl>#lco-club</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Club</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-sala-twin-rockola</value></Data></ExtendedData>
+<Point><coordinates>-3.71554,40.43327,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>Bares</name>
+<Placemark id="p-barracudas-rock-bar">
+<name>Barracudas Rock Bar</name>
+<description>Bar · Rock y punk, Metal y heavy
+C/ Brescia 19 · Salamanca · Madrid
+Bar con conciertos (listados en nov 2026)
+Más en lacapillaoscura.es/templos/#p-barracudas-rock-bar</description>
+<styleUrl>#lco-bar</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Bar</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-barracudas-rock-bar</value></Data></ExtendedData>
+<Point><coordinates>-3.66237,40.43669,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-cadillac-solitario">
+<name>Cadillac Solitario</name>
+<description>Bar · Rock y punk
+C/ Fermín Caballero 6 · Fuencarral-El Pardo · Madrid
+Conciertos de bar baratos (Sublimado Korrosivo, 10 € con consumición, 21 nov)
+Más en lacapillaoscura.es/templos/#p-cadillac-solitario</description>
+<styleUrl>#lco-bar</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Bar</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-cadillac-solitario</value></Data></ExtendedData>
+<Point><coordinates>-3.69957,40.48741,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-honky-tonk">
+<name>Honky Tonk</name>
+<description>Bar · Rock y punk
+C/ Covarrubias 24 · Chamberí · Madrid
+Bar con conciertos (listados en nov 2026)
+Más en lacapillaoscura.es/templos/#p-honky-tonk</description>
+<styleUrl>#lco-bar</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Bar</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-honky-tonk</value></Data></ExtendedData>
+<Point><coordinates>-3.69752,40.43024,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>Tiendas</name>
+<Placemark id="p-ater-cosmo">
+<name>Ater Cosmo</name>
+<description>Tienda de discos · Rock y punk, Oscuro (goth · darkwave · EBM · post-punk)
+Madrid · ubicación aproximada
+Firmas y showcases acústicos
+Más en lacapillaoscura.es/templos/#p-ater-cosmo</description>
+<styleUrl>#lco-tienda</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Tienda de discos</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-ater-cosmo</value></Data></ExtendedData>
+<Point><coordinates>-3.70350,40.41690,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-bajo-el-volcan">
+<name>Bajo el Volcán</name>
+<description>Tienda de discos · Rock y punk, Fuera del altar (jazz, folk, otros)
+Lavapiés · ubicación aproximada
+Firmas y conciertos pequeños
+Más en lacapillaoscura.es/templos/#p-bajo-el-volcan</description>
+<styleUrl>#lco-tienda</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Tienda de discos</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-bajo-el-volcan</value></Data></ExtendedData>
+<Point><coordinates>-3.70066,40.40845,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-la-metralleta">
+<name>Discos La Metralleta</name>
+<description>Tienda de discos · Rock y punk, Metal y heavy, Oscuro (goth · darkwave · EBM · post-punk)
+Sol · ubicación aproximada
+Vinilo; firmas y showcases
+Más en lacapillaoscura.es/templos/#p-la-metralleta</description>
+<styleUrl>#lco-tienda</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Tienda de discos</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-la-metralleta</value></Data></ExtendedData>
+<Point><coordinates>-3.70222,40.41783,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-killers-discos">
+<name>Killer's Discos</name>
+<description>Tienda de discos · Metal y heavy
+Madrid · ubicación aproximada
+Tienda de discos de metal
+Más en lacapillaoscura.es/templos/#p-killers-discos</description>
+<styleUrl>#lco-tienda</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Tienda de discos</value></Data><Data name="Ubicación"><value>aproximada</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-killers-discos</value></Data></ExtendedData>
+<Point><coordinates>-3.70350,40.41690,0</coordinates></Point>
+</Placemark>
+<Placemark id="p-la-rebelde-records">
+<name>La Rebelde Records</name>
+<description>Tienda de discos · Rock y punk, Oscuro (goth · darkwave · EBM · post-punk)
+C/ Felipe Fraile 6 · Puente de Vallecas · Madrid
+Nueva (nov 2026): punk, rock, darkwave, goth; vende camisetas
+https://www.timeout.es/madrid/es/noticias/descubrimos-una-nueva-tienda-de-vinilos-y-discos-en-madrid-con-clasicos-de-rock-y-electronica-voces-emergentes-y-sellos-independientes-111226
+Más en lacapillaoscura.es/templos/#p-la-rebelde-records</description>
+<styleUrl>#lco-tienda</styleUrl>
+<ExtendedData><Data name="Tipo"><value>Tienda de discos</value></Data><Data name="Ubicación"><value>exacta</value></Data><Data name="Ficha LCO"><value>https://lacapillaoscura.es/templos/#p-la-rebelde-records</value></Data></ExtendedData>
+<Point><coordinates>-3.66592,40.39701,0</coordinates></Point>
+</Placemark>
+</Folder>
+</Document>
+</kml>

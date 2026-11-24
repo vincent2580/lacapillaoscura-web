@@ -1,0 +1,48 @@
+{
+ "_source": "The manifesto as published and pinned on Instagram @lacapillaoscura on 18 Nov 2026 (caption + the 5 slides). His published words only.",
+ "lead": "Conciertos, salas y discos del Madrid rock y metal: esto es La Capilla Oscura.",
+ "paragraphs": [
+  "Un buen concierto es bueno para el público y para la banda. Aquí se escucha también a los teloneros, se vive el concierto entero y se disfruta con quien está en el escenario.",
+  "Voy a conciertos y te cuento lo que vivo: la energía, el público, el momento. Antes de cada concierto hago los deberes; después, una crónica honesta, con velas en vez de estrellas.",
+  "Las fotos son mías. Las palabras, también.",
+  "Y sí: de esta capilla saldrá ropa. Poca y numerada."
+ ],
+ "close": "Si la música es tu ritual, quédate.",
+ "motto": "Colto a la música",
+ "lines": [
+  {
+   "kicker": "I · El concierto",
+   "line": "Un buen concierto es bueno para el público y para la banda."
+  },
+  {
+   "kicker": "II · Respeto",
+   "line": "Aquí también se escucha a los teloneros."
+  },
+  {
+   "kicker": "III · Hecho por mí",
+   "line": "Las fotos son mías. Las palabras, también."
+  }
+ ],
+ "slides": [
+  {
+   "img": "manifiesto-slide-1",
+   "alt": "Manifiesto 1 de 5: LCO, La Capilla Oscura, colto a la música. Conciertos, salas, discos, Madrid"
+  },
+  {
+   "img": "manifiesto-slide-2",
+   "alt": "Manifiesto 2 de 5: Un buen concierto es bueno para el público y para la banda"
+  },
+  {
+   "img": "manifiesto-slide-3",
+   "alt": "Manifiesto 3 de 5: Aquí también se escucha a los teloneros, sobre el escenario del Resurrection Fest"
+  },
+  {
+   "img": "manifiesto-slide-4",
+   "alt": "Manifiesto 4 de 5: Las fotos son mías. Las palabras, también"
+  },
+  {
+   "img": "manifiesto-slide-5",
+   "alt": "Manifiesto 5 de 5: Si la música es tu ritual, quédate"
+  }
+ ]
+}

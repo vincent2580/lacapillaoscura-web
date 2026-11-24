@@ -1,0 +1,32 @@
+{% extends 'base.html.j2' %}
+{% block title %}Tienda · Edición 001: próximamente | La Capilla Oscura{% endblock %}
+{% block description %}La ropa de La Capilla Oscura: poca y numerada. Edición 001, próximamente. Escríbenos y te avisamos.{% endblock %}
+{% block meta %}<link rel="canonical" href="{{ site }}/tienda/"><meta property="og:type" content="website"><meta property="og:title" content="Tienda · Edición 001 · La Capilla Oscura">{% endblock %}
+{% block body %}
+<main id="main">
+<section class="hero hero-plain tienda-hero" aria-labelledby="hero-h">
+  <div class="hero-in wrap">
+    {{ m.stamp('Próximamente', 'st-big') }}
+    <h1 id="hero-h" class="hero-t">Tienda</h1>
+    <p class="ed-t">{{ edicion.title }}</p>
+    <p class="hero-sub">{{ manif.paragraphs[3] }}</p>
+    <p class="ed-off">Ahora mismo la tienda no está disponible: todavía no se puede comprar nada.</p>
+  </div>
+  <img class="tienda-mark" src="/assets/lco-mark.svg" alt="" width="260" height="200">
+</section>
+<div class="wrap grid-2">
+  <section class="card" aria-labelledby="h-que">
+    {% set tx = textos['tienda.edicion_001'] %}
+    {% if tx.text or preview %}<h2 class="card-t" id="h-que">Qué será la {{ edicion.title }}</h2>
+    {{ m.slot(tx, preview, '') }}{% else %}<h2 class="card-t" id="h-que">Mientras tanto</h2>{% endif %}
+    <p class="muted">{{ 'Mientras tanto, lo cuento' if (tx.text or preview) else 'Lo cuento' }} en <a href="{{ instagram }}" rel="noopener external" target="_blank">Instagram<span class="sr"> (abre en otra pestaña)</span></a> y en <a href="{{ tiktok }}" rel="noopener external" target="_blank">TikTok<span class="sr"> (abre en otra pestaña)</span></a>.</p>
+  </section>
+  <section class="card avisa" id="avisame" aria-labelledby="h-avisa">
+    <h2 class="card-t" id="h-avisa">Avísame</h2>
+    <p>Escríbenos y te avisamos cuando abra la {{ edicion.title }}. Solo para eso.</p>
+    <p class="acts"><a class="btn" href="{{ avisame_href }}" data-avisame>Avísame<span class="sr"> (abre tu correo con un mensaje a {{ email }})</span></a></p>
+    <p class="fine-l">El botón abre tu programa de correo con un mensaje para <a href="mailto:{{ email }}">{{ email }}</a>. Esta web no tiene formulario y no guarda nada. Para darte de baja, escribe con el asunto «Baja Avísame». No cedemos tu correo a nadie. Más en la <a href="/privacidad/#avisame">política de privacidad</a>.</p>
+  </section>
+</div>
+</main>
+{% endblock %}

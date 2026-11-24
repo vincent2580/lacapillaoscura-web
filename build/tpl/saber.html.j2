@@ -1,0 +1,48 @@
+{% extends 'base.html.j2' %}
+{% block title %}Saber: deberes antes del concierto, velas y glosario | La Capilla Oscura{% endblock %}
+{% block description %}Deberes antes del concierto (el último disco y el primero), cómo puntúo con velas y el glosario de La Capilla Oscura: misas, vigilias, procesiones, reliquias y arte sacro.{% endblock %}
+{% block meta %}<link rel="canonical" href="{{ site }}/saber/"><meta property="og:type" content="website"><meta property="og:title" content="Saber · La Capilla Oscura">{% endblock %}
+{% block body %}
+<main id="main">
+<section class="hero hero-s hero-plain" aria-labelledby="hero-h">
+  <div class="hero-in wrap">
+    {{ m.stamp('Deberes · velas · glosario') }}
+    <h1 id="hero-h" class="hero-t">Saber</h1>
+    <blockquote class="hero-quote"><p>«Antes de cada concierto hago los deberes; después, una crónica honesta, con velas en vez de estrellas.»</p></blockquote>
+  </div>
+</section>
+<div class="wrap">
+  {{ m.sect('Deberes antes del concierto', id='deberes') }}
+  <ol class="steps">
+    <li><span class="rn" aria-hidden="true">I</span><div><h3>El último disco</h3><p>Lo más reciente de la banda.</p></div></li>
+    <li><span class="rn" aria-hidden="true">II</span><div><h3>El primero</h3><p>Su disco de debut.</p></div></li>
+    <li><span class="rn" aria-hidden="true">III</span><div><h3>Después, la crónica</h3><p>Con velas en vez de estrellas. <a href="/cronicas/">Ver crónicas</a></p></div></li>
+  </ol>
+  {{ m.slot(textos['saber.deberes_por_que'], preview) }}
+
+  <div class="grid-2 mt">
+    <section class="card" aria-labelledby="h-velas">
+      <h2 class="card-t" id="h-velas">Las velas</h2>
+      <p>En La Capilla Oscura no hay estrellas: hay velas. De 0 a 5, de media en media.</p>
+      <p class="velas-ex">{{ m.velas({'full': 4, 'half': True, 'empty': 0, 'label': '4,5 de 5 velas', 'num': '4,5'}, True) }}<span class="cro-vn">4,5 / 5 velas · <a href="{{ cronicas[0].url }}">{{ cronicas[0].band }}</a></span></p>
+      {{ m.slot(textos['saber.velas_significado'], preview) }}
+    </section>
+    <section class="card" aria-labelledby="h-glos">
+      <h2 class="card-t" id="h-glos">Glosario de la capilla</h2>
+      <dl class="glos">
+        {% for t in types %}<dt><i class="dot d-{{ t.id }}" aria-hidden="true"></i>{{ t.lit|capitalize }}</dt><dd>{{ {'misa': 'Concierto', 'vigilia': 'Fiesta o noche de club', 'procesion': 'Festival', 'reliquias': 'Feria de discos o tienda', 'arte-sacro': 'Museo, exposición o cine'}[t.id] }}</dd>{% endfor %}
+        <dt>{{ m.star(False) }} Iría</dt><dd>Mi recomendación de la semana</dd>
+        <dt>Templos</dt><dd>Salas, clubs, bares y tiendas de discos</dd>
+        <dt>Horario de misas</dt><dd>La agenda de la semana, día a día</dd>
+      </dl>
+    </section>
+  </div>
+  {% if textos['saber.guias'].text or preview %}
+  <section class="card mt soon" aria-labelledby="h-guias">
+    <h2 class="card-t" id="h-guias">Guías y escena de Madrid</h2>
+    {% if textos['saber.guias'].text %}<p>{{ textos['saber.guias'].text }}</p>{% else %}<p>{{ m.stamp('Próximamente', 'st-s') }} {{ m.todo(textos['saber.guias'].hint) }}</p>{% endif %}
+  </section>
+  {% endif %}
+</div>
+</main>
+{% endblock %}

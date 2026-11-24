@@ -1,0 +1,60 @@
+{% extends 'base.html.j2' %}
+{% block title %}Templos: salas, clubs, bares y tiendas de discos de rock y metal en Madrid | La Capilla Oscura{% endblock %}
+{% block description %}{{ n_templos }} templos del rock, el metal y lo oscuro en Madrid: salas, clubs, bares y tiendas de discos, con su barrio, su estilo y sus próximas misas. Guárdalos en tu Google Maps.{% endblock %}
+{% block meta %}<link rel="canonical" href="{{ site }}/templos/"><meta property="og:type" content="website"><meta property="og:title" content="Templos · La Capilla Oscura">{% endblock %}
+{% block body %}
+<main id="main">
+{% call m.hero('wall-rig', 'Madrid', 'Templos', 'Salas, clubs, bares y tiendas de discos donde se celebra el culto.', '', True) %}{% endcall %}
+<div class="wrap">
+  <section class="mapbox" aria-labelledby="h-map">
+    <div class="mapbox-h">
+      <h2 id="h-map" class="card-t">El mapa</h2>
+      <button type="button" class="btn" data-map-open hidden>Abrir el mapa</button>
+    </div>
+    <p class="mapbox-note" data-map-note>El mapa usa OpenStreetMap: al abrirlo, tu navegador pide las imágenes del mapa a sus servidores (un servicio externo). Hasta que lo abras, no se carga nada de fuera. <a href="/privacidad/#mapa">Más en privacidad</a>.</p>
+    <noscript><p class="mapbox-note">El mapa necesita JavaScript. Abajo tienes la lista con enlaces a Google Maps y Apple Maps para cada templo.</p></noscript>
+    <div class="map" id="map" data-map hidden role="region" aria-label="Mapa de los templos de Madrid"></div>
+    <ul class="map-leg" data-map-leg hidden aria-label="Leyenda del mapa">{% for k in kinds_count %}<li><i class="pin pin-{{ k.id }}" aria-hidden="true"></i>{{ k.label }}</li>{% endfor %}<li><i class="pin pin-ap" aria-hidden="true"></i>Ubicación aproximada</li></ul>
+  </section>
+
+  <section class="card gm" id="en-tu-mapa" aria-labelledby="h-gm">
+    <h2 id="h-gm" class="card-t">Guarda los Templos LCO en tu Google Maps</h2>
+    {% if mymaps_url %}
+    <p>La lista «LCO · Templos de Madrid» está en Google My Maps: ábrela en el móvil o en el ordenador.</p>
+    <p class="acts"><a class="btn" href="{{ mymaps_url }}" rel="noopener external" target="_blank">Abrir los Templos LCO en Google Maps<span aria-hidden="true"> ↗</span><span class="sr"> (Google My Maps, abre en otra pestaña)</span></a></p>
+    <p class="gm-dl">O descarga la lista: <a href="{{ exports.kml }}" download>KML</a><a href="{{ exports.kmz }}" download>KMZ</a><a href="{{ exports.csv }}" download>CSV</a></p>
+    {% else %}
+    <p class="acts"><a class="btn" href="{{ exports.kml }}" download>Descarga la lista (KML)</a><a class="btn ghost" href="{{ exports.csv }}" download>CSV</a><a class="btn ghost" href="{{ exports.kmz }}" download>KMZ</a></p>
+    <p class="gm-hint">Impórtala en Google My Maps (Añadir capa → Importar) o ábrela con Organic Maps, y tendrás los {{ n_templos }} templos en tu móvil.</p>
+    {% endif %}
+  </section>
+
+  <div class="tp-ctl" data-js-tp hidden>
+    <div class="chips" role="group" aria-label="Filtrar templos">
+      <button type="button" class="chip" data-k="" aria-pressed="true">Todos <span class="n">{{ n_templos }}</span></button>
+      {% for k in kinds_count %}<button type="button" class="chip" data-k="{{ k.id }}" aria-pressed="false"><i class="pin pin-{{ k.id }}" aria-hidden="true"></i>{{ k.label }} <span class="n">{{ k.n }}</span></button>{% endfor %}
+    </div>
+    <p class="sr" aria-live="polite" data-tp-status></p>
+  </div>
+
+  <ul class="tp-grid">
+    {% for p in templos %}
+    <li class="card tp" id="{{ p.id }}" data-kind="{{ p.kind }}">
+      <p class="tp-k"><span class="kind kind-{{ p.kind }}">{{ p.kind_label }}</span>{% if p.status == 'cierra' %} {{ m.stamp('Cierra', 'st-s') }}{% elif p.status == 'cerrado' %} {{ m.stamp('Cerrado', 'st-s') }}{% endif %}</p>
+      <h3 class="tp-t">{{ p.name }}</h3>
+      <p class="tp-a">{% if p.address %}{{ p.address }}{% if p.area %} · {{ p.area }}{% endif %}{% else %}{{ p.area or 'Madrid' }} <span class="muted">· ubicación aproximada</span>{% endif %}</p>
+      {% if p.styles %}<p class="tp-s">{{ p.styles|join(' · ') }}</p>{% endif %}
+      {% if p.info %}<p class="tp-i">{{ p.info }}</p>{% endif %}
+      {% if p.status_note %}<p class="tp-i">{{ p.status_note }}</p>{% endif %}
+      {% if p.next %}<div class="tp-n"><p class="mini-h">Próximas misas</p><ul>{% for e in p.next[:3] %}<li><a href="/agenda/#e-{{ e.id }}">{{ e.when }} · {{ e.title }}</a></li>{% endfor %}</ul></div>{% endif %}
+      <p class="tp-l">{% if p.url %}<a href="{{ p.url }}" rel="noopener external" target="_blank">{{ p.url_label }}<span class="sr"> (web de {{ p.name }}, abre en otra pestaña)</span></a>{% endif %}{% if p.instagram_url %}<a href="{{ p.instagram_url }}" rel="noopener external" target="_blank">Instagram<span class="sr"> de {{ p.name }} (abre en otra pestaña)</span></a>{% endif %}</p>
+      <p class="tp-m"><a href="{{ p.google }}" rel="noopener external" target="_blank" data-gmaps>Google Maps<span aria-hidden="true"> ↗</span><span class="sr">: {{ p.name }} (abre en otra pestaña)</span></a><a href="{{ p.apple }}" rel="noopener external" target="_blank" data-amaps>Apple Maps<span aria-hidden="true"> ↗</span><span class="sr">: {{ p.name }} (abre en otra pestaña)</span></a></p>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="fine-l">Datos públicos de cada sitio (barrio, estilo, web). Las ubicaciones aproximadas marcan el barrio, no la puerta. Si algo ha cambiado, escríbenos a <a href="mailto:{{ email }}">{{ email }}</a>.</p>
+</div>
+<script type="application/json" id="lco-templos">{{ map_json|safe }}</script>
+</main>
+{% endblock %}
+{% block scripts %}<script src="/assets/templos.js" defer></script>{% endblock %}
