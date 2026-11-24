@@ -11,4 +11,4 @@ This repository is the published static website served by GitHub Pages at https:
 - `agenda.ics` / `ics/*.ics`: calendar files
 - `aviso-legal.html`, `404.html`, `assets/` (self-hosted fonts under the SIL Open Font License, CSS, JS, images)
 
-No cookies, no analytics, no third-party requests. Contact: hola@lacapillaoscura.es · Instagram [@lacapillaoscura](https://www.instagram.com/lacapillaoscura/)
+No cookies, no analytics, no third-party requests. Contact: info@lacapillaoscura.es · Instagram [@lacapillaoscura](https://www.instagram.com/lacapillaoscura/)
